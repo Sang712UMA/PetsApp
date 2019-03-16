@@ -6,25 +6,32 @@
 	Adrián Salas Troya - Software Engineer
 
 >Short description of the project
-	We want to create an application for animals. We want to include various functionalities which will help the pets and their owners.
+	We want to create an app/a wep for animals. This app/wep include various functions which will help the pets and their owners.
 -->Problem that you aim to solve
-	Pets dying on the street
-	People without resources to help pets
-	Overflow of Shelters
+	Pets dying on streets
+	People who help pets with not enough resources
+	Overflowing of Shelters
 -->Proposed solution
-	Developing a social app/web to share and help pets and owners
+	Developing a social app/web to share resources and help pets and owners
 -->Collaborative aspects of the chosen approach
-	People can upload animal they have found, so other people can take care of them
-	People can help others, taking care of their pets during holidays
+	People can upload an animal's information they have found on a street
+	-->so that other people who have interests can take care of them
+	-->or that the shelter can rescue them
+	People can help owners, taking care of their pets during holidays or when they can't
 	
 >Commitments (Requirements that you commit to implement)
 	UI Design of web and android app
 	Backend of the app (Server-side)
+	+)Advertiser's requirement - smart advertisement system
+	+)Shelter's requirement - minimizing effort and time to find and take volunteers equally
+	
 >Extensions (Requirements that you might implement if time permits)
 	Frontend of the mobile app
 	Frontend of the web app
+	
 >Exclusions (Requirements that are not considered)
 	Server
 	Fully functional app (We will make the MVP)
+	
 >Signature of all team members 
 	_To be printed and updated_
