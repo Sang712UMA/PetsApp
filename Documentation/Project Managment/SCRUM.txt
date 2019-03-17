@@ -20,6 +20,7 @@
 	--->Tutorial UML
 	>Michal:
 	>Sanggil:
+	--->Project Definition
 
 ##WORK DONE: (Describe what was done)
 	>Adri:
