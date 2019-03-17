@@ -1,0 +1,35 @@
+# WEEK 1:
+#### WORK TO BE DONE: (Creation at least of these documents)
+
+ - [ ] Project Definition *(Assigned to Sanggil)*
+ - [X] Project Contract *(Need to check by the team)*
+ - [ ] Project Management Structure and rules
+ - [ ] Document management rules
+ - [ ] Requirements document
+ - [ ] UML Model
+ - [X] Tutorial GIT *(Assigned to Adri)*
+ - [ ] Tutorial UML *(Assigned to Konstantina)*
+ - [ ] Tutorial Magic Draw
+ - [ ] Tutorial JUnit
+ - [ ] Tutorial Mockito
+
+#### WORK IN PROGRESS:
+
+* Adri:
+   - Tutorial Markdown 
+* Antek:
+* Konstantina:
+   - Tutorial UML
+* Michal: 
+* Sanggil:
+  - Project Definition
+
+#### WORK DONE: *(Describe what was done)*
+* Adri:
+	- Project Contract Created *(Add almost everything, it needs to be review by the team)*
+	- Create Tutorial GIT *(Basic Concepts, Quick Tutorial, GUI Apps, Links)*
+* Antek:
+* Konstantina:
+* Michal:
+* Sanggil:
+  - Project Contract modified *(Change some words, and add 2 requirements)*
