@@ -5,11 +5,11 @@
  - [X] Project Contract *(Need to check by the team) (Assigned to Adri)*
  - [ ] Project Management Structure and rules
  - [ ] Document management rules
- - [ ] Requirements document
+ - [ ] Requirements document *(Assigned to Antek)*
  - [ ] UML Model
  - [X] Tutorial GIT *(Assigned to Adri)*
  - [ ] Tutorial UML *(Assigned to Konstantina)*
- - [ ] Tutorial Magic Draw
+ - [ ] Tutorial Magic Draw *(Assigned to Antek)*
  - [ ] Tutorial JUnit
  - [ ] Tutorial Mockito *(Assigned to Adri)*
 
@@ -18,6 +18,8 @@
 * Adri:
    - Tutorial Mockito
 * Antek:
+   - Requirements document
+   - Tutorial Magic Draw
 * Konstantina:
    - Tutorial UML
 * Michal: 
