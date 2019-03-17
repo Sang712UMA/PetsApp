@@ -4,15 +4,24 @@ writer is still working on this document
 
 
 # This is _*PetsApp*_
-
-## Project description: 
+ 
 ### This is an app/ a wep for animals. It includes various functions which will help pets and their onwners.
 
-1. Hospitality & Adoptions - If you found an animal on a street, and the buddy don't seem to have a owner? Then, upload the buddy's information on PetsApp. 
-  Now someone will contact you who wants to take care of him/her.
+## Hospitality & Adoptions 
 
-2. Lost pets and found - This functionality have to help animals owners who lose somewhere their little friend. If somebody find pet can add information about this. 
+###  If you found an animal on a street, and the buddy don't seem to have a owner? Then, upload the buddy's information on PetsApp. 
+###  Now someone will contact you who wants to take care of him/her.
 
-3. PetSitting - This functionality have to help animals owners when their are going for example on holidays and can't take their pets. It includes babysitting accommodation and walking. 
+## Lost pets and found 
 
-4. In order to make people to contribute, we can add a system where you get free stuff (from sponsors) when you do free work (accomodation, rescuing pets...). We can have ads from sponsor in our web/app, and instead of receiving money the sponsor will give us free stuff (food, vaccines, items...).
+### Have you lost your lovely friend? Don't worry. 
+### All you need to do is upload your friend's information on here. It will help you save way much of your time or effort spending on making leaflet. 
+
+## PetSitting 
+
+### You don't have time to take your little friend a walk? You cannot go anywhere even if you want because you concern about your friend?
+### Then check this out! You can look for someone who will care your little friend during you can't.
+
+## Rewards
+### The more you adore animals, the more you can earn.
+### You can get free pet food, vaccines, goods and etc as much as you contribute to animals.
