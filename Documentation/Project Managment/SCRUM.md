@@ -32,6 +32,7 @@
 * Antek:
    - Requirements Document *(Creating first version with general functional requirements about the system)*
    - MagicDraw Tutorial *(Only brief explanation of what is MagicDraw and links to tutorials)*
+   - Project Contract modified *(Added some problems to be solved and reward system information)*
 * Konstantina:
 * Michal:
 * Sanggil:
