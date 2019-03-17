@@ -9,7 +9,7 @@
  - [ ] UML Model
  - [X] Tutorial GIT *(Assigned to Adri)*
  - [ ] Tutorial UML *(Assigned to Konstantina)*
- - [ ] Tutorial Magic Draw *(Assigned to Antek)*
+ - [X] Tutorial Magic Draw *(Assigned to Antek)*
  - [ ] Tutorial JUnit
  - [ ] Tutorial Mockito *(Assigned to Adri)*
 
@@ -18,7 +18,6 @@
 * Adri:
    - Tutorial Mockito
 * Antek:
-   - Tutorial Magic Draw
 * Konstantina:
    - Tutorial UML
 * Michal: 
@@ -32,6 +31,7 @@
    - Tutorial Markdown _(What is Markdown, Useful Links, Long-Quick-Tutorial)_
 * Antek:
    - Requirements Document *(Creating first version with general functional requirements about the system)*
+   - MagicDraw Tutorial *(Only brief explanation of what is MagicDraw and links to tutorials)*
 * Konstantina:
 * Michal:
 * Sanggil:
