@@ -11,6 +11,8 @@
 	Pets dying on streets
 	People who help pets with not enough resources
 	Overflowing of Shelters
+	Lost pets
+	Neglected pets when their owners can't take care of them
 -->Proposed solution
 	Developing a social app/web to share resources and help pets and owners
 -->Collaborative aspects of the chosen approach
@@ -18,6 +20,7 @@
 	-->so that other people who have interests can take care of them
 	-->or that the shelter can rescue them
 	People can help owners, taking care of their pets during holidays or when they can't
+	Contributors will be rewarded with resources which will help them with taking care of animals
 	
 >Commitments (Requirements that you commit to implement)
 	UI Design of web and android app
