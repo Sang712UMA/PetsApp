@@ -14,6 +14,8 @@ We want to create an app/a wep for animals. This app/wep include various functio
 * Overflowing of Shelters
 * Lost pets
 * Neglected pets when their owners can't take care of them
+* Pets that they're owners don't live anymore and they need a family
+* Pet owners that will go for holidays and they searching for a person to take care of they're pets for a couple of days
 #### Proposed solution
 * Developing a social app/web to share resources and help pets and owners
 #### Collaborative aspects of the chosen approach
