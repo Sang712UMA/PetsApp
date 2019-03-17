@@ -16,7 +16,6 @@
 #### WORK IN PROGRESS:
 
 * Adri:
-   - Tutorial Mockito
 * Antek:
 * Konstantina:
    - Tutorial UML
@@ -26,9 +25,11 @@
 
 #### WORK DONE: *(Describe what was done)*
 * Adri:
-	- Project Contract Created *(Add almost everything, it needs to be review by the team)*
-	- Create Tutorial GIT *(Basic Concepts, Quick Tutorial, GUI Apps, Links)*
+   - Project Contract Created *(Add all required sections, first revision)*
+   - Create Tutorial GIT *(Basic Concepts, Quick Tutorial, GUI Apps, Links)*
    - Tutorial Markdown _(What is Markdown, Useful Links, Long-Quick-Tutorial)_
+   - Project Contract Modified *(Refactor the file to Markdown)*
+   - Tutorial Mockito Created _(Create the file, add a brief description, add two links)
 * Antek:
    - Requirements Document *(Creating first version with general functional requirements about the system)*
    - MagicDraw Tutorial *(Only brief explanation of what is MagicDraw and links to tutorials)*
