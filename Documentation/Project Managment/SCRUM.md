@@ -2,7 +2,7 @@
 #### WORK TO BE DONE: (Creation at least of these documents)
 
  - [X] Project Definition *(Assigned to Sanggil)*
- - [X] Project Contract *(Need to check by the team) (Assigned to Adri)*
+ - [X] Project Contract *(Need to be checked by the team) (Assigned to Adri)*
  - [ ] Project Management Structure and rules
  - [ ] Document management rules
  - [X] Requirements document *(Assigned to Antek)*
@@ -11,7 +11,7 @@
  - [ ] Tutorial UML *(Assigned to Konstantina)*
  - [X] Tutorial Magic Draw *(Assigned to Antek)*
  - [ ] Tutorial JUnit
- - [ ] Tutorial Mockito *(Assigned to Adri)*
+ - [X] Tutorial Mockito *(Assigned to Adri)*
 
 #### WORK IN PROGRESS:
 
