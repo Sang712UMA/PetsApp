@@ -10,7 +10,7 @@
  - [X] Tutorial GIT *(Assigned to Adri)*
  - [ ] Tutorial UML *(Assigned to Konstantina)*
  - [X] Tutorial Magic Draw *(Assigned to Antek)*
- - [ ] Tutorial JUnit
+ - [ ] Tutorial JUnit *(Assigned to Michal)*
  - [X] Tutorial Mockito *(Assigned to Adri)*
 
 #### WORK IN PROGRESS:
@@ -20,6 +20,7 @@
 * Konstantina:
    - Tutorial UML
 * Michal: 
+  - Tutorial JUnit
 * Sanggil:
   - Project Definition
 
