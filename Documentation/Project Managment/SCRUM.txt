@@ -1,21 +1,20 @@
 #WEEK 1:
 ##WORK TO BE DONE: (Creation at least of these documents)
 	>Project Definition
-	>Project Contract (=? Contract Submission)
+	>Project Contract (Add things, Modify things & Check)
 	>Project Management Structure and rules
 	>Document management rules
 	>Requirements document
 	>UML Model
-	>Tutorial GIT (Adri doing it)
+	>Tutorial GIT (Done)
 	>Tutorial UML (Konstantina doing it)
 	>Tutorial Magic Draw
 	>Tutorial JUnit
 	>Tutorial Mockito.
-	>Contrat Submission (Add things, Modify things & Check)
 
 ##WORK IN PROGRESS:
-	>Adri: 
-	--->Tutorial GIT
+	>Adri:
+	--->Tutorial Markdown 
 	>Antek:
 	>Konstantina: 
 	--->Tutorial UML
@@ -24,8 +23,10 @@
 
 ##WORK DONE: (Describe what was done)
 	>Adri:
-	--->Contract Submission Created (Add almost everything, it needs to be review by the team)
+	--->Project Contract Created (Add almost everything, it needs to be review by the team)
+	--->Create Tutorial GIT (Basic Concepts, Quick Tutorial, GUI Apps, Links)
 	>Antek:
 	>Konstantina:
 	>Michal:
 	>Sanggil:
+	--->Project Contract modified (Change some words, and add 2 requirements)
