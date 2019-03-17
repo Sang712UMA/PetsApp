@@ -5,7 +5,7 @@
  - [X] Project Contract *(Need to check by the team) (Assigned to Adri)*
  - [ ] Project Management Structure and rules
  - [ ] Document management rules
- - [ ] Requirements document *(Assigned to Antek)*
+ - [X] Requirements document *(Assigned to Antek)*
  - [ ] UML Model
  - [X] Tutorial GIT *(Assigned to Adri)*
  - [ ] Tutorial UML *(Assigned to Konstantina)*
@@ -18,7 +18,6 @@
 * Adri:
    - Tutorial Mockito
 * Antek:
-   - Requirements document
    - Tutorial Magic Draw
 * Konstantina:
    - Tutorial UML
@@ -32,6 +31,7 @@
 	- Create Tutorial GIT *(Basic Concepts, Quick Tutorial, GUI Apps, Links)*
    - Tutorial Markdown _(What is Markdown, Useful Links, Long-Quick-Tutorial)_
 * Antek:
+   - Requirements Document *(Creating first version with general functional requirements about the system)*
 * Konstantina:
 * Michal:
 * Sanggil:
