@@ -8,7 +8,7 @@
  - [X] Requirements document *(Assigned to Antek)*
  - [ ] UML Model
  - [X] Tutorial GIT *(Assigned to Adri)*
- - [ ] Tutorial UML *(Assigned to Konstantina)*
+ - [X] Tutorial UML *(Assigned to Konstantina)*
  - [X] Tutorial Magic Draw *(Assigned to Antek)*
  - [ ] Tutorial JUnit *(Assigned to Michal)*
  - [X] Tutorial Mockito *(Assigned to Adri)*
@@ -18,7 +18,6 @@
 * Adri:
 * Antek:
 * Konstantina:
-   - Tutorial UML
 * Michal: 
   - Tutorial JUnit
 * Sanggil:
@@ -36,6 +35,8 @@
    - MagicDraw Tutorial *(Only brief explanation of what is MagicDraw and links to tutorials)*
    - Project Contract modified *(Added some problems to be solved and reward system information)*
 * Konstantina:
+   - UML tutorial
+   - Project Contract modified *(Added some problems to be solved)*
 * Michal:
 * Sanggil:
   - Project Contract modified *(Change some words, and add 2 requirements)*
