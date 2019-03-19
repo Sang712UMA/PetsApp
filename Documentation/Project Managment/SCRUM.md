@@ -4,7 +4,7 @@
  - [X] Project Definition *(Assigned to Sanggil)*
  - [X] Project Contract *(Need to be checked by the team) (Assigned to Adri)*
  - [ ] Project Management Structure and rules
- - [ ] Document management rules
+ - [X] Document management rules
  - [X] Requirements document *(Assigned to Antek)*
  - [ ] UML Model
  - [X] Tutorial GIT *(Assigned to Adri)*
@@ -37,6 +37,7 @@
 * Konstantina:
    - UML tutorial
    - Project Contract modified *(Added some problems to be solved)*
+   - Document management rules *(only create the folder)*
 * Michal:
 * Sanggil:
   - Project Contract modified *(Change some words, and add 2 requirements)*
