@@ -21,7 +21,6 @@
 * Michal: 
   - Tutorial JUnit
 * Sanggil:
-  - Project Definition
 
 #### WORK DONE: *(Describe what was done)*
 * Adri:
@@ -41,4 +40,4 @@
 * Michal:
 * Sanggil:
   - Project Contract modified *(Change some words, and add 2 requirements)*
-  - Project Definition created
+  - Project Definition created *(Describe functions; what user can do)*
