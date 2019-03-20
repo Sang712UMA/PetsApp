@@ -37,8 +37,9 @@
    - UML tutorial
    - Project Contract modified *(Added some problems to be solved)*
    - Document management rules *(only create the folder)*
-   - UML Model *(Start the project on UML - Use Case Diagram)*
+   - UML Model *(Make the Use Case Diagram)*
 * Michal:
 * Sanggil:
   - Project Contract modified *(Change some words, and add 2 requirements)*
   - Project Definition created *(Describe functions; what user can do)*
+  - UML Model *(Do some changes on the Use Case Diagram)*
