@@ -10,12 +10,12 @@
 We want to create an app/a wep for animals. This app/wep include various functions which will help the pets and their owners.
 #### Problem that you aim to solve
 * Pets dying on streets
-* People who help pets with not enough resources
+* People who help pets without enough resources
 * Overflowing of Shelters
 * Lost pets
 * Neglected pets when their owners can't take care of them
-* Pets that their owners don't live anymore and they need a family
-* Pet owners that will go for holidays and they searching for a person to take care of they're pets for a couple of days
+* Pet owners, which will go for holidays, searching for a person to take care of their pets for a couple of days
+* Pets that their owners don't live with anymore, which need a family
 #### Proposed solution
 * Developing a social app/web to share resources and help pets and owners
 #### Collaborative aspects of the chosen approach
