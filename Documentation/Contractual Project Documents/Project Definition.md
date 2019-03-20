@@ -1,8 +1,3 @@
-****************************************
-writer is still working on this document
-****************************************
-
-
 # This is _**PetsApp**_
  
 ### This is _an app/ a wep_ for animals. It includes various functions which will help pets and their onwners.
