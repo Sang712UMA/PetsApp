@@ -19,7 +19,8 @@
 ## 3. PetSitting 
 
  You don't have time to take your little friend a walk? Or you cannot go anywhere even if you want because you concern about your friend?
- *Then check this out!* You can look for someone who will care your little friend during you can't.
+ 
+ **Then check this out!** You can look for someone who will care your little friend during you can't.
 
 ## 4. Rewards
  **"The more you adore animals, the more you can earn."**
