@@ -4,7 +4,7 @@
 
 ## 1. Hospitality & Adoptions 
 
-  If you found an animal on a street, and the buddy _**don't seem to have a owner**_?
+  If you found an animal on a street, and the buddy _**don't seem to have an owner**_?
   
   Then, upload the buddy's information on PetsApp. 
   
