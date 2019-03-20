@@ -6,7 +6,7 @@
  - [ ] Project Management Structure and rules
  - [X] Document management rules
  - [X] Requirements document *(Assigned to Antek)*
- - [ ] UML Model
+ - [X] UML Model
  - [X] Tutorial GIT *(Assigned to Adri)*
  - [X] Tutorial UML *(Assigned to Konstantina)*
  - [X] Tutorial Magic Draw *(Assigned to Antek)*
@@ -37,6 +37,7 @@
    - UML tutorial
    - Project Contract modified *(Added some problems to be solved)*
    - Document management rules *(only create the folder)*
+   - UML Model *(Start the project on UML - Use Case Diagram)*
 * Michal:
 * Sanggil:
   - Project Contract modified *(Change some words, and add 2 requirements)*
