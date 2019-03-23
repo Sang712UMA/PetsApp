@@ -22,6 +22,7 @@
  * Adri:
  * Antek:
  * Konstantina:
+   -Added 4 rules in the folder of document management rules
  * Michal: 
  * Sanggil:
 
