@@ -5,6 +5,8 @@
  - [ ] Project Management Structure and rules *(Just the creation of the file)*
  - [ ] Upload individual User_Cases Diagram *(EVERYONE, Konstantina uploaded hers, previous week)*
  - [ ] Join all User_Cases Diagrams in a Unified one
+ - [ ] Upload individual Class Diagram *(EVERYONE)*
+ - [ ] Join all Class Diagrams in a Unified one
 
 #### WORK IN PROGRESS:
 
