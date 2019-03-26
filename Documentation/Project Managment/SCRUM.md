@@ -23,8 +23,12 @@
  * Antek:
  * Konstantina:
    - Added 4 rules in the folder of document management rules
+   - Tried to do the sequence diagram with Sanggil (26/03 - lab)
+   - Changed the use case diagram with Sanggil (-||-)
  * Michal: 
  * Sanggil:
+   - Tried to do the sequence diagram with Konstantina (26/03 - lab)
+   - Changed the use case diagram with Konstantina (-||-)
 
 
 
