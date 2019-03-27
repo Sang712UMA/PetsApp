@@ -14,7 +14,8 @@
 * Antek:
 * Konstantina:
 * Michal: 
-   - Tutorial JUnit
+ - individual User_Cases Diagram
+  - individual Class Diagram
 * Sanggil:
 
 #### WORK DONE: *(Describe what was done)*
@@ -27,6 +28,7 @@
    - Tried to do the sequence diagram with Sanggil (26/03 - lab)
    - Changed the use case diagram with Sanggil (-||-)
  * Michal: 
+   - Tutorial JUnit
  * Sanggil:
    - Tried to do the sequence diagram with Konstantina (26/03 - lab)
    - Changed the use case diagram with Konstantina (-||-)
