@@ -20,6 +20,7 @@
 #### WORK DONE: *(Describe what was done)*
 
  * Adri:
+   - Meet with Sanggil to refactor/edit Use Diagram, start doing Class Diagram (27/03)
  * Antek:
  * Konstantina:
    - Added 4 rules in the folder of document management rules
@@ -29,6 +30,7 @@
  * Sanggil:
    - Tried to do the sequence diagram with Konstantina (26/03 - lab)
    - Changed the use case diagram with Konstantina (-||-)
+   - Meet with Adri to refactor/edit Use Diagram, start doing Class Diagram (27/03)
 
 
 
