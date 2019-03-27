@@ -14,8 +14,7 @@
 * Antek:
 * Konstantina:
 * Michal: 
- - individual User_Cases Diagram
-  - individual Class Diagram
+   - individual Class Diagram
 * Sanggil:
 
 #### WORK DONE: *(Describe what was done)*
@@ -77,6 +76,9 @@
 >    - Document management rules *(only create the file)*
 >    - UML Model *(Make the Use Case Diagram)*
 > * Michal:
+>   - JUnit Tutorial *(Links to tutorials with first steps, writed project in Java to play with JUnit)*
+>   - UML Model *(Proposition of UML USE CASE Diagram)*
+
 > * Sanggil:
 >   - Project Contract modified *(Change some words, and add 2 requirements)*
 >   - Project Definition created *(Describe functions; what user can do)*
