@@ -1,7 +1,7 @@
 # WEEK 2:
 #### WORK TO BE DONE:
 
- - [ ] Tutorial JUnit *(Assigned to Michal)* *(Just the creation of the file)* 
+ - [X] Tutorial JUnit *(Assigned to Michal)* *(Just the creation of the file)* 
  - [ ] Project Management Structure and rules *(Just the creation of the file)*
  - [ ] Upload individual User_Cases Diagram *(EVERYONE, Konstantina uploaded hers, previous week)*
  - [ ] Join all User_Cases Diagrams in a Unified one
@@ -21,6 +21,7 @@
 
  * Adri:
    - Meet with Sanggil to refactor/edit Use Diagram, start doing Class Diagram (27/03)
+   - Make "long" Use-Case _(It needs to be change with the feedback of the teacher)_ (28/03)
  * Antek:
  * Konstantina:
    - Added 4 rules in the folder of document management rules
