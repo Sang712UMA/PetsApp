@@ -1,12 +1,13 @@
-# WEEK 2:
+
+# WEEK 3:
 #### WORK TO BE DONE:
 
- - [X] Tutorial JUnit *(Assigned to Michal)* *(Just the creation of the file)* 
  - [ ] Project Management Structure and rules *(Just the creation of the file)*
- - [ ] Upload individual User_Cases Diagram *(EVERYONE, Konstantina uploaded hers, previous week)*
- - [ ] Join all User_Cases Diagrams in a Unified one
- - [ ] Upload individual Class Diagram *(EVERYONE)*
- - [ ] Join all Class Diagrams in a Unified one
+ - [ ] Upload individual Class Diagram *(EVERYONE UNTIL FRIDAY 23:00)*
+ - [ ] Upload individual Sequence Diagram *(EVERYONE UNTIL SATURDAY 23:00)*
+ - [ ] Join all User_Cases Diagrams in a Unified one *SUNDAY MEETING*
+ - [ ] Join all Class Diagrams in a Unified one *SUNDAY MEETING*
+ - [ ] Join all Sequence Diagram *SUNDAY MEETING*
 
 #### WORK IN PROGRESS:
 
@@ -20,23 +21,45 @@
 #### WORK DONE: *(Describe what was done)*
 
  * Adri:
-   - Meet with Sanggil to refactor/edit Use Diagram, start doing Class Diagram (27/03)
-   - Make "long" Use-Case _(It needs to be change with the feedback of the teacher)_ (28/03)
  * Antek:
  * Konstantina:
-   - Added 4 rules in the folder of document management rules
-   - Tried to do the sequence diagram with Sanggil (26/03 - lab)
-   - Changed the use case diagram with Sanggil (-||-)
  * Michal: 
-   - Tutorial JUnit
  * Sanggil:
-   - Tried to do the sequence diagram with Konstantina (26/03 - lab)
-   - Changed the use case diagram with Konstantina (-||-)
-   - Meet with Adri to refactor/edit Use Diagram, start doing Class Diagram (27/03)
-
 
 
 > # PREVIOUS WEEKS **(Do NOT modify)**
+> ## WEEK 2:
+> #### WORK TO BE DONE:
+> 
+>  - [X] Tutorial JUnit *(Assigned to Michal)* *(Just the creation of the file)* 
+>  - [ ] Project Management Structure and rules *(Just the creation of the file)*
+>  - [ ] Upload individual User_Cases Diagram *(EVERYONE, Konstantina uploaded hers, previous week)*
+>  - [ ] Join all User_Cases Diagrams in a Unified one
+>  - [ ] Upload individual Class Diagram *(EVERYONE)*
+>  - [ ] Join all Class Diagrams in a Unified one
+> 
+> #### WORK IN PROGRESS:
+> 
+> * Adri:
+> * Antek:
+> * Konstantina:
+> * Michal: 
+>    - individual Class Diagram
+> * Sanggil:
+> 
+> #### WORK DONE: *(Describe what was done)*
+> 
+>  * Adri:
+>    - Meet with Sanggil to refactor/edit Use Diagram, start doing Class Diagram (27/03)
+>    - Make "long" Use-Case _(It needs to be change with the feedback of the teacher)_ (28/03)  * Antek:  * Konstantina:
+>    - Added 4 rules in the folder of document management rules
+>    - Tried to do the sequence diagram with Sanggil (26/03 - lab)
+>    - Changed the use case diagram with Sanggil (-||-)  * Michal: 
+>    - Tutorial JUnit  * Sanggil:
+>    - Tried to do the sequence diagram with Konstantina (26/03 - lab)
+>    - Changed the use case diagram with Konstantina (-||-)
+>    - Meet with Adri to refactor/edit Use Diagram, start doing Class Diagram (27/03)
+> 
 > ## WEEK 1:
 > #### WORK TO BE DONE: (Creation at least of these documents)
 > 
@@ -79,7 +102,7 @@
 > * Michal:
 >   - JUnit Tutorial *(Links to tutorials with first steps, writed project in Java to play with JUnit)*
 >   - UML Model *(Proposition of UML USE CASE Diagram)*
-
+>
 > * Sanggil:
 >   - Project Contract modified *(Change some words, and add 2 requirements)*
 >   - Project Definition created *(Describe functions; what user can do)*
