@@ -13,6 +13,7 @@
 * Adri:
    - UML Class Diagram & Fixing UML Use Case _(AdriSanggil File)_
 * Antek:
+   - individual Class Diagram
 * Konstantina:
 * Michal: 
    - individual Class Diagram
@@ -22,6 +23,7 @@
 
  * Adri:
  * Antek:
+   - individual Use Case Diagram
  * Konstantina:
  * Michal: 
    - JUnit Tutorial *(Links to tutorials with first steps, writed project in Java to play with JUnit)*
