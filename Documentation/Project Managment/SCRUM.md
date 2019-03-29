@@ -13,6 +13,7 @@
 
 * Adri:
 * Antek:
+   - individual Class Diagram
 * Konstantina:
 * Michal: 
    - individual Class Diagram
@@ -22,6 +23,7 @@
 
  * Adri:
  * Antek:
+   - individual Use Case Diagram
  * Konstantina:
  * Michal: 
  * Sanggil:
