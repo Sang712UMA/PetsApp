@@ -11,7 +11,8 @@
 #### WORK IN PROGRESS:
 
 * Adri:
-   - UML Class Diagram & Fixing UML Use Case _(AdriSanggil File)_
+   - Add methods to Class Diagram _AdriUML file_
+   - Individual Sequence Diagram
 * Antek:
    - individual Class Diagram
 * Konstantina:
@@ -22,6 +23,8 @@
 #### WORK DONE: *(Describe what was done)*
 
  * Adri:
+   - Individual Use Case Diagram _(Fixed previous version AdriUML)_
+   - Individual Class Diagram _(with Attributes)_
  * Antek:
    - individual Use Case Diagram
  * Konstantina:
