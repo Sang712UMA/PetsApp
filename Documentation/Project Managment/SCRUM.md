@@ -14,7 +14,7 @@
    - Add methods to Class Diagram _AdriUML file_
    - Individual Sequence Diagram
 * Antek:
-   - Individual Class Diagram
+   - Individual Sequence Diagram
 * Konstantina:
 * Michal: 
    - Individual Class Diagram
@@ -27,6 +27,7 @@
    - Individual Class Diagram _(with Attributes)_
  * Antek:
    - Individual Use Case Diagram
+   - Individual Class Diagram
  * Konstantina:
  * Michal: 
    - JUnit Tutorial *(Links to tutorials with first steps, writed project in Java to play with JUnit)*
