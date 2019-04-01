@@ -35,3 +35,4 @@
  * Sanggil:
    - Use Case Diagram _(Modified from AdriUML)_
    - Class Diagram _(Modified from AdriUML)_
+   - Individual Project Planning via Sinnaps
