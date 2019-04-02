@@ -30,6 +30,6 @@
    - JUnit Tutorial *(Links to tutorials with first steps, writed project in Java to play with JUnit)*
    - UML Model *(Proposition of UML USE CASE Diagram)*
  * Sanggil:
-   - Use Case Diagram _(Modified from AdriUML)_
-   - Class Diagram _(Modified from AdriUML)_
+   - Use Case Diagram _(Modified from AdriUML and Antony's)_
+   - Class Diagram _(Modified from AdriUML and Antony's)_
    - Individual Project Planning via Sinnaps
