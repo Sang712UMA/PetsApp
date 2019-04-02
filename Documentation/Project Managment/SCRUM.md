@@ -1,4 +1,4 @@
-# WEEK 3:
+# WEEK 4:
 #### WORK TO BE DONE:
 
  - [ ] Project Management Structure and rules *(Just the creation of the file)*
@@ -19,6 +19,10 @@
 #### WORK DONE: *(Describe what was done)*
 
  * Adri:
+   - Changed things in the class diagram with Sanggil and Konstantina.
  * Antek:
  * Konstantina:
+   - Copied Sanggil's files to have a project to work and worked on this with Adrián and Sanggil (in the class diagram).
  * Michal: 
+ * Sanggil:
+   - Changed things in the class diagram with Adrián and Konstantina.
