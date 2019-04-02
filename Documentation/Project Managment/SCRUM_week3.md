@@ -2,7 +2,7 @@
 #### WORK TO BE DONE:
 
  - [ ] Project Management Structure and rules *(Just the creation of the file)*
- - [ ] Upload individual Class Diagram *(EVERYONE UNTIL FRIDAY 23:00)*
+ - [X] Upload individual Class Diagram *(EVERYONE UNTIL FRIDAY 23:00)*
  - [ ] Upload individual Sequence Diagram *(EVERYONE UNTIL SATURDAY 23:00)*
  - [ ] Join all User_Cases Diagrams in a Unified one *SUNDAY MEETING*
  - [ ] Join all Class Diagrams in a Unified one *SUNDAY MEETING*
@@ -11,12 +11,9 @@
 #### WORK IN PROGRESS:
 
 * Adri:
-   - Add methods to Class Diagram _AdriUML file_
-   - Individual Sequence Diagram
 * Antek:
 * Konstantina:
 * Michal: 
-   - Individual Class Diagram
 * Sanggil:
 
 #### WORK DONE: *(Describe what was done)*
