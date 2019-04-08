@@ -5,6 +5,7 @@
 * **Konstantina Marantidou** - _Software Engineer_
 * **Antoni Pięta** - _Software Engineer_
 * **Adrián Salas Troya** - _Software Engineer_
+* **George Karamalis** - _Back-end Designer_
 
 ## Short description of the project
 We want to create an app/a wep for animals. This app/wep include various functions which will help the pets and their owners.
