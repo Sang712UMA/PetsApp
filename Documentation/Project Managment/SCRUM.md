@@ -23,6 +23,9 @@
  * Antek:
  * Konstantina:
    - Copied Sanggil's files to have a project to work and worked on this with Adrián and Sanggil (in the class diagram).
+   - Did some changes on the use case diagram in her folder (08/04). 
+   - Did a sequence diagram (in her folder)(08/04)
  * Michal: 
  * Sanggil:
    - Changed things in the class diagram with Adrián and Konstantina.
+ * George:
