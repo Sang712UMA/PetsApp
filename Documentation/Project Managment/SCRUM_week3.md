@@ -2,7 +2,7 @@
 #### WORK TO BE DONE:
 
  - [ ] Project Management Structure and rules *(Just the creation of the file)*
- - [ ] Upload individual Class Diagram *(EVERYONE UNTIL FRIDAY 23:00)*
+ - [X] Upload individual Class Diagram *(EVERYONE UNTIL FRIDAY 23:00)*
  - [ ] Upload individual Sequence Diagram *(EVERYONE UNTIL SATURDAY 23:00)*
  - [ ] Join all User_Cases Diagrams in a Unified one *SUNDAY MEETING*
  - [ ] Join all Class Diagrams in a Unified one *SUNDAY MEETING*
@@ -11,13 +11,9 @@
 #### WORK IN PROGRESS:
 
 * Adri:
-   - Add methods to Class Diagram _AdriUML file_
-   - Individual Sequence Diagram
 * Antek:
-   - Individual Sequence Diagram
 * Konstantina:
 * Michal: 
-   - Individual Class Diagram
 * Sanggil:
 
 #### WORK DONE: *(Describe what was done)*
@@ -28,10 +24,12 @@
  * Antek:
    - Individual Use Case Diagram
    - Individual Class Diagram
+   - Sequence Diagram together with Michal
  * Konstantina:
  * Michal: 
    - JUnit Tutorial *(Links to tutorials with first steps, writed project in Java to play with JUnit)*
    - UML Model *(Proposition of UML USE CASE Diagram)*
  * Sanggil:
-   - Use Case Diagram _(Modified from AdriUML)_
-   - Class Diagram _(Modified from AdriUML)_
+   - Use Case Diagram _(Modified from AdriUML and Antony's)_
+   - Class Diagram _(Modified from AdriUML and Antony's)_
+   - Individual Project Planning via Sinnaps
