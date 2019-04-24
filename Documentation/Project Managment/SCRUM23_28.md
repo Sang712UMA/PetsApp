@@ -21,6 +21,8 @@
    - Changed the name of her diagrams (23/04)
    - Changed some of the diagrams in her folder (23/04)
    - Added some diagrams for her part of the project (23/04)
+   - Changed the class and the sequence diagram in her folder. Not the diagrams of the team. Only the diagrams
+   of her part of the project (24/04)
  * Michal: 
  * Sanggil:
  * George:
