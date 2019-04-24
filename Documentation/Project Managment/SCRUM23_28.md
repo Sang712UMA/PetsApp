@@ -15,6 +15,7 @@
 
  * Adri:
  * Antek:
+   - Worked with George on unified Class Diagram and Use Case Diagram
  * Konstantina:
    - Chosen the part of the project that she will work individually (What happen when a user finds a pet)(23/04)
    - Changed the name of her diagrams (23/04)
