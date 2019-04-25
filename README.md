@@ -7,4 +7,4 @@ We are Halkidiki, a group of students developing an app
 We are building now the first version of the infrastructure of the app:
 > ![Project Image](/Models/classDiagram2504.png)
 > ![Project Image](/Models/roadMap2504.png)
-> ![Project Image](/Models/useCase2504)
+> ![Project Image](/Models/useCase2504.png)
