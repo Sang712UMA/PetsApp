@@ -33,7 +33,7 @@ public class AdvertismentList extends Advertisment  {
 		
 		Advertisment a = null; 
 		
-		for(int i = 0; i <= advertisments.size(); i++) {
+		for(int i = 0; i < advertisments.size(); i++) {
 			
 			a = advertisments.get(i);
 		}
