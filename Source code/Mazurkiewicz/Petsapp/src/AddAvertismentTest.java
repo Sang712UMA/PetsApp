@@ -1,4 +1,7 @@
 
+
+@Test
 public class AddAvertismentTest {
+
 
 }

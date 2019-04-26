@@ -1,15 +1,17 @@
 package interfaces;
 
-public interface IUser {
+import java.util.List;
 
-	static String login = ""; 
-	String password =  ""; 
-	String name = ""; 
+import bll.Animal;
+
+public interface IUser{
 	
-	
-	public static void setLogin(String login) {}
-	public static void setPassword(String password) {}
-	public static void setName(String name) {}
+	void setLogin(String login); 
+	void setPassword(String password); 
+	void setName(String name);
+	void addAnimal(IAnimal a);
+	void addAdvertisment(IAdvertisment a);
+	void setIsVolonteer();
 	
 	
 }

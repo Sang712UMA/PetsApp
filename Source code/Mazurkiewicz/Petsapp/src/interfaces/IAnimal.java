@@ -1,13 +1,15 @@
 package interfaces;
 
+import java.sql.Date;
+
 public interface IAnimal {
 
-	String name = "";
-	String race = "";
-	int age = 0;
-	Date schedule = "";
 	
 	
+	void setName(String name);
+	void setRace(String race);
+	void setAge(int age);
+	void setDate(Date beginDate,Date finalDate);
 	
 	
 }
