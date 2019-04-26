@@ -143,6 +143,11 @@ public class Advertisment implements IAdvertisment{
 		// TODO Auto-generated method stub
 		
 	}
+	
+	public String toString() {
+		
+		return title + description + startDate + endDate;
+	}
 
 	
 	

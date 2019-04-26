@@ -6,11 +6,11 @@ import java.util.Date;
 import java.util.Dictionary;
 import java.util.List;
 
-public class AdvertismentsManager<TAdvertisment> extends Advertisment {
+public class AdvertismentsManager<TAdvertisment> extends ArrayList<TAdvertisment>  {
 
 	public AdvertismentsManager(String title, Dictionary<Integer, String> type, String description, Object picture, Date startDate,
 			Date endDate, boolean show, Animal animal) {
-		super(title, type, description, picture, startDate, endDate, show, animal);
+		//super(title, type, description, picture, startDate, endDate, show, animal);
 		
 	}
 
@@ -19,6 +19,7 @@ public class AdvertismentsManager<TAdvertisment> extends Advertisment {
 	}
 
 	Advertisment a = new Advertisment();
+	
 
 	List<Advertisment> advertisments = new ArrayList<Advertisment>();
 
@@ -28,14 +29,15 @@ public class AdvertismentsManager<TAdvertisment> extends Advertisment {
 	};
 
 	
-	public List<Advertisment> newList(String listName){
-		
-		List<Advertisment> name = new ArrayList<Advertisment>();
-		return name;
-	}
-	public List<Advertisment> setNewAdvertisment(String title, int type, String description, Object picture,
-			Date startDate, Date endDate, boolean show, Animal animal) {
 
+	public List<Advertisment> newList(String name){
+		
+		List<Advertisment> list = new ArrayList<Advertisment>();
+		return list;
+	}
+	public List<Advertisment> setNewAdvertisment(Advertisment a) {
+
+		
 		advertisments.add(a);
 
 		return advertisments;
@@ -47,18 +49,27 @@ public class AdvertismentsManager<TAdvertisment> extends Advertisment {
 	}
 	
 	
-	
+	public String getNameList() {
+		
+		return a.type.get(a);
+	}
 	
 	public List<Advertisment> getSpecyficAdvertisment(Advertisment a){
 		
 		if (a.equals(this.a)) {
 
-			newList(a.type.get(a)).add(a);
+			newList(getNameList()).add(a);
 
 		}
 		;
 
 		return advertisments;
+	}
+	
+public Advertisment getFromList(int condition) {
+		
+		
+		return advertisments.get(condition); 
 	}
 
 }
