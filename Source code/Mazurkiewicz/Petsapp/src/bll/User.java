@@ -9,6 +9,8 @@ import interfaces.IUser;
 public class User<TAnimal, TAdvertisment> implements IUser{
 
 	String login;
+	String password;
+	String name;
 	List<IAnimal> animals;
 	List<IAdvertisment> advertisments;
 	Boolean Volonteer = false; 
@@ -23,7 +25,7 @@ public class User<TAnimal, TAdvertisment> implements IUser{
 
 	@Override
 	public void setPassword(String password) {
-		// TODO Auto-generated method stub
+		this.password = password;
 		
 	}
 
@@ -51,4 +53,23 @@ public class User<TAnimal, TAdvertisment> implements IUser{
 		
 	}
 
-}
+
+	
+	public User(String login, String password, String name, boolean volonteer) {
+		
+		this.login = login;
+		this.setPassword(password);;
+		
+	}
+
+	@Override
+	public User<?, ?> createNewUser() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public User<Animal, Advertisment> createNewUser(String login, String password, String name, boolean volonteer) {
+		// TODO Auto-generated method stub
+		return null;
+	}}

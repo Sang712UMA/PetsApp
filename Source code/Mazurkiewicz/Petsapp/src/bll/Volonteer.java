@@ -6,12 +6,14 @@ import javax.xml.crypto.Data;
 
 public class Volonteer extends User<Animal, Advertisment> {
 
-	Date finalAvailbleDate;
-	Date beginAvaibleDate;
+	public Volonteer(String login, String password, String name, boolean volonteer) {
+		super(login, password, name, volonteer);
+		// TODO Auto-generated constructor stub
+	}
+
 	
-	User<Animal, Advertisment> user = new User();
 	
-	user.
+
 	
 	
 	
