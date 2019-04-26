@@ -38,6 +38,19 @@ public class Advertisment implements IAdvertisment{
 
 
 
+	public Advertisment(String title, int type, String description, Object picture, Date startDate, Date endDate,
+			boolean show) {
+		
+		
+		this.title = title;
+		//this.type = type;
+		this.description = description;
+		this.picture = picture;
+		this.startDate = startDate;
+		this.endDate = endDate; 
+	}
+
+
 	public void setAdvertismentType(int key, String advType) {
 		this.type.put(key, advType);
 		

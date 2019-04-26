@@ -29,7 +29,19 @@ public class AdvertismentList extends Advertisment  {
 		return advertisments.size();
 	}
 	
-	
+	public String toString() {
+		
+		Advertisment a = null; 
+		
+		for(int i = 0; i <= advertisments.size(); i++) {
+			
+			a = advertisments.get(i);
+		}
+		return a.getTitle() + a.getDescription() + a.getStartDate()+ a.getEndDate();
+		
+		
+		
+	}
 	
 
 }

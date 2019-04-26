@@ -8,9 +8,8 @@ import java.util.List;
 
 public class AdvertismentsManager<TAdvertisment> extends ArrayList<TAdvertisment>  {
 
-	public AdvertismentsManager(String title, Dictionary<Integer, String> type, String description, Object picture, Date startDate,
-			Date endDate, boolean show, Animal animal) {
-		//super(title, type, description, picture, startDate, endDate, show, animal);
+	public AdvertismentsManager(Advertisment advertisment) {
+		super();
 		
 	}
 

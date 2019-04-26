@@ -9,13 +9,16 @@ public class Petsapp {
 	public static void main(String[] args) {
 		
 		Animal animal = new Animal();
-		Advertisment a = new Advertisment();
+		Advertisment a = new Advertisment("I am LF BabySitter for Boby", 2 , "Very quaiet snake.", null, Date.valueOf(LocalDate.now()),Date.valueOf(LocalDate.of(2019, 05, 13)), true);
 		AdvertismentList al = new AdvertismentList(a);
-		@SuppressWarnings("deprecation")
-		
-		AdvertismentsManager<Advertisment> am = new AdvertismentsManager<Advertisment>( "I am LF BabySitter for Boby",a.getAdvertismentType(), "Very quaiet snake.", null, Date.valueOf(LocalDate.now()),Date.valueOf(LocalDate.of(2019, 05, 13)), true, a.getAnimal());
+		AdvertismentsManager<Advertisment> am = new AdvertismentsManager<Advertisment>();
 
+	am.add(a);
+	al.advertisments.add(a);
 	
+	
+	
+	System.out.println(al.toString());
 		 
 		
 			
