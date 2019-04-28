@@ -8,6 +8,8 @@ import java.util.List;
 
 public class AdvertismentsManager<TAdvertisment> extends ArrayList<TAdvertisment>  {
 
+	
+	
 	public AdvertismentsManager(Advertisment advertisment) {
 		super();
 		

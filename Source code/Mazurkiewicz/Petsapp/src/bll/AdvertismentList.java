@@ -3,14 +3,20 @@ package bll;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AdvertismentList extends Advertisment  {
+public class AdvertismentList extends ArrayList<Advertisment>  {
+
 
 	List<Advertisment> advertisments = new ArrayList<Advertisment>();
 	
 	
-	public AdvertismentList(Advertisment advertisment) {
+	public AdvertismentList() {
 		
-		advertisments.add(advertisment); 
+		super();
+	}
+	
+	public String createNewListString(String name) {
+		
+		return "List<Advertisment>" + name + "= new ArrayList<Advertisment>();";
 	}
 	
 	public Advertisment getFromList(int condition) {
@@ -32,12 +38,14 @@ public class AdvertismentList extends Advertisment  {
 	public String toString() {
 		
 		Advertisment a = null; 
+		String List = "";
 		
-		for(int i = 0; i < advertisments.size(); i++) {
+		for(int i = 0; i <= advertisments.size() - 1; i++) {
 			
 			a = advertisments.get(i);
+			List += a.getTitle() + a.getDescription() + a.getStartDate()+ a.getEndDate() + "\n";
 		}
-		return a.getTitle() + a.getDescription() + a.getStartDate()+ a.getEndDate();
+		return List;
 		
 		
 		

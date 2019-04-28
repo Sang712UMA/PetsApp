@@ -159,7 +159,7 @@ public class Advertisment implements IAdvertisment{
 	
 	public String toString() {
 		
-		return title + description + startDate + endDate;
+		return title +" "+ description+ " " + startDate + " " + endDate;
 	}
 
 	
