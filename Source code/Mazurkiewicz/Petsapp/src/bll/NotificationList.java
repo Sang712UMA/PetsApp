@@ -1,16 +1,16 @@
 package bll;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class NotificationList extends Notification{
 
 	
-	
-	
-	AdvertismentList al = new AdvertismentList();
-	boolean founded = false; 
+
+	List<Advertisment> notifications = new ArrayList<Advertisment>();
 	
 	public NotificationList() {
 		
-		super();
 		
 	}
 	

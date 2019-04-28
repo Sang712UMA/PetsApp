@@ -3,10 +3,18 @@ package bll;
 public class Notification extends Advertisment {
 
 	
-	public Notification() {
+	boolean foundedAnimal;
+	
+	
+	public Notification(boolean foundedAnimal) {
 		
 		super(); 
+		this.foundedAnimal = foundedAnimal;
 		
 	}
+	
+	
+	
+	
 	
 }
