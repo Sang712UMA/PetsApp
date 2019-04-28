@@ -16,9 +16,11 @@
 
  * Adri:
    - Individual story (sequence diagram)
+   - Meet with the team to join all the project done by the moment (25/04)
  * Antek:
    - Worked with George on unified Class Diagram and Use Case Diagram
    - Did implementation project for my part (shelter contacting a volunteer and changing their schedule): created sequence diagram and          added details (methods) to my version of class diagram
+   - Meet with the team to join all the project done by the moment (25/04)
  * Konstantina:
    - Chosen the part of the project that she will work individually (What happen when a user finds a pet)(23/04)
    - Changed the name of her diagrams (23/04)
@@ -28,8 +30,11 @@
    of her part of the project (24/04)
  * Michal: 
    - Individual story (sequence diagram)
+   - Meet with the team to join all the project done by the moment (25/04)
  * Sanggil:
    - Individual story (sequence diagram)
+   - Meet with the team to join all the project done by the moment (25/04)
  * George:
    - Individual story (sequence diagram)
    - Worked with Antek on unified Class Diagram and Use Case Diagram
+   - Meet with the team to join all the project done by the moment (25/04)
