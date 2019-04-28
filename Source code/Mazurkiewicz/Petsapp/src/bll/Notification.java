@@ -9,9 +9,13 @@ public class Notification extends Advertisment {
 	public Notification(boolean foundedAnimal) {
 		
 		super(); 
+		
+		
 		this.foundedAnimal = foundedAnimal;
 		
 	}
+	
+	//ListOf<, AdvertismentList> lo = new ListOf<Advertisment, AdvertismentList>();
 	
 	
 	

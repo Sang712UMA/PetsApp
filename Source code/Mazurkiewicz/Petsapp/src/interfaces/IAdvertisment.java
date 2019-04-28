@@ -19,7 +19,7 @@ public interface IAdvertisment {
 	void setVisibility(boolean show);
 	void setAnimal(Animal a);
 	
-	Dictionary getAdvertismentType();
+	String getAdvertismentType();
 	String getTitle();
 	String getDescription();
 	Object getPicture();

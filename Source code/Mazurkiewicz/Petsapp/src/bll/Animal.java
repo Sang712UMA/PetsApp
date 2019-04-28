@@ -9,6 +9,7 @@ public class Animal implements IAnimal {
 	String name;
 	String race;
 	int age;
+	int sex;
 	Date beginDate;
 	Date finalDate;
 	

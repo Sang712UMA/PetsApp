@@ -35,12 +35,14 @@ public class AdvertismentList extends ArrayList<Advertisment>  {
 		return advertisments.size();
 	}
 	
+	
+	
 	public String toString() {
 		
 		Advertisment a = null; 
 		String List = "";
 		
-		for(int i = 0; i <= advertisments.size() - 1; i++) {
+		for(int i = 0; i <= advertisments.size() -1; i++) {
 			
 			a = advertisments.get(i);
 			List += a.getTitle() + a.getDescription() + a.getStartDate()+ a.getEndDate() + "\n";
