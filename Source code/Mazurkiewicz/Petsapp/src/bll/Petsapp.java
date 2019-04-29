@@ -49,11 +49,11 @@ public class Petsapp {
 	
 	
     	boolean isThere;
-    	 {
+    	 
         	
         	
-        		lo1.advertisments.forEach((n) -> System.out.println(n.type.getOrDefault(5, n.toString())));
+        		lo1.advertisments.forEach((n) -> System.out.println(n.type.getOrDefault(2, n.toString())));
         	
 	
 }}
-}
+
