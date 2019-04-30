@@ -2,7 +2,7 @@
 #### WORK TO BE DONE:
 
  - [X] work individually in our parts of the project (ask the teacher for your part)
- - [ ] Unify files (UML)
+ - [X] Unify files (UML)
 
 #### WORK IN PROGRESS:
 
