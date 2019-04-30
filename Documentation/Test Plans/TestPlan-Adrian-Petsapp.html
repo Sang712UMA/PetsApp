@@ -1,0 +1,59 @@
+<h1 id="test-plan-_-petsapp-adrian-_">TEST PLAN <em>(Petsapp-Adrian)</em></h1>
+<hr>
+<h2 id="my-story-">My Story:</h2>
+<blockquote>
+<p>I&#39;m a user who has lost his pet. I want to create a notification (alert) if someone finds my pet (or a pet with similar characteristics)</p>
+</blockquote>
+<hr>
+<h2 id="test-plan-procedures">Test Plan / Procedures</h2>
+<ul>
+<li><p><strong>Case n1:</strong></p>
+<ul>
+<li><strong>Event:</strong> Create a Notification</li>
+<li><strong>Input Data:</strong> Add a notification to Notification Manager</li>
+<li><strong>Events to Observe:</strong> Check if the notification is inside NotificationManager</li>
+</ul>
+</li>
+<li><p><strong>Case n2:</strong></p>
+<ul>
+<li><strong>Event:</strong> Create a post with a pet that would prompt an alert (previous notification in NotificationManager)</li>
+<li><strong>Input Data:</strong> Create a new Post valid</li>
+<li><strong>Events to Observe:</strong> NotificationManager send an alert to user</li>
+</ul>
+</li>
+<li><p><strong>Case n3:</strong></p>
+<ul>
+<li><strong>Event:</strong> Create a post with a pet that would NOT prompt an alert (previous notification in NotificationManager)</li>
+<li><strong>Input Data:</strong> Create a new Post (invalid)</li>
+<li><strong>Events to Observe:</strong> NotificationManager is NOT sending an alert to user</li>
+</ul>
+</li>
+<li><p><strong>Case n4:</strong></p>
+<ul>
+<li><strong>Event:</strong> Save different types of notifications</li>
+<li><strong>Input Data:</strong> create different types of notifications</li>
+<li><strong>Events to Observe:</strong> Notifications are saved and can run case n2 and case n3 to them</li>
+</ul>
+</li>
+<li><p><strong>Case n5:</strong></p>
+<ul>
+<li><strong>Event:</strong> Add more notifications than expected</li>
+<li><strong>Input Data:</strong> Add enough notifications to get out of the array</li>
+<li><strong>Events to Observe:</strong> New notifications must be saved, you can not get out of the array</li>
+</ul>
+</li>
+<li><p><strong>Case n6:</strong></p>
+<ul>
+<li><strong>Event:</strong> User delete notification, do not send alert to user for that notification anymore</li>
+<li><strong>Input Data:</strong> Delete user notification, create a post that would have prompt an alert</li>
+<li><strong>Events to Observe:</strong> Alert is not being sent</li>
+</ul>
+</li>
+<li><p><strong>Case n7:</strong></p>
+<ul>
+<li><strong>Event:</strong> User delete notification, do not send alert to user for that notification anymore</li>
+<li><strong>Input Data:</strong> Delete user notification, create a post that would have prompt an alert</li>
+<li><strong>Events to Observe:</strong> Alert is not being sent to the user</li>
+</ul>
+</li>
+</ul>
