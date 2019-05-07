@@ -18,7 +18,7 @@
  * Adri:
  * Antek:
  * Konstantina:
-  - Did some changes in the class model (07/05)
+   - Did some changes in the class model (07/05)
  * Michal: 
  * Sanggil:
  * George:
