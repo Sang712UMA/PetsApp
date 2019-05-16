@@ -32,6 +32,7 @@
    - FoundPet, LostPet, Pet, IUser classes created (14/05)
    - some changes on App class (main class) (14/05)
    - some changes on her classes and her sequence diagram (15/05)
+   - added some things in her classes (in the code) (16/05)
  * Michal: 
  * Sanggil:
    - Administrator & Reward classes created
