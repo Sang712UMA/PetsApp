@@ -6,9 +6,15 @@ public class LostPet {
 
 	private Date lostDate;
 	private String lostLocation;
+	Pet LostPet1 = new Pet();
 
 	public LostPet(){}
 
+	public LostPet(Date lostDate,String lostLocation){
+		lostDate = this.lostDate;
+		lostLocation = this.lostLocation;
+	}
+	
 	public Date getLostDate() {
 		return lostDate;
 	}
@@ -25,7 +31,13 @@ public class LostPet {
 		this.lostLocation = lostLocation;
 	}
 	
-	public void reportLostPet(int petType, boolean sex, boolean neutralization, boolean tag, String chip, int age, String name, String details) {
-		
+	public void reportLostPet(int petType, boolean sex, boolean neutralization, String chip, int age, String name, String details) {
+		LostPet1.setPetType(petType);
+		LostPet1.setSex(sex);
+		LostPet1.setNeutralization(neutralization);
+		LostPet1.setChip(chip);
+		LostPet1.setAge(age);
+		LostPet1.setName(name);
+		LostPet1.setDetails(details);
 	}
 }

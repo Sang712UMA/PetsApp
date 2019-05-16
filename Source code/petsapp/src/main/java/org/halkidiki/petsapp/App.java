@@ -22,7 +22,6 @@ public class App
     	
     }
     
-    @SuppressWarnings("unused")
 	private void showFoundPets() {
     	
     }

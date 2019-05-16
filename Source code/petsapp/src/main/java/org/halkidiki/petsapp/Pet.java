@@ -3,18 +3,28 @@ package org.halkidiki.petsapp;
 
 public class Pet {
 
-	private int PetType, age, petID;
+	private int petType, age, petID;
 	private boolean sex, neutralization;
 	private String chip, name, details;
 
 	public Pet(){}
 
+	public Pet(int petType, boolean sex, boolean neutralization, String chip, int age, String name, String details){
+		petType = this.petType;
+		sex = this.sex;
+		neutralization = this.neutralization;
+		chip = this.chip;
+		age = this.age;
+		name = this.name;
+		details = this.details;
+	}
+	
 	public int getPetType() {
-		return PetType;
+		return petType;
 	}
 
 	public void setPetType(int petType) {
-		PetType = petType;
+		this.petType = petType;
 	}
 
 	public int getAge() {
@@ -25,13 +35,12 @@ public class Pet {
 		this.age = age;
 	}
 
-	@SuppressWarnings("unused")
-	private int getPetID() {
+	public int getPetID() {
 		return petID;
 	}
 
 	@SuppressWarnings("unused")
-	private void setPetID(int petID) {
+	public void setPetID(int petID) {
 		this.petID = petID;
 	}
 
@@ -43,23 +52,19 @@ public class Pet {
 		this.sex = sex;
 	}
 
-	@SuppressWarnings("unused")
-	private boolean isNeutralization() {
+	public boolean isNeutralization() {
 		return neutralization;
 	}
 
-	@SuppressWarnings("unused")
-	private void setNeutralization(boolean neutralization) {
+	public void setNeutralization(boolean neutralization) {
 		this.neutralization = neutralization;
 	}
 
-	@SuppressWarnings("unused")
-	private String getChip() {
+	public String getChip() {
 		return chip;
 	}
 
-	@SuppressWarnings("unused")
-	private void setChip(String chip) {
+	public void setChip(String chip) {
 		this.chip = chip;
 	}
 
@@ -79,13 +84,11 @@ public class Pet {
 		this.details = details;
 	}
 	
-	@SuppressWarnings("unused")
-	private void getAdopter(int adopterID) {
+	public void getAdopter(int adopterID) {
 		
 	}
 	
-	@SuppressWarnings("unused")
-	private void recordAdopter(int adopterID) {
+	public void recordAdopter(int adopterID) {
 		
 	}
 	
