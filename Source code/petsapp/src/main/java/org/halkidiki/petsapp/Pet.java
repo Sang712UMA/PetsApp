@@ -6,7 +6,8 @@ public class Pet {
 	private int petType, age, petID;
 	private boolean sex, neutralization;
 	private String chip, name, details;
-
+	IUser adopter = new IUser();
+	
 	public Pet(){}
 
 	public Pet(int petType, boolean sex, boolean neutralization, String chip, int age, String name, String details){
@@ -85,11 +86,27 @@ public class Pet {
 	}
 	
 	public void getAdopter(int adopterID) {
-		
+		if (adopter.getId() == adopterID) {
+			adopter.getNickName();
+			adopter.getCity();
+			adopter.getCreationDate();
+			adopter.getEmail();
+			adopter.getPhoneNumber();
+			adopter.getProfilePicture();
+			adopter.getStreet();
+		}
 	}
 	
 	public void recordAdopter(int adopterID) {
-		
+		if (adopter.getId() == adopterID) {
+			adopter.setNickName(UserInput.getString());
+			adopter.setCity(UserInput.getString());
+			// adopter.setCreationDate();
+			adopter.setEmail(UserInput.getString());
+			adopter.setPhoneNumber(UserInput.getInteger());
+			//adopter.setProfilePicture();
+			adopter.setStreet(UserInput.getString());
+		}
 	}
 	
 	
