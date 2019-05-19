@@ -33,6 +33,7 @@
    - some changes on App class (main class) (14/05)
    - some changes on her classes and her sequence diagram (15/05)
    - added some things in her classes (in the code) (16/05)
+   - added some thing in her code and created the class UserInput to help her with the data that she wants to get from the user (19/05)
  * Michal: 
  * Sanggil:
    - Administrator & Reward classes created
