@@ -1,5 +1,7 @@
 package org.halkidiki.petsapp;
 
+import java.util.LinkedList;
+import java.util.List;
 
 public class Pet {
 
@@ -7,7 +9,9 @@ public class Pet {
 	private boolean sex, neutralization;
 	private String chip, name, details;
 	IUser adopter = new IUser();
+	List<Pet> foundlst = new LinkedList<Pet>();
 	
+
 	public Pet(){}
 
 	public Pet(int petType, boolean sex, boolean neutralization, String chip, int age, String name, String details){

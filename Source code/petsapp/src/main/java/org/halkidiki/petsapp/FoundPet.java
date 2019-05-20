@@ -39,6 +39,7 @@ public class FoundPet {
 		FoundPet1.setAge(age);
 		FoundPet1.setName(name);
 		FoundPet1.setDetails(details);
+	//	Pet.foundlst.add.new Pet(FoundPet1);
 	}
 	
 	public void getFoundPetData(Pet Pet1) {

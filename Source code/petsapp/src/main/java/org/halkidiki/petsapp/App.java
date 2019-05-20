@@ -1,13 +1,11 @@
 package org.halkidiki.petsapp;
 
-/**
- * Hello world!
- *
- */
+import java.util.List;
+
 public class App 
 {
     public static void main( String[] args ){
-        
+       
     }
     
     public void temporaryAdopt(int adopterID) {
@@ -22,7 +20,10 @@ public class App
     	
     }
     
-	private void showFoundPets() {
-    	
+	@SuppressWarnings("unused")
+	private void showFoundPets(List<Pet> l) {
+		for(Pet b : l)
+			System.out.printf("%s ", b);
+		System.out.println();
     }
 }
