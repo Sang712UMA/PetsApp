@@ -11,6 +11,7 @@
 * Antek:
 * George:
 * Konstantina:
+   - IPostTest, IUserTest (testing on her classes)
 * Michal: 
 * Sanggil:
 
@@ -35,6 +36,8 @@
    - added some things in her classes (in the code) (16/05)
    - added some things in her code and created the class UserInput to help her with the data that she wants to get from the user (19/05)
    - added and changed some things in her code (20/05)
+   - Deleted the classes LostPets and FoundPets, cteated the classes IPost, 
+     IPostTest and IUserTest and did some changes on her code (21/05)
  * Michal: 
  * Sanggil:
    - Administrator & Reward classes created
