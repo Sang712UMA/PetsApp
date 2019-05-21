@@ -14,10 +14,12 @@ public class IUser {
 		public IUser() {}
 		
 		@SuppressWarnings("unused")
-		private void ownerFound(int owner) {
+		private String ownerFound(int owner) {
+			String found = "Not found";
 			if(owner == theowner.getId()) {
-				
+				found = "Found";
 			}
+			return found;
 		}
 
 		public Date getCreationDate() {

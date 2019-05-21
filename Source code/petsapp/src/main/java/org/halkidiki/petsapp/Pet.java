@@ -1,20 +1,18 @@
 package org.halkidiki.petsapp;
 
-import java.util.LinkedList;
-import java.util.List;
 
 public class Pet {
 
 	private int petType, age, petID;
-	private boolean sex, neutralization;
-	private String chip, name, details;
-	IUser adopter = new IUser();
-	List<Pet> foundlst = new LinkedList<Pet>();
+	private boolean neutralization;
+	private String chip, name, details,sex;
+	IUser adopter = null;
+	
 	
 
 	public Pet(){}
 
-	public Pet(int petType, boolean sex, boolean neutralization, String chip, int age, String name, String details){
+	public Pet(int petType, String sex, boolean neutralization, String chip, int age, String name, String details){
 		petType = this.petType;
 		sex = this.sex;
 		neutralization = this.neutralization;
@@ -28,6 +26,10 @@ public class Pet {
 		return petType;
 	}
 
+	public void adopt(IUser adopter) {
+		this.adopter = adopter;
+	}
+	
 	public void setPetType(int petType) {
 		this.petType = petType;
 	}
@@ -49,11 +51,11 @@ public class Pet {
 		this.petID = petID;
 	}
 
-	public boolean isSex() {
+	public String isSex() {
 		return sex;
 	}
 
-	public void setSex(boolean sex) {
+	public void setSex(String sex) {
 		this.sex = sex;
 	}
 
