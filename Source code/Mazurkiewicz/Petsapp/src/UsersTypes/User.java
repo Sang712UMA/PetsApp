@@ -8,7 +8,7 @@ import interfaces.IAdvertisment;
 import interfaces.IAnimal;
 import interfaces.IUser;
 
-public class User<TAnimal, TAdvertisment> implements IUser{
+public class User<TAnimal, TAdvertisment > implements IUser<TAnimal, TAdvertisment>{
 
 	String login;
 	String password;
