@@ -13,13 +13,13 @@ public class Pet {
 	public Pet(){}
 
 	public Pet(int petType, String sex, boolean neutralization, String chip, int age, String name, String details){
-		petType = this.petType;
-		sex = this.sex;
-		neutralization = this.neutralization;
-		chip = this.chip;
-		age = this.age;
-		name = this.name;
-		details = this.details;
+		this.petType = petType;
+		this.sex = sex;
+		this.neutralization = neutralization;
+		this.chip = chip;
+		this.age = age;
+		this.name = name;
+		this.details = details;
 	}
 	
 	public int getPetType() {

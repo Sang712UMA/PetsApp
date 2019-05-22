@@ -10,12 +10,12 @@ public class IPost {
 	public IPost(){}
 	
 	public IPost(Date foundDate,String foundLocation){
-		foundDate = this.foundDate;
-		foundLocation = this.foundLocation;
+		this.foundDate = foundDate;
+		this.foundLocation = foundLocation;
 	}
 	public IPost(String lostLocation,Date lostDate){
-		lostDate = this.lostDate;
-		lostLocation = this.lostLocation;
+		this.lostDate = lostDate;
+		this.lostLocation = lostLocation;
 	}
 
 	public Date getFoundDate() {
