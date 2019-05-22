@@ -2,7 +2,7 @@
 #### WORK TO BE DONE:
 
  - [X] work individually in our parts of the project (ask the teacher for your part)
- - [ ] Unify files (UML)
+ - [X] Unify files (UML)
 
 #### WORK IN PROGRESS:
 
@@ -28,6 +28,7 @@
    - Added some diagrams for her part of the project (23/04)
    - Changed the class and the sequence diagram in her folder. Not the diagrams of the team. Only the diagrams
    of her part of the project (24/04)
+   - Meet with the team to talk about her part of the job and listen the ideas of the others (28/04).
  * Michal: 
    - Individual story (sequence diagram)
    - Meet with the team to join all the project done by the moment (25/04)
