@@ -17,7 +17,7 @@ public class Petsapp {
 		Animal animal = new Animal();
 		String string = new String();
 		Advertisment a = new Advertisment("I am LF BabySitter for Boby ", 2 , "Very quiet snake. ", null,null, Date.valueOf(LocalDate.of(2019, 06, 13)), true);
-		Advertisment a0 = new Advertisment("I am LF BabySitter for Boby ", 2 , "Very quiet snake. ", null,null, Date.valueOf(LocalDate.of(2019, 07, 13)), true);
+		Advertisment a0 = new Advertisment("I am LF BabySitter for Boby ", 2 , "Very quiet snake. ", null,null, Date.valueOf(LocalDate.of(2019, 06, 13)), true);
 		Advertisment a1 = new Advertisment("I am LF BabySitter for Boby ", 2 , "Very quiet snake. ", null, Date.valueOf(LocalDate.of(2019, 06, 13)), Date.valueOf(LocalDate.of(2019, 05, 13)), true);
 		Advertisment a2 = new Advertisment("I am LF BabySitter for Boby ", 3 , "Very quiet snake. ", null , null, Date.valueOf(LocalDate.of(2019, 05, 13)), true);
 		Advertisment a3 = new Advertisment("I am LF BabySitter for Boby ", 1 , "Very quiet dragon. ", null, null, Date.valueOf(LocalDate.of(2019, 05, 13)), true);
@@ -37,22 +37,22 @@ public class Petsapp {
 	
 	
 	
-	//System.out.println(al.toString());
+	System.out.println(al.toString());
 	
 	
 	//System.out.println(lo.founded);
 	
-	//System.out.println(lo1.checkEqual(String.valueOf(a.endDate), String.valueOf(a0.endDate)));
+	System.out.println(lo.checkEqual(a, a0));
 	
 	
 	//System.out.println(al.advertisments);
 	
 	
-    	boolean isThere;
+ 
     	 
         	
         	
-        		lo1.advertisments.forEach((n) -> System.out.println(n.type.getOrDefault(2, n.toString())));
+        		lo1.advertisments.forEach((n) -> System.out.println(n.type.getOrDefault(1, n.toString())));
         	
 	
 }}

@@ -3,7 +3,7 @@ package bll;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListOf<TAdvertisment, List extends ArrayList>  {
+public class ListOf<TAdvertisment, List extends ArrayList>{
 	
 	
 	private TAdvertisment object1, object2;

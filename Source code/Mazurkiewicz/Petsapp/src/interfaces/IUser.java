@@ -6,7 +6,7 @@ import UsersTypes.User;
 import bll.Advertisment;
 import bll.Animal;
 
-public interface IUser{
+public interface IUser< ? extends TAnimal, TAdvertisment>{
 	
 
 	
