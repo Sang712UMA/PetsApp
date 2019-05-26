@@ -1,7 +1,8 @@
 package org.halkidiki.petsapp;
 
+import java.util.List;
 
-public class Pet {
+public class Pet{
 
 	private int petType, age, petID;
 	private boolean neutralization;
@@ -91,29 +92,17 @@ public class Pet {
 		this.details = details;
 	}
 	
-	public void getAdopter(int adopterID) {
-		if (adopter.getId() == adopterID) {
-			adopter.getNickName();
-			adopter.getCity();
-			adopter.getCreationDate();
-			adopter.getEmail();
-			adopter.getPhoneNumber();
-			adopter.getProfilePicture();
-			adopter.getStreet();
-		}
+	public IUser getAdopter(int adopterID,  List<IUser> l) {
+		IUser current = null;
+    	for(IUser b : l) {
+    		if(b.getId() == adopterID) {
+    			current = b;
+    		}
+    	}
+    	return current;
 	}
 	
-	public void recordAdopter(int adopterID) {
-		if (adopter.getId() == adopterID) {
-			adopter.setNickName(UserInput.getString());
-			adopter.setCity(UserInput.getString());
-			// adopter.setCreationDate();
-			adopter.setEmail(UserInput.getString());
-			adopter.setPhoneNumber(UserInput.getInteger());
-			//adopter.setProfilePicture();
-			adopter.setStreet(UserInput.getString());
-		}
-	}
+	
 	
 	
 }

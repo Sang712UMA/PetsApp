@@ -10,8 +10,20 @@ public class IUser {
 		private int id, phoneNumber;
 		private String street, city, email,  password, nickName;
 		Pet pet1 = new Pet();
-		IUser theowner = new IUser();
+		IUser theowner = null;
 		public IUser() {}
+		
+		public IUser(Date creationDate,Image profilePicture, int id, int phoneNumber, String street, String city, String email, String  password,String nickName) {
+			this.creationDate = creationDate;
+			this.profilePicture = profilePicture;
+			this.id = id;
+			this.phoneNumber = phoneNumber;
+			this.street = street;
+			this.city = city;
+			this.email = email;
+			this.password = password;
+			this.nickName = nickName;
+		}
 		
 		@SuppressWarnings("unused")
 		private String ownerFound(int owner) {
