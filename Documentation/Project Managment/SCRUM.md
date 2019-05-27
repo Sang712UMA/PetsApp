@@ -7,7 +7,7 @@
 
 * Adri:
   - UI Design
-  - Notification Manager & Post Manager classes (TDD)
+  - Create JUnit Tests
 * Antek:
 * George:
 * Konstantina:
@@ -18,6 +18,8 @@
 #### WORK DONE: *(Describe what was done)*
 
  * Adri:
+   - INotification, NotificationManager, PetNotification, PostManager code written
+   - Modify a bit class Diagram with the new methods (name of methods) used on the code
  * Antek:
  * George:
  * Konstantina:
