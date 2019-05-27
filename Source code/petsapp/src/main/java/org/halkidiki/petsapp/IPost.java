@@ -8,7 +8,6 @@ public class IPost {
 	Pet FoundPet1 = new Pet();
 	private Date lostDate;
 	private String lostLocation;
-	Pet LostPet1 = new Pet();
 	
 	public IPost(){}
 	
