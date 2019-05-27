@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Pet{
 
-	private int petType, age, petID;
+	private int petType, age, petID, size;
 	private boolean neutralization;
 	private String chip, name, details,sex;
 	IUser adopter = null;
@@ -102,6 +102,9 @@ public class Pet{
     	return current;
 	}
 	
+	public int getSize() {
+		return size;
+	}
 	
 	
 	

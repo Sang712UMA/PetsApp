@@ -36,13 +36,6 @@ public class IPost {
 		this.foundLocation = foundLocation;
 	};
 	
-	
-	
-	
-
-
-
-	
 	public Date getLostDate() {
 		return lostDate;
 	}

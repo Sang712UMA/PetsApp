@@ -1,18 +1,42 @@
 package org.halkidiki.petsapp;
 
+import java.util.List;
+
 public class NotificationManager {
 
-	int[] test;
-	final int SIZE = 100; // Test value
-	int nItems;
-	
-	public NotificationManager() {
-		test = new int[SIZE];
-		nItems = 0;
+	private static NotificationManager activeNotificationManager=null;
+	private List<INotification> activeNotifications;
+
+	private NotificationManager() {
+		activeNotificationManager = this;
 	}
-	
-	public void addInteger (int number) {
-		test[nItems] = number;
-		nItems++;
+
+	public static NotificationManager getActiveNotificationManager() {
+		if(activeNotificationManager==null){
+			activeNotificationManager= new NotificationManager();
+		}
+		return activeNotificationManager;
+	}
+
+	public void addNotification (INotification notification) {
+		activeNotifications.add(notification);
+	}
+
+	public void checkIfPostMustAlertUser (Pet pet) {
+		for (INotification notification : activeNotifications) {
+			if(notification.doPostMustBeNotified(pet)) {
+				sendNotification(notification, pet);
+				deleteNotification (notification);
+			}
+		}
+	}
+
+	private void deleteNotification (INotification notification) {
+		activeNotifications.remove(notification);
+	}
+
+	private void sendNotification (INotification notification, Pet pet) {
+		//TODO Send between clients TCP
+		System.out.println("User: " + notification.getUser().getId() + " CHECK POST: " + pet.getPetID());
 	}
 }
