@@ -2,5 +2,6 @@ package org.halkidiki.petsapp;
 
 public interface INotification {
 	
-	IUser getUser();
+	User getUser();
+	boolean doPostMustBeNotified(Pet pet);
 }

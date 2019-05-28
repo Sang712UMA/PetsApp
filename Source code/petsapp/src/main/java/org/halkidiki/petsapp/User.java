@@ -1,7 +1,7 @@
 package org.halkidiki.petsapp;
 import java.awt.Image;
 import java.util.Date;
-public class IUser {
+public class User{
 
 
 	
@@ -10,10 +10,10 @@ public class IUser {
 		private int id, phoneNumber;
 		private String street, city, email,  password, nickName;
 		Pet pet1 = new Pet();
-		IUser theowner = null;
-		public IUser() {}
+		User theowner = null;
+		public User() {}
 		
-		public IUser(Date creationDate,Image profilePicture, int id, int phoneNumber, String street, String city, String email, String  password,String nickName) {
+		public User(Date creationDate,Image profilePicture, int id, int phoneNumber, String street, String city, String email, String  password,String nickName) {
 			this.creationDate = creationDate;
 			this.profilePicture = profilePicture;
 			this.id = id;

@@ -7,7 +7,7 @@ public class Pet{
 	private int petType, age, petID, size;
 	private boolean neutralization;
 	private String chip, name, details,sex;
-	IUser adopter = null;
+	User adopter = null;
 	
 	
 
@@ -27,7 +27,7 @@ public class Pet{
 		return petType;
 	}
 
-	public void adopt(IUser adopter) {
+	public void adopt(User adopter) {
 		this.adopter = adopter;
 	}
 	
@@ -92,9 +92,9 @@ public class Pet{
 		this.details = details;
 	}
 	
-	public IUser getAdopter(int adopterID,  List<IUser> l) {
-		IUser current = null;
-    	for(IUser b : l) {
+	public User getAdopter(int adopterID,  List<User> l) {
+		User current = null;
+    	for(User b : l) {
     		if(b.getId() == adopterID) {
     			current = b;
     		}

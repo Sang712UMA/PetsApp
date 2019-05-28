@@ -2,14 +2,14 @@ package org.halkidiki.petsapp;
 
 public class PetNotification implements INotification {
 
-	IUser userToNotify;
+	User userToNotify;
 	int PetType;
 	int sizeMin;
 	int sizeMax;
 	int ageMin;
 	int ageMax;
 
-	public PetNotification (IUser userToNotify, int PetType, int sizeMin, int sizeMax, int ageMin, int ageMax) {
+	public PetNotification (User userToNotify, int PetType, int sizeMin, int sizeMax, int ageMin, int ageMax) {
 		this.PetType = PetType;
 		this.sizeMin = sizeMin;
 		this.sizeMax = sizeMax;
@@ -19,7 +19,7 @@ public class PetNotification implements INotification {
 
 
 	@Override
-	public IUser getUser() {
+	public User getUser() {
 		return userToNotify;
 	}
 

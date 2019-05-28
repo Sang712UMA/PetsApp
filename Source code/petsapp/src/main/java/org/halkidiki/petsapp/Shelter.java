@@ -4,7 +4,7 @@ package org.halkidiki.petsapp;
  *
  * @author antek
  */
-public class Shelter implements IUser{
+public class Shelter implements User{
     
     public Shelter(){
         
