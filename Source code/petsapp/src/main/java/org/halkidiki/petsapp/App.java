@@ -34,9 +34,9 @@ public class App
     	pet1.adopt(adopter);
     }
     
-    public List<Pet> searchForAdoption(int petType) {
+   /* public List<Pet> searchForAdoption(int petType) {
     	
-    }
+    }*/
         
     public void selectPet(int petID, List<Pet> l) {
     	Pet current = null;
