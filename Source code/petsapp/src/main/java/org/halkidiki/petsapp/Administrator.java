@@ -5,7 +5,7 @@ package org.halkidiki.petsapp;
  */
 import org.halkidiki.petsapp.Reward;
 
-public class Administrator implements IUser{
+public class Administrator implements User{
 	
 	Reward reward;
 	public Reward getReward() {

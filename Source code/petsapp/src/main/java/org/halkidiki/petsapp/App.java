@@ -10,16 +10,16 @@ public class App
 	static List<Pet> foundlist = new LinkedList<Pet>();
 	static List<Pet> lostlist = new LinkedList<Pet>();
 	static List<Pet> temporaryAdoptedList = new LinkedList<Pet>();
-	static List<IUser> userList = new LinkedList<IUser>();
-	static List<IUser> adopterList = new LinkedList<IUser>();
+	static List<User> userList = new LinkedList<User>();
+	static List<User> adopterList = new LinkedList<User>();
 	
     public static void main( String[] args ){
        
     }
     
-    private IUser getUser(List<IUser> users, int userID) {
-    	IUser current = null;
-    	for(IUser b : users) {
+    private User getUser(List<User> users, int userID) {
+    	User current = null;
+    	for(User b : users) {
     		if(b.getId() == userID) {
     			current = b;
     		}
@@ -28,7 +28,7 @@ public class App
 	}
     
     public void temporaryAdopt(int adopterID, Pet pet1) {
-    	IUser adopter;
+    	User adopter;
     	
     	adopter = getUser(userList, adopterID);
     	pet1.adopt(adopter);
@@ -125,7 +125,7 @@ public class App
 	}
 	
 	public void recordAdopter(Date creationDate,Image profilePicture, int adopterID) {
-		IUser Adopter;
+		User Adopter;
 		System.out.println("Phone Number: ");
 		int phone = UserInput.getInteger();
 		
@@ -144,7 +144,7 @@ public class App
 		System.out.println("Nickname: ");
 		String nickname = UserInput.getString();
 		
-		Adopter = new IUser(creationDate,profilePicture, adopterID, phone, street, city, email, password, nickname);
+		Adopter = new User(creationDate,profilePicture, adopterID, phone, street, city, email, password, nickname);
 
 		adopterList.add(Adopter);
 	}
