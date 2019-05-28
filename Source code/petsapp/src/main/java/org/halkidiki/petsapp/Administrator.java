@@ -1,13 +1,17 @@
 package org.halkidiki.petsapp;
 
+import java.util.Date;
+
 /*
  * by Sanggil
  */
 import org.halkidiki.petsapp.Reward;
 
-public class Administrator implements IUser{
+public class Administrator extends IUser{
+	
 	
 	Reward reward;
+	Administrator(){}
 	public Reward getReward() {
 		return reward;
 	}
@@ -19,18 +23,17 @@ public class Administrator implements IUser{
 		this.reward = reward;
 	}
 	
-	User user;
-	public User getUser() {
+	IUser user;
+	public IUser getUser() {
 		return user;
 	}
-	public void setUser(User user) {
+	public void setUser(IUser user) {
 		this.user = user;
 	}
-	public Administrator(User user) {
+	public Administrator(IUser user) {
 		super();
 		this.user = user;
 	}
-	
 	
 	
 	public void checkTotaltime() {
@@ -40,12 +43,12 @@ public class Administrator implements IUser{
 	
 	public void setEvent(Date startdate, Date enddate) {
 		 reward.seteStarted(true);
-		 reward.seteStarDate(startdate);
+		 reward.seteStartDate(startdate);
 		 reward.seteEndDate(enddate);
 	}
 	
 	public String setWinner(String nickname) {
-		if (User.nickname==nickname) return nickname;
+		if (IUser.getNickName()==nickname) return nickname;
 		else {
 			System.out.println("There's no" + nickname + ".");
 			return null;

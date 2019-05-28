@@ -1,10 +1,38 @@
 package org.halkidiki.petsapp;
 
+import java.util.Date;
+
 /*
  * by Sanggil
  */
 
 public class Reward {
+	String title = "";
+	String description = "";
+	int requiredPP;
+	Boolean	eStarted = false;
+	Date eStartDate;
+	Date eEndDate;
+	String ePrize;
+	
+	Reward(){}
+	Reward(String title, String description, int requiredPP, Boolean eStarted, Date eStartDate, Date eEndDate, String ePrize){
+		this.title = title;
+		this.description = description;
+		this.requiredPP = requiredPP;
+		this.eStarted = eStarted;
+		this.eStartDate = eStartDate;
+		this.eEndDate = eEndDate;
+		this.ePrize = ePrize;
+	}
+	
+	public void  eventEnd() {
+		
+	}
+	public void givePrize()	{
+		
+	}
+	
 	public String getTitle() {
 		return title;
 	}
@@ -17,10 +45,10 @@ public class Reward {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public Decimal getRequiredPP() {
+	public int getRequiredPP() {
 		return requiredPP;
 	}
-	public void setRequiredPP(Decimal requiredPP) {
+	public void setRequiredPP(int requiredPP) {
 		this.requiredPP = requiredPP;
 	}
 	public Boolean geteStarted() {
@@ -29,11 +57,11 @@ public class Reward {
 	public void seteStarted(Boolean eStarted) {
 		this.eStarted = eStarted;
 	}
-	public Date geteStarDate() {
-		return eStarDate;
+	public Date geteStartDate() {
+		return eStartDate;
 	}
-	public void seteStarDate(Date eStarDate) {
-		this.eStarDate = eStarDate;
+	public void seteStartDate(Date eStartDate) {
+		this.eStartDate = eStartDate;
 	}
 	public Date geteEndDate() {
 		return eEndDate;
@@ -47,19 +75,8 @@ public class Reward {
 	public void setePrize(String ePrize) {
 		this.ePrize = ePrize;
 	}
-	String title = "";
-	String description = "";
-	Decimal requiredPP;
-	Boolean	eStarted = false;
-	Date eStarDate;
-	Date eEndDate;
-	String ePrize;
 	
-	public eventEnd() {
-		
-	}
-	public givePrize()	{
-		
-	}
+	
+	
 	
 }
