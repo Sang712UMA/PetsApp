@@ -7,7 +7,7 @@ import java.util.Date;
  */
 import org.halkidiki.petsapp.Reward;
 
-public class Administrator extends IUser{
+public class Administrator extends User{
 	
 	
 	Reward reward;
@@ -23,14 +23,14 @@ public class Administrator extends IUser{
 		this.reward = reward;
 	}
 	
-	IUser user;
-	public IUser getUser() {
+	User user;
+	public User getUser() {
 		return user;
 	}
-	public void setUser(IUser user) {
+	public void setUser(User user) {
 		this.user = user;
 	}
-	public Administrator(IUser user) {
+	public Administrator(User user) {
 		super();
 		this.user = user;
 	}
@@ -48,10 +48,12 @@ public class Administrator extends IUser{
 	}
 	
 	public String setWinner(String nickname) {
-		if (IUser.getNickName()==nickname) return nickname;
+		if (Account.getNickName()==nickname) return nickname;
 		else {
 			System.out.println("There's no" + nickname + ".");
 			return null;
 		}
 	}
+	
+	
 }
