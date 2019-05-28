@@ -22,21 +22,27 @@ public class NotificationManager {
 		activeNotifications.add(notification);
 	}
 
-	public void checkIfPostMustAlertUser (Pet pet) {
-		for (INotification notification : activeNotifications) {
-			if(notification.doPostMustBeNotified(pet)) {
-				sendNotification(notification, pet);
-				deleteNotification (notification);
-			}
-		}
+	public void checkIfPostMustAlertUser () {
+//		for (INotification notification : activeNotifications) {
+//			if(notification.doPostMustBeNotified(pet)) {
+//				sendNotification(notification, pet);
+//				deleteNotification (notification);
+//			}
+//		}
 	}
 
 	private void deleteNotification (INotification notification) {
 		activeNotifications.remove(notification);
 	}
 
-	private void sendNotification (INotification notification, Pet pet) {
+	private void sendNotification (INotification notification) {
 		//TODO Send between clients TCP
-		System.out.println("User: " + notification.getUser().getId() + " CHECK POST: " + pet.getPetID());
+		if (notification.getClass() == PetNotification.class) {
+			System.out.println("ALERT user: " + notification.getUser() + "; Pet: " 
+		+ ((PetNotification) notification).PetType + " found in a post");
+			
+		} else {
+			System.out.println("ALERT user: " + notification.getUser() + "; You have a notification");
+		}
 	}
 }

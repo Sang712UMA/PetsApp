@@ -23,7 +23,6 @@ public class PetNotification implements INotification {
 		return userToNotify;
 	}
 
-	@Override
 	public boolean doPostMustBeNotified(Pet pet) {
 		boolean notify = false;
 
