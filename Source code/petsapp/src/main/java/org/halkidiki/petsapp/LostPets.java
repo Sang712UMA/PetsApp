@@ -2,7 +2,7 @@ package org.halkidiki.petsapp;
 
 import java.util.Date;
 
-public class LostPets {
+public class LostPets extends Post{
 private Date lostDate;
 private String lostLocation; 
 

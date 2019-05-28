@@ -3,7 +3,7 @@ package org.halkidiki.petsapp;
 import java.util.Date;
 
 
-public class FoundPets {
+public class FoundPets extends Post{
 
 private Date foundDate;
 private String foundLocation;
