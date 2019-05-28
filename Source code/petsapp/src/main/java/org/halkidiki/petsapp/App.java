@@ -34,7 +34,7 @@ public class App
     	pet1.adopt(adopter);
     }
     
-    public void searchForAdoption(int petType) {
+    public List<Pet> searchForAdoption(int petType) {
     	
     }
         
