@@ -10,21 +10,21 @@ public class Shelter extends Account{
     
     private ArrayList<Volunteer> shelterVolunteers;
     private ArrayList<Task> shelterTasks;
-
+    
     public Shelter(){
-
+        
     }
-
+    
     public ArrayList<Volunteer> listVolunteers(){
-        return shelterVolunteers;
-    }
-
+        return new ArrayList<Volunteer>();
+    }    
+    
     public void sendMessage(String text){
-
+        
     }
-
+    
     public void sendTask(ArrayList<Task> taskList){
-
+        
     }
     
 }
