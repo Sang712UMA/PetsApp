@@ -14,6 +14,7 @@
    - IPostTest, IUserTest (testing on her classes)
 * Michal: 
 * Sanggil:
+   - Implement method on Administrator, Account, Reward, and **User**
 
 #### WORK DONE: *(Describe what was done)*
 
@@ -29,3 +30,5 @@
      IPostTest and IUserTest and did some changes on her code (21/05)
  * Michal: 
  * Sanggil:
+   - Modify class diagram
+   - Make Administrator, Account, Reward
