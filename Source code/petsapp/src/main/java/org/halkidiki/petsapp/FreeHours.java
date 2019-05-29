@@ -12,11 +12,13 @@ public class FreeHours {
     Date endDateTime;
     
     public FreeHours(Date startDateTime, Date endDateTime){
-        //A veeeer
-    }
+        this.startDateTime = startDateTime;
+        this.endDateTime = endDateTime;
+   }
     
     public void changeHours(Date startDateTime, Date endDateTime){
-        
+        this.startDateTime = startDateTime;
+        this.endDateTime = endDateTime;
     }
     
 }
