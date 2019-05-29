@@ -1,5 +1,11 @@
 package org.halkidiki.petsapp;
 
+/**
+ * 
+ * @Author: Adrian
+ * 
+ */
+
 import java.util.List;
 
 public class NotificationManager {
