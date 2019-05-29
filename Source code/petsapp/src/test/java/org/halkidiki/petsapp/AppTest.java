@@ -8,7 +8,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class IPostTest {
+public class AppTest {
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -27,57 +27,47 @@ public class IPostTest {
 	}
 
 	@Test
-	public void testIPost() {
+	public void testMain() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	public void testIPostDateString() {
+	public void testTemporaryAdopt() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	public void testIPostStringDate() {
+	public void ifNoPetExistsWhenSearchingForAdoptionAnExceptionIsThrown() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	public void testGetFoundDate() {
+	public void ifPetsExistWhenSearchingForAdoptionTheyAreReturnedInTheList() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	public void testSetFoundDate() {
+	public void testSelectPet() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	public void testGetFoundLocation() {
+	public void testGetFoundPetData() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	public void testSetFoundLocation() {
+	public void testReportFoundPet() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	public void testGetLostDate() {
+	public void testReportLostPet() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	public void testSetLostDate() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testGetLostLocation() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetLostLocation() {
+	public void testRecordAdopter() {
 		fail("Not yet implemented");
 	}
 

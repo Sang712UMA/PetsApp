@@ -26,8 +26,8 @@ public class Reward {
 		this.ePrize = ePrize;
 	}
 	
-	public void  eventEnd() {
-		
+	public void eventEnd() {
+		eStarted = false;
 	}
 	public void givePrize()	{
 		

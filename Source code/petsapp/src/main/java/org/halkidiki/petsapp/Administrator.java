@@ -1,6 +1,8 @@
 package org.halkidiki.petsapp;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /*
  * by Sanggil
@@ -35,9 +37,14 @@ public class Administrator extends User{
 		this.user = user;
 	}
 	
-	
+	public static List<User> timeRanker = new ArrayList<User>();
 	public void checkTotaltime() {
-		
+		String output = null;
+		List<User> eligibleUser = Account.activeUsers;
+		for(User user : eligibleUser) {
+			
+			if (eligibleUser.)
+		}
 		
 	}
 	
@@ -48,11 +55,17 @@ public class Administrator extends User{
 	}
 	
 	public String setWinner(String nickname) {
-		if (Account.getNickName()==nickname) return nickname;
-		else {
-			System.out.println("There's no" + nickname + ".");
-			return null;
+		String output = null;
+		List<User> eligibleUser = Account.activeUsers;
+		for(User user : eligibleUser) {
+			if (user.getNickName()==nickname) output = nickname;
+			else {
+				System.out.println("There's no" + nickname + ".");
+				output = null;
+			}
 		}
+		return output;
+		
 	}
 	
 	
