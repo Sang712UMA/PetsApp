@@ -17,7 +17,7 @@ public class App
        
     }
     
-    private User getUser(List<User> users, int userID) {
+    private User getUser(List<User> users, int userID) { //Konstantina 
     	User current = null;
     	for(User b : users) {
     		if(b.getId() == userID) {
@@ -27,7 +27,7 @@ public class App
     	return current;
 	}
     
-    public void temporaryAdopt(int adopterID, Pet pet1) {
+    public void temporaryAdopt(int adopterID, Pet pet1) { //Konstantina 
     	User adopter;
     	
     	adopter = getUser(userList, adopterID);
@@ -38,8 +38,8 @@ public class App
     	
     }*/
         
-    public void selectPet(int petID, List<Pet> l) {
-    	Pet current = null;
+    public void selectPet(int petID, List<Pet> l) { //Konstantina 
+    	Pet current = null; 
     	for(Pet b : l) {
     		if(b.getPetID() == petID) {
     			current = b;
@@ -48,7 +48,7 @@ public class App
     	System.out.println(current);
     }
     
-    public Pet getFoundPetData(Pet Pet1, List<Pet> l) {
+    public Pet getFoundPetData(Pet Pet1, List<Pet> l) { //Konstantina 
 		Pet current = null;
     	for(Pet b : l) {
     		if(b == Pet1) {
@@ -61,13 +61,13 @@ public class App
 	};
     
 	@SuppressWarnings("unused")
-	private void showFoundPets(List<Pet> l) {
+	private void showFoundPets(List<Pet> l) { //Konstantina 
 		for(Pet b : l)
 			System.out.printf("%s ", b);
 		System.out.println();
     }
 	
-	public void reportFoundPet() {
+	public void reportFoundPet() { //Konstantina 
 		
 		Pet FoundPet1;
 		System.out.println("PetType: ");
@@ -96,7 +96,7 @@ public class App
 		foundlist.add(FoundPet1);
 		
 	}
-	public void reportLostPet() {
+	public void reportLostPet() { //Konstantina 
 		Pet LostPet1;
 		System.out.println("PetType: ");
 		int petType = UserInput.getInteger();
@@ -124,7 +124,7 @@ public class App
 		lostlist.add(LostPet1);
 	}
 	
-	public void recordAdopter(Date creationDate,Image profilePicture, int adopterID) {
+	public void recordAdopter(Date creationDate,Image profilePicture, int adopterID) { //Konstantina 
 		User Adopter;
 		System.out.println("Phone Number: ");
 		int phone = UserInput.getInteger();
