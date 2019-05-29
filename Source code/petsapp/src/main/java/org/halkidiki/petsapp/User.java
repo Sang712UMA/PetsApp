@@ -1,7 +1,7 @@
 package org.halkidiki.petsapp;
 import java.awt.Image;
 import java.util.Date;
-public class User{
+public class User{ //Konstantina
 
 
 	
@@ -13,7 +13,7 @@ public class User{
 		User theowner = null;
 		public User() {}
 		
-		public User(Date creationDate,Image profilePicture, int id, int phoneNumber, String street, String city, String email, String  password,String nickName) {
+		public User(Date creationDate,Image profilePicture, int id, int phoneNumber, String street, String city, String email, String  password,String nickName) { //Konstantina 
 			this.creationDate = creationDate;
 			this.profilePicture = profilePicture;
 			this.id = id;
@@ -26,7 +26,7 @@ public class User{
 		}
 		
 		@SuppressWarnings("unused")
-		private String ownerFound(int owner) {
+		private String ownerFound(int owner) { //Konstantina 
 			String found = "Not found";
 			if(owner == theowner.getId()) {
 				found = "Found";
@@ -34,77 +34,77 @@ public class User{
 			return found;
 		}
 
-		public Date getCreationDate() {
+		public Date getCreationDate() { //Konstantina 
 			return creationDate;
 		}
 
-		public void setCreationDate(Date creationDate) {
+		public void setCreationDate(Date creationDate) { //Konstantina 
 			this.creationDate = creationDate;
 		}
 
-		public Image getProfilePicture() {
-			return profilePicture;
+		public Image getProfilePicture() { //Konstantina 
+			return profilePicture; 
 		}
 
-		public void setProfilePicture(Image profilePicture) {
+		public void setProfilePicture(Image profilePicture) { //Konstantina 
 			this.profilePicture = profilePicture;
 		}
 
-		public int getPhoneNumber() {
+		public int getPhoneNumber() { //Konstantina 
 			return phoneNumber;
 		}
 
-		public void setPhoneNumber(int phoneNumber) {
+		public void setPhoneNumber(int phoneNumber) { //Konstantina 
 			this.phoneNumber = phoneNumber;
 		}
 
-		public String getStreet() {
+		public String getStreet() { //Konstantina 
 			return street;
 		}
 
-		public void setStreet(String street) {
+		public void setStreet(String street) { //Konstantina 
 			this.street = street;
 		}
 
-		public String getCity() {
+		public String getCity() { //Konstantina 
 			return city;
 		}
 
-		public void setCity(String city) {
+		public void setCity(String city) { //Konstantina 
 			this.city = city;
 		}
 
-		public String getEmail() {
+		public String getEmail() { //Konstantina 
 			return email;
 		}
 
-		public void setEmail(String email) {
+		public void setEmail(String email) { //Konstantina 
 			this.email = email;
 		}
 
 		@SuppressWarnings("unused")
-		private String getPassword() {
+		private String getPassword() { //Konstantina 
 			return password;
 		}
 
 		@SuppressWarnings("unused")
-		private void setPassword(String password) {
+		private void setPassword(String password) { //Konstantina 
 			this.password = password;
 		}
 
-		public String getNickName() {
+		public String getNickName() { //Konstantina 
 			return nickName;
 		}
 
-		public void setNickName(String nickName) {
+		public void setNickName(String nickName) { //Konstantina 
 			this.nickName = nickName;
 		}
 
-		public int getId() {
+		public int getId() { //Konstantina 
 			return id;
 		}
 
-		public void setId(int id) {
+		public void setId(int id) { //Konstantina 
 			this.id = id;
 		}
 

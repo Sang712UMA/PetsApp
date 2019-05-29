@@ -1,11 +1,11 @@
-package org.halkidiki.petsapp;
+package org.halkidiki.petsapp; 
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-class UserInput {
-    static int getInteger() { 
+class UserInput { //Konstantina
+    static int getInteger() { //Konstantina 
         String line;
         InputStreamReader eisodosString=new InputStreamReader(System.in);
         BufferedReader br = new BufferedReader(eisodosString);
@@ -19,7 +19,7 @@ class UserInput {
         }
     }
     
-    static float getFloat() { 
+    static float getFloat() { //Konstantina 
         String line;
         InputStreamReader eisodosString=new InputStreamReader(System.in);
         BufferedReader br=new BufferedReader(eisodosString);
@@ -33,7 +33,7 @@ class UserInput {
         }
     }
     
-    static double getDouble() { 
+    static double getDouble() { //Konstantina 
         String line;
         InputStreamReader eisodosString=new InputStreamReader(System.in);
         BufferedReader br=new BufferedReader(eisodosString);
@@ -47,7 +47,7 @@ class UserInput {
         }
     }
     
-    static short getShort() { 
+    static short getShort() { //Konstantina 
         String line;
         InputStreamReader eisodosString=new InputStreamReader(System.in);
         BufferedReader br=new BufferedReader(eisodosString);
@@ -61,7 +61,7 @@ class UserInput {
         }
     }
     
-    static char getChar(){
+    static char getChar(){  //Konstantina 
         char c;
         InputStreamReader eisodosString=new InputStreamReader(System.in);
         BufferedReader br=new BufferedReader(eisodosString);
@@ -75,7 +75,7 @@ class UserInput {
         }
     }
     
-    static float getByte() { 
+    static float getByte() {  //Konstantina 
         String line;
         InputStreamReader eisodosString=new InputStreamReader(System.in);
         BufferedReader br=new BufferedReader(eisodosString);
@@ -89,7 +89,7 @@ class UserInput {
         }
     }
     
-    static long getLong() { 
+    static long getLong() { //Konstantina 
         String line;
         InputStreamReader eisodosString=new InputStreamReader(System.in);
         BufferedReader br=new BufferedReader(eisodosString);
@@ -103,7 +103,7 @@ class UserInput {
         }
     }
     
-    static boolean getBoolean() { 
+    static boolean getBoolean() { //Konstantina 
         String line;
         InputStreamReader eisodosString=new InputStreamReader(System.in);
         BufferedReader br=new BufferedReader(eisodosString);
@@ -117,7 +117,7 @@ class UserInput {
         }
     }
     
-    static String getString(){
+    static String getString(){ //Konstantina 
         String line;
         InputStreamReader eisodosString=new InputStreamReader(System.in);
         BufferedReader br=new BufferedReader(eisodosString);
