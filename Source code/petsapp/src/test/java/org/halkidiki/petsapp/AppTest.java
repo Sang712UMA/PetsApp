@@ -1,12 +1,17 @@
 package org.halkidiki.petsapp;
 
 import static org.junit.Assert.*;
+import static org.mockito.Mockito.*;
+
+import java.util.List;
 
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 
 public class AppTest {
 
@@ -36,11 +41,24 @@ public class AppTest {
 		fail("Not yet implemented");
 	}
 
-	@Test
-	public void ifNoPetExistsWhenSearchingForAdoptionAnExceptionIsThrown() {
-		fail("Not yet implemented");
-	}
-
+	
+	/*@Rule
+	public ExpectedException e = ExpectedException.none(); 
+	@Test public void ifNoPetExistsWhenSearchingForAdoptionAnExceptionIsThrown() { //Konstantina
+		List<Pet> l = mock(App.foundlist); //den anagnorizi to mock
+		int i =0;
+		int petType = 2;
+    	for(Pet b : l) {
+    		if(b.getPetType() == petType) {
+    			i++;
+    		}
+    	}
+    	if(i==0) {
+    		e.expect(IndexOutOfBoundsException.class);
+    		e.expectMessage("Index: 0, Size: 0");
+    	}
+    	
+	} */
 	@Test
 	public void ifPetsExistWhenSearchingForAdoptionTheyAreReturnedInTheList() {
 		fail("Not yet implemented");
