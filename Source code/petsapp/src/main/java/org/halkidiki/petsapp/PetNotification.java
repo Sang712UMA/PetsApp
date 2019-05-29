@@ -1,5 +1,11 @@
 package org.halkidiki.petsapp;
 
+/**
+ * 
+ * @Author: Adrian
+ * 
+ */
+
 public class PetNotification implements INotification {
 
 	User userToNotify;
