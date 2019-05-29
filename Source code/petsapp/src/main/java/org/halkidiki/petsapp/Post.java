@@ -8,6 +8,11 @@ public class Post {
 	private Date postDate;
 	private String location, description;
 	private int postID, expPoints;
+	private Pet pet;
+	
+	public Pet getPet() {
+		return pet;
+	}
 	
 	public Image getPetPicture() {
 		return petPicture;
