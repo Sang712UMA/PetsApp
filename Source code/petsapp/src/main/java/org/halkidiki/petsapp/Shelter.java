@@ -16,7 +16,7 @@ public class Shelter extends Account{
     }
     
     public ArrayList<Volunteer> listVolunteers(){
-        return new ArrayList<Volunteer>();
+        return shelterVolunteers;
     }    
     
     public void sendMessage(String text){
