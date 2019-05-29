@@ -5,8 +5,8 @@ import java.util.List;
 public class PostManager {
 
 	private static PostManager activePostManager=null;
-	private List<IPost> activePosts;
-	private List<IPost> inactivePosts;
+	private List<Post> activePosts;
+	private List<Post> inactivePosts;
 
 	private PostManager() {
 		activePostManager = this;
@@ -19,18 +19,18 @@ public class PostManager {
 		return activePostManager;
 	}
 	
-	public List<IPost> getPosts() {
+	public List<Post> getPosts() {
 		return activePosts;
 	}
 
-	public void addPost(IPost post) {
+	public void addPost(Post post) {
 		activePosts.add(post);
 		
 		NotificationManager nm = NotificationManager.getActiveNotificationManager();
-		nm.checkIfPostMustAlertUser(post.FoundPet1);
+		nm.checkIfPostMustAlertUser(post);
 	}
 
-	public void deletePost(IPost post) {
+	public void deletePost(Post post) {
 		if (activePosts.contains(post)) {
 			activePosts.remove(post);
 		} else if (inactivePosts.contains(post)){
@@ -38,7 +38,7 @@ public class PostManager {
 		}
 	}
 	
-	public void postNotLongerRequired(IPost post) {
+	public void postNotLongerRequired(Post post) {
 		activePosts.remove(post);
 		inactivePosts.add(post);
 	}
