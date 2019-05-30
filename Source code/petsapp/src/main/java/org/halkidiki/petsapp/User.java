@@ -61,15 +61,6 @@ public class User extends Account{ //Konstantina
 		}
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		/*
 		 * to this line coded by Sanggil
 		 */

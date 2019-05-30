@@ -1,6 +1,7 @@
 package org.halkidiki.petsapp.conversation;
 
 import java.util.ArrayList;
+import javafx.util.Pair;
 import org.halkidiki.petsapp.Account;
 
 /**
@@ -9,25 +10,22 @@ import org.halkidiki.petsapp.Account;
  */
 public class Conversation {
     
-    private Account participant1;
-    private Account participant2;
+    private final Pair<Integer, Integer> participantsId;
     private ArrayList<Message> messages;
     
-    public Conversation(Account participant1, Account participant2){
-        this.participant1 = participant1;
-        this.participant2 = participant2;
+    public Conversation(int participant1Id, int participant2Id){
+        this.participantsId = new Pair(participant1Id, participant2Id);
     }
     
-    public ArrayList<Message> loadConversation(){
+    public Pair<Integer, Integer> getParticipantsId(){
+        return participantsId;
+    }
+    
+    public ArrayList<Message> loadMessagesFrom(){
         return messages;
     }
     
-    public void sendMessage(Message message, int authorID){
-        if(authorID==participant1.getID()){
-            message.setAuthor(1);
-        } else {
-            message.setAuthor(2);
-        }
+    public void sendMessage(Message message){
         messages.add(message);
     }
     
