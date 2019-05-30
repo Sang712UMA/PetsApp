@@ -1,4 +1,4 @@
-package org.halkidiki.petsapp;
+package org.halkidiki.petsapp.post;
 
 /**
  * 
@@ -7,6 +7,8 @@ package org.halkidiki.petsapp;
  */
 
 import java.util.List;
+
+import org.halkidiki.petsapp.notifications.NotificationManager;
 
 public class PostManager {
 

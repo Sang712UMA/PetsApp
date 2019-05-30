@@ -1,6 +1,9 @@
-package org.halkidiki.petsapp;
+package org.halkidiki.petsapp.post;
 
 import java.util.Date;
+
+import org.halkidiki.petsapp.Pet;
+
 import java.awt.Image;
 
 public class Post { //Konstantina 

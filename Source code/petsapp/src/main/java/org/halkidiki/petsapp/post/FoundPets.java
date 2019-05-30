@@ -1,5 +1,5 @@
-package org.halkidiki.petsapp;
- 
+package org.halkidiki.petsapp.post;
+
 import java.util.Date;
 
 
