@@ -13,7 +13,7 @@ import org.halkidiki.petsapp.post.Post;
 public class NotificationManager {
 
 	private static NotificationManager activeNotificationManager=null;
-	private List<INotification> activeNotifications;
+	private List<Notification> activeNotifications;
 
 	private NotificationManager() {
 		activeNotificationManager = this;
@@ -26,12 +26,12 @@ public class NotificationManager {
 		return activeNotificationManager;
 	}
 
-	public void addNotification (INotification notification) {
+	public void addNotification (Notification notification) {
 		activeNotifications.add(notification);
 	}
 
 	public void checkIfPostMustAlertUser (Post post) {
-		for (INotification notification : activeNotifications) {
+		for (Notification notification : activeNotifications) {
 			if(isAPetNotification(notification)) {
 				if(((PetNotification) notification).doPostMustBeNotified(post.getPet())) {
 					sendNotification(notification);
@@ -41,15 +41,15 @@ public class NotificationManager {
 		}
 	}
 
-	private boolean isAPetNotification(INotification notification) {
+	private boolean isAPetNotification(Notification notification) {
 		return notification.getClass() == PetNotification.class;
 	}
 
-	private void deleteNotification (INotification notification) {
+	private void deleteNotification (Notification notification) {
 		activeNotifications.remove(notification);
 	}
 
-	private void sendNotification (INotification notification) {
+	private void sendNotification (Notification notification) {
 		//TODO Send between clients TCP
 		if (notification.getClass() == PetNotification.class) {
 			System.out.println("ALERT user: " + notification.getUser() + "; Pet: " 
