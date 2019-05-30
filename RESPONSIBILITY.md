@@ -7,10 +7,15 @@
   - Lost & Found <---> **KONSTANTINA**
   - PetSitting <---> **MICHAL**
   - User Profiles <---> **KONSTANTINA / SANGGIL / ANTEK**
-  - Database _//Unable to deliver on time_
+  - ~_Database //Unable to deliver on time_~
   - Advertiser's requirement - smart advertisement system <---> **GEORGE**
   - Shelter's requirement - minimising effort and time to find and take volunteers equally <---> **ANTEK**
-  EXTRA: Products/Rewards <---> **SANGGIL**
+  - EXTRA: Products/Rewards <---> **SANGGIL**
+
+```
+**IMPORTANT**: SANGGIL is responsible for the slide unfied document, NO ONE ELSE. 
+After you've done your slides YOU SHOULD SEND HIM yours.
+```
 
 ### From Slides:
 - Introduction <---> **ANTEK**
