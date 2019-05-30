@@ -24,13 +24,17 @@ public class ConversationManager {
     }
     
     public void sendMessage(Message message, int receiverId){
-        Pair<Integer, Integer> messageParticipantsId = new Pair(message.getAuthorId(), receiverId);
+        Pair<Integer, Integer> messageParticipantsId;
+        if(message.getAuthorId()<receiverId){
+            messageParticipantsId = new Pair(message.getAuthorId(), receiverId);
+        } else {
+            messageParticipantsId = new Pair(receiverId, message.getAuthorId());
+        }
+        
         for(Conversation conversation : conversations){
             Pair<Integer, Integer> conversationParticipantsId = conversation.getParticipantsId();
             if(messageParticipantsId.getKey() == conversationParticipantsId.getKey()
-                    && messageParticipantsId.getValue() == conversationParticipantsId.getValue()
-                    || messageParticipantsId.getKey() == conversationParticipantsId.getValue()
-                    && messageParticipantsId.getValue() == conversationParticipantsId.getKey())
+                    && messageParticipantsId.getValue() == conversationParticipantsId.getValue())
                 conversation.sendMessage(message);
         }
     }

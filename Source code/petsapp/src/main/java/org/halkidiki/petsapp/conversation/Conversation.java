@@ -14,7 +14,11 @@ public class Conversation {
     private ArrayList<Message> messages;
     
     public Conversation(int participant1Id, int participant2Id){
-        this.participantsId = new Pair(participant1Id, participant2Id);
+        if(participant1Id < participant2Id){
+            this.participantsId = new Pair(participant1Id, participant2Id);
+        } else {
+            this.participantsId = new Pair(participant2Id, participant1Id);
+        }
     }
     
     public Pair<Integer, Integer> getParticipantsId(){
