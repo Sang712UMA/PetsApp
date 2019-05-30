@@ -107,5 +107,45 @@ public class User{ //Konstantina
 		public void setId(int id) { //Konstantina 
 			this.id = id;
 		}
+		/*
+		 * from this line coded by Sanggil
+		 */
+		
+		public int expPoint = 0;
+		public int petPoint = 0;
+		public int totalTimeDevoted = 0;
+		public int eTimeDevoted = 0;
 
+		public void addTimeDevoted(int timeDevoted) {
+			totalTimeDevoted += timeDevoted;
+		}
+		public void addETimeDevoted(int timeDevoted, Reward reward) {
+			if(reward.eStarted == true) {
+				eTimeDevoted += timeDevoted;
+			}
+		}
+		public void addExpPoint(int expPoint) {
+			this.expPoint += expPoint;
+			if(this.expPoint<0)
+				this.expPoint = 0;
+		}
+		public void addPetPoint(int petPoint) {
+			this.petPoint += petPoint;
+			if(this.petPoint<0)
+				this.petPoint=0;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		/*
+		 * to this line coded by Sanggil
+		 */
 }
