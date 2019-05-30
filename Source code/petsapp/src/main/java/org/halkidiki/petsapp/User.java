@@ -1,14 +1,11 @@
 package org.halkidiki.petsapp;
 import java.awt.Image;
 import java.util.Date;
-public class User{ //Konstantina
+public class User extends Account{ //Konstantina
 
 
 	
-	    private Date creationDate;
-		private Image profilePicture;
-		private int id, phoneNumber;
-		private String street, city, email,  password, nickName;
+	    
 		Pet pet1 = new Pet();
 		User theowner = null;
 		public User() {}
@@ -34,79 +31,7 @@ public class User{ //Konstantina
 			return found;
 		}
 
-		public Date getCreationDate() { //Konstantina 
-			return creationDate;
-		}
-
-		public void setCreationDate(Date creationDate) { //Konstantina 
-			this.creationDate = creationDate;
-		}
-
-		public Image getProfilePicture() { //Konstantina 
-			return profilePicture; 
-		}
-
-		public void setProfilePicture(Image profilePicture) { //Konstantina 
-			this.profilePicture = profilePicture;
-		}
-
-		public int getPhoneNumber() { //Konstantina 
-			return phoneNumber;
-		}
-
-		public void setPhoneNumber(int phoneNumber) { //Konstantina 
-			this.phoneNumber = phoneNumber;
-		}
-
-		public String getStreet() { //Konstantina 
-			return street;
-		}
-
-		public void setStreet(String street) { //Konstantina 
-			this.street = street;
-		}
-
-		public String getCity() { //Konstantina 
-			return city;
-		}
-
-		public void setCity(String city) { //Konstantina 
-			this.city = city;
-		}
-
-		public String getEmail() { //Konstantina 
-			return email;
-		}
-
-		public void setEmail(String email) { //Konstantina 
-			this.email = email;
-		}
-
-		@SuppressWarnings("unused")
-		private String getPassword() { //Konstantina 
-			return password;
-		}
-
-		@SuppressWarnings("unused")
-		private void setPassword(String password) { //Konstantina 
-			this.password = password;
-		}
-
-		public String getNickName() { //Konstantina 
-			return nickName;
-		}
-
-		public void setNickName(String nickName) { //Konstantina 
-			this.nickName = nickName;
-		}
-
-		public int getId() { //Konstantina 
-			return id;
-		}
-
-		public void setId(int id) { //Konstantina 
-			this.id = id;
-		}
+		
 		/*
 		 * from this line coded by Sanggil
 		 */
