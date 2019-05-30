@@ -9,9 +9,8 @@ import org.halkidiki.petsapp.User;
  * 
  */
 
-public class PetNotification implements INotification {
+public class PetNotification extends Notification {
 
-	User userToNotify;
 	int PetType;
 	int sizeMin;
 	int sizeMax;
@@ -19,17 +18,12 @@ public class PetNotification implements INotification {
 	int ageMax;
 
 	public PetNotification (User userToNotify, int PetType, int sizeMin, int sizeMax, int ageMin, int ageMax) {
+            super(userToNotify);
 		this.PetType = PetType;
 		this.sizeMin = sizeMin;
 		this.sizeMax = sizeMax;
 		this.ageMin = ageMin;
 		this.ageMax = ageMax;
-	}
-
-
-	@Override
-	public User getUser() {
-		return userToNotify;
 	}
 
 	public boolean doPostMustBeNotified(Pet pet) {

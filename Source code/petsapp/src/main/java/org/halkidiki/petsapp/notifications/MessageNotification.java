@@ -3,18 +3,13 @@ package org.halkidiki.petsapp.notifications;
 import org.halkidiki.petsapp.Pet;
 import org.halkidiki.petsapp.User;
 
-public class MessageNotification implements INotification {
+public class MessageNotification extends Notification {
 
-	@Override
-	public User getUser() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public boolean doPostMustBeNotified(Pet pet) {
-		// TODO Auto-generated method stub
-		return false;
-	}
+    String message;
+    
+    public MessageNotification(User user, String message){
+        super(user);
+        this.message = message;
+    }
 
 }
