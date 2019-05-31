@@ -11,5 +11,8 @@ public class MessageNotification extends Notification {
         super(user);
         this.message = message;
     }
-
+    
+    public String getMessage() {
+    	return message;
+    }
 }
