@@ -50,7 +50,7 @@ public class ContestTest {
 	public void testGivePrize() {
 		fail("Not yet implemented");
 		for(User user : winner) {
-//			assertEquals(cPrize,user.earnedreward(0));
+			assertEquals(cPrize,user.getEarnedReward(0));
 		}
 	}
 

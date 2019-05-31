@@ -94,10 +94,9 @@ public class User extends Account{ //Konstantina
 		public void earnReward(Reward reward) {
 			earnedReward.add(reward);
 		}
-//		public Reward getEarnedReward() {
-//			
-//			return ;
-//		}
+		public Reward getEarnedReward(int num) {
+			return earnedReward.get(num);
+		}
 		/*
 		 * to this line coded by Sanggil
 		 */
