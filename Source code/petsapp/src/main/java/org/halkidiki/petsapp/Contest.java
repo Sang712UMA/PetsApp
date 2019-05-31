@@ -1,6 +1,10 @@
 package org.halkidiki.petsapp;
 
 import java.util.Date;
+import java.util.List;
+
+import org.halkidiki.petsapp.accounts.AccountManager;
+import org.halkidiki.petsapp.accounts.User;
 
 public class Contest {
 	private String title = "";
@@ -9,10 +13,12 @@ public class Contest {
 	private Date cStartDate;
 	private Date cEndDate;
 	private Reward cPrize;
-	private final int ONE_DAY_IN_MILLISEC = 86400000;
+	private AccountManager AM = AccountManager.getActiveAccountManager();
+	private List<User> winner = AM.getUsers();
+//	private final int ONE_DAY_IN_MILLISEC = 86400000;
 
 	
-	public Contest(String title, String description, Boolean cStarted, Date cStartDate, Date cEndDate, Reward cPrize){
+	Contest(String title, String description, Boolean cStarted, Date cStartDate, Date cEndDate, Reward cPrize){
 		this.title = title;
 		this.description = description;
 		this.cStarted = cStarted;
@@ -21,12 +27,16 @@ public class Contest {
 		this.cPrize = cPrize;
 	}
 	
-	public void eventEnd() {
+	public void contestEnd() {
 		cStarted = false;
 	}
-	public void givePrize()	{
-		
+	public void givePrize(Reward reward)	{
+		for(User user : winner) {
+			user.earnReward(reward);
+		}
+		contestEnd();
 	}
+	
 	/*	
 	 *	getters & setters
 	 */
@@ -65,5 +75,8 @@ public class Contest {
 	}
 	public void setcPrize(Reward cPrize) {
 		this.cPrize = cPrize;
+	}
+	public void setWinner(User winner) {
+		this.winner.add(winner);
 	}
 }

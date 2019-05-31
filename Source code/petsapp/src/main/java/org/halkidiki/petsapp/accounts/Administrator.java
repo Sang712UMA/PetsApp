@@ -1,9 +1,8 @@
 package org.halkidiki.petsapp.accounts;
 
-import org.halkidiki.petsapp.App;
 import org.halkidiki.petsapp.Contest;
+import org.halkidiki.petsapp.Reward;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -11,7 +10,7 @@ import java.util.List;
  * by Sanggil
  */
 
-public class Administrator extends Account{
+public class Administrator extends Account {
 	
 	
 	Contest contest;
@@ -38,41 +37,49 @@ public class Administrator extends Account{
 		super();
 		this.user = user;
 	}
-//	AccountManager AM = AccountManager.getActiveAccountManager();
-//	public List<User> users = AM.getUsers();
-//	private void checkTotaltime() {
-//		String output = null;
-//		List<User> timeRanker = new ArrayList<User>();
-//		int[] rank = new int[users.size()] ;
-//		for(int i = 0; i<users.size(); i++) {
-//			rank[i] = users i.getTimeDevoted();
-//			
-//		}
-//	}
-		
 	
-	public void setEvent(Date startdate, Date enddate) {
-		 contest.setcStarted(true);
-		 contest.setcStartDate(startdate);
-		 contest.setcEndDate(enddate);
+	AccountManager AM = AccountManager.getActiveAccountManager();
+	public List<User> users = AM.getUsers();
+	public void checkTotaltime() {
+		String output = "";
+		
+		int[] timeRank = new int[users.size()];
+		int[] rank = new int[users.size()];
+		
+		for(int i = 0; i<users.size(); i++) {
+			timeRank[i] = users.get(i).getcTimeDevoted();
+			rank[i] = i;
+		}
+		heapSort(timeRank, rank);
+		
+		for(int i = 0; i < users.size(); i++)
+		output += "Num" + i + " is \""+ users.get(rank[i]).getNickName() + 
+					"\" who is devoted for " + users.get(rank[i]).getcTimeDevoted() + "hours.\n";
+		
+		System.out.println(output);
 	}
 	
-//	public String setWinner(String nickname) {
-//		String output = null;
-//		List<User> eligibleUser = Account.activeUsers;
-//		for(User user : eligibleUser) {
-//			if (user.getNickName()==nickname) output = nickname;
-//			else {
-//				System.out.println("There's no" + nickname + ".");
-//				output = null;
-//			}
-//		}
-//		return output;
-//		
-//	}
+	public void setContest(String title, String description, Boolean cStarted, Date cStartDate, Date cEndDate, Reward cPrize){
+		contest.setTitle(title);
+		contest.setDescription(description);
+		contest.setcStarted(cStarted);
+		contest.setcStartDate(cStartDate);
+		contest.setcEndDate(cEndDate);
+		contest.setcPrize(cPrize);
+	}
+	
+	public void setWinner(String nickname) {
+		for(User user : users) {
+			if (user.getNickName()==nickname) contest.setWinner(user);
+			else {
+				System.out.println("There's no" + nickname + ".");
+			}
+		}
+		
+	}
 	
 	
-	static void heapify(int[] array, int length, int i) {  
+	static void heapify(int[] array, int length, int i, int[] rank) {  
 	    int leftChild = 2*i+1;
 	    int rightChild = 2*i+2;
 	    int largest = i;
@@ -92,25 +99,33 @@ public class Administrator extends Account{
 	        int temp = array[i];
 	        array[i] = array[largest];
 	        array[largest] = temp;
-	        heapify(array, length, largest);
+	        
+	        int rankNum = rank[i];
+	        rank[i] = rank[largest];
+	        rank[largest] = rankNum;
+	        heapify(array, length, largest, rank);
 	    }
 	}
 
-	public static void heapSort(int[] array) {  
+	public static void heapSort(int[] array, int[] rank) {  
 	    if (array.length == 0) return;
 
 	    // Building the heap
 	    int length = array.length;
 	    // we're going from the first non-leaf to the root
 	    for (int i = length / 2-1; i >= 0; i--)
-	        heapify(array, length, i);
+	        heapify(array, length, i, rank);
 
 	    for (int i = length-1; i >= 0; i--) {
 	        int temp = array[0];
 	        array[0] = array[i];
 	        array[i] = temp;
+	        
+	        int rankNum = rank[0];
+	        rank[0] = rank[i];
+	        rank[i] = rankNum;
 
-	        heapify(array, i, 0);
+	        heapify(array, i, 0, rank);
 	    }
 	}
 }

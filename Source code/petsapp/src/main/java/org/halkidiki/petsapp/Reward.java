@@ -9,7 +9,6 @@ public class Reward {
 	private String title = "";
 	private String description = "";
 	private int requiredPP;
-	private final int ONE_DAY_IN_MILLISEC = 86400000;
 
 	
 	public Reward(String title, String description, int requiredPP){
