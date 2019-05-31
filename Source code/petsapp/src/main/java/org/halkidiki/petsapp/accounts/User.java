@@ -1,6 +1,8 @@
 package org.halkidiki.petsapp.accounts;
 import java.awt.Image;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import org.halkidiki.petsapp.Pet;
 import org.halkidiki.petsapp.Contest;
@@ -44,11 +46,12 @@ public class User extends Account{ //Konstantina
 		public int petPoint = 0;
 		public int totalTimeDevoted = 0;
 		public int cTimeDevoted = 0;
+		private List<Reward> earnedReward = new ArrayList<Reward>();
 
 		public void addTimeDevoted(int timeDevoted) {
 			totalTimeDevoted += timeDevoted;
 		}
-		public void addETimeDevoted(int timeDevoted, Contest contest) {
+		public void addcTimeDevoted(int timeDevoted, Contest contest) {
 			if(contest.getcStarted() == true) {
 				cTimeDevoted += timeDevoted;
 			}
@@ -64,10 +67,11 @@ public class User extends Account{ //Konstantina
 				this.petPoint=0;
 		}
 		public void buyReward(Reward reward) {
-			//reward must be exist.
+			if(reward != null)
 			if(petPoint>=reward.getRequiredPP()) {
 				petPoint -= reward.getRequiredPP();
-				//getReward(); making a list and store it
+				earnReward(reward);
+				System.out.println("You've bought \"" + reward.getTitle() + "\" successfully.");
 			}
 			else {
 				//this one would be better if it is a notification
@@ -86,6 +90,9 @@ public class User extends Account{ //Konstantina
 		}
 		public int getpetPoint() {
 			return petPoint;
+		}
+		public void earnReward(Reward reward) {
+			earnedReward.add(reward);
 		}
 		/*
 		 * to this line coded by Sanggil
