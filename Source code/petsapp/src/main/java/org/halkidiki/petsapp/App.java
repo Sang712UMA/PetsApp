@@ -33,11 +33,25 @@ public class App
     	adopter = getUser(userList, adopterID);
     	pet1.adopt(adopter);
     }
+  
+  /* public List<Pet> searchForAdoption(int petType) {
+    	List<Pet> Results = null;
+    	int i =0;
+    	for(Pet b : foundlist) {
+    		if(b.getPetType() == petType) {
+    			Results.add(b);    			
+    			i++;
+    		}
+    	}
+    	if(i==0) {
+    		e.expect(IndexOutOfBoundsException.class);
+    		e.expectMessage("Index: 0, Size: 0");
+    	}
+    	else throw 
+    } */
+
+   
     
-   /* public List<Pet> searchForAdoption(int petType) {
-    	
-    }*/
-        
     public void selectPet(int petID, List<Pet> l) { //Konstantina 
     	Pet current = null; 
     	for(Pet b : l) {

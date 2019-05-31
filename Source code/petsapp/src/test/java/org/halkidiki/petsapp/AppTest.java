@@ -14,6 +14,7 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
 public class AppTest {
+	App myApp; 
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -25,6 +26,9 @@ public class AppTest {
 
 	@Before
 	public void setUp() throws Exception {
+		myApp = new App(); 
+
+		
 	}
 
 	@After
@@ -42,23 +46,25 @@ public class AppTest {
 	}
 
 	
-	/*@Rule
-	public ExpectedException e = ExpectedException.none(); 
+	
 	@Test public void ifNoPetExistsWhenSearchingForAdoptionAnExceptionIsThrown() { //Konstantina
-		List<Pet> l = mock(App.foundlist); //den anagnorizi to mock
-		int i =0;
-		int petType = 2;
-    	for(Pet b : l) {
-    		if(b.getPetType() == petType) {
-    			i++;
-    		}
-    	}
-    	if(i==0) {
-    		e.expect(IndexOutOfBoundsException.class);
-    		e.expectMessage("Index: 0, Size: 0");
-    	}
+	// Setup this test
+	//	myApp.foundlist = mock(List.class); 
+		//Pet myPet = new Pet(1, )
+		//App.foundlist.add(myPet);
+		List<Pet> Results;
+		
+	// Stubbing some behavior
+		// Simular que cuando se pregunte por perro tipo 0 no hay ninguno que coincida
+		
+		
+		
+	// run the test	
+		
+		//Results = myApp.searchForAdoption(0);
     	
-	} */
+	} 
+	
 	@Test
 	public void ifPetsExistWhenSearchingForAdoptionTheyAreReturnedInTheList() {
 		fail("Not yet implemented");
