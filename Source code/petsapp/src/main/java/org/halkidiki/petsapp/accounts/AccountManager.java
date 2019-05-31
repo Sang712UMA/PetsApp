@@ -19,7 +19,10 @@ public class AccountManager {
 	}
 
 	public static AccountManager getActiveAccountManager(){
-		return null;
+		if(activeAccountManager == null) {
+			activeAccountManager = new AccountManager();
+		}
+		return activeAccountManager;
 	}
 	
 	public List<User> getUsers() {
