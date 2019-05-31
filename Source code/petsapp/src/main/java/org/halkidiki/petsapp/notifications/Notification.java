@@ -4,12 +4,14 @@ import org.halkidiki.petsapp.accounts.User;
 
 
 public abstract class Notification {
-	User userToBeNotified;
+	
+	private User userToBeNotified;
 
 	public Notification(User userToBeNotified){
+		this.userToBeNotified = userToBeNotified;
 	}
 
 	public User getUser(){
-		return null;
+		return userToBeNotified;
 	}
 }
