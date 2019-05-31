@@ -3,6 +3,7 @@ import java.awt.Image;
 import java.util.Date;
 
 import org.halkidiki.petsapp.Pet;
+import org.halkidiki.petsapp.Contest;
 import org.halkidiki.petsapp.Reward;
 public class User extends Account{ //Konstantina
 
@@ -42,14 +43,14 @@ public class User extends Account{ //Konstantina
 		public int expPoint = 0;
 		public int petPoint = 0;
 		public int totalTimeDevoted = 0;
-		public int eTimeDevoted = 0;
+		public int cTimeDevoted = 0;
 
 		public void addTimeDevoted(int timeDevoted) {
 			totalTimeDevoted += timeDevoted;
 		}
-		public void addETimeDevoted(int timeDevoted, Reward reward) {
-			if(reward.eStarted == true) {
-				eTimeDevoted += timeDevoted;
+		public void addETimeDevoted(int timeDevoted, Contest contest) {
+			if(contest.getcStarted() == true) {
+				cTimeDevoted += timeDevoted;
 			}
 		}
 		public void addExpPoint(int expPoint) {
@@ -62,8 +63,30 @@ public class User extends Account{ //Konstantina
 			if(this.petPoint<0)
 				this.petPoint=0;
 		}
+		public void buyReward(Reward reward) {
+			//reward must be exist.
+			if(petPoint>=reward.getRequiredPP()) {
+				petPoint -= reward.getRequiredPP();
+				//getReward(); making a list and store it
+			}
+			else {
+				//this one would be better if it is a notification
+				System.out.println("You don't have enough petpoint.");
+			}
+		}
 		
-		
+		public int getcTimeDevoted() {
+			return cTimeDevoted;
+		}
+		public int gettotalTimeDevoted() {
+			return totalTimeDevoted;
+		}
+		public int getexpPoint() {
+			return expPoint;
+		}
+		public int getpetPoint() {
+			return petPoint;
+		}
 		/*
 		 * to this line coded by Sanggil
 		 */
