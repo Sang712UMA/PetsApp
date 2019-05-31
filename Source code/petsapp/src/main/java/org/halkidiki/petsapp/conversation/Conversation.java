@@ -1,8 +1,10 @@
 package org.halkidiki.petsapp.conversation;
 
 import java.util.ArrayList;
+
+import org.halkidiki.petsapp.accounts.Account;
+
 import javafx.util.Pair;
-import org.halkidiki.petsapp.Account;
 
 /**
  *

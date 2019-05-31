@@ -2,11 +2,13 @@ package org.halkidiki.petsapp;
 
 import java.util.Date;
 
+import org.halkidiki.petsapp.accounts.Volunteer;
+
 /**
  *
  * @author antek
  */
-class Task {
+public class Task {
     private String description;
     private Date startHour;
     private Date endHour;

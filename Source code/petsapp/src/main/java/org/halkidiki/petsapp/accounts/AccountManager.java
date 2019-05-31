@@ -1,4 +1,4 @@
-package org.halkidiki.petsapp;
+package org.halkidiki.petsapp.accounts;
 
 /**
  * 

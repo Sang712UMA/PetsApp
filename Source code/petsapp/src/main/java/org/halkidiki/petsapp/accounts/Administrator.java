@@ -1,4 +1,4 @@
-package org.halkidiki.petsapp;
+package org.halkidiki.petsapp.accounts;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -38,15 +38,15 @@ public class Administrator extends User{
 	}
 	
 	public static List<User> timeRanker = new ArrayList<User>();
-	public void checkTotaltime() {
-		String output = null;
-		List<User> eligibleUser = Account.activeUsers;
-		for(User user : eligibleUser) {
-			
-			if (eligibleUser.)
-		}
-		
-	}
+//	public void checkTotaltime() {
+//		String output = null;
+//		List<User> eligibleUser = Account.activeUsers;
+//		for(User user : eligibleUser) {
+//			
+//			if (eligibleUser.)
+//		}
+//		
+//	}
 	
 	public void setEvent(Date startdate, Date enddate) {
 		 reward.seteStarted(true);
@@ -54,19 +54,19 @@ public class Administrator extends User{
 		 reward.seteEndDate(enddate);
 	}
 	
-	public String setWinner(String nickname) {
-		String output = null;
-		List<User> eligibleUser = Account.activeUsers;
-		for(User user : eligibleUser) {
-			if (user.getNickName()==nickname) output = nickname;
-			else {
-				System.out.println("There's no" + nickname + ".");
-				output = null;
-			}
-		}
-		return output;
-		
-	}
+//	public String setWinner(String nickname) {
+//		String output = null;
+//		List<User> eligibleUser = Account.activeUsers;
+//		for(User user : eligibleUser) {
+//			if (user.getNickName()==nickname) output = nickname;
+//			else {
+//				System.out.println("There's no" + nickname + ".");
+//				output = null;
+//			}
+//		}
+//		return output;
+//		
+//	}
 	
 	
 }

@@ -10,7 +10,7 @@ public class Reward {
 	String title = "";
 	String description = "";
 	int requiredPP;
-	Boolean	eStarted = false;
+	public Boolean	eStarted = false;
 	Date eStartDate;
 	Date eEndDate;
 	String ePrize;

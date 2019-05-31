@@ -1,7 +1,7 @@
 package org.halkidiki.petsapp.notifications;
 
 import org.halkidiki.petsapp.Pet;
-import org.halkidiki.petsapp.User;
+import org.halkidiki.petsapp.accounts.User;
 
 public class MessageNotification extends Notification {
 

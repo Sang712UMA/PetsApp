@@ -1,4 +1,4 @@
-package org.halkidiki.petsapp;
+package org.halkidiki.petsapp.accounts;
 
 import java.awt.Image;
 import java.util.Date;

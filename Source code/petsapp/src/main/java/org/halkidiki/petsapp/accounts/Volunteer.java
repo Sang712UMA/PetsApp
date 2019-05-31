@@ -1,6 +1,8 @@
-package org.halkidiki.petsapp;
+package org.halkidiki.petsapp.accounts;
 
 import java.util.ArrayList;
+
+import org.halkidiki.petsapp.FreeHours;
 
 /**
  *

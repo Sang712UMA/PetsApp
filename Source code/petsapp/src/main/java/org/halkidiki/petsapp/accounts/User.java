@@ -1,6 +1,9 @@
-package org.halkidiki.petsapp;
+package org.halkidiki.petsapp.accounts;
 import java.awt.Image;
 import java.util.Date;
+
+import org.halkidiki.petsapp.Pet;
+import org.halkidiki.petsapp.Reward;
 public class User extends Account{ //Konstantina
 
 

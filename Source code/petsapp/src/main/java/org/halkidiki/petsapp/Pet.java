@@ -2,6 +2,8 @@ package org.halkidiki.petsapp;
 
 import java.util.List;
 
+import org.halkidiki.petsapp.accounts.User;
+
 public class Pet{
 
 	private int petType, age, petID, size;

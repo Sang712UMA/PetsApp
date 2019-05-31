@@ -5,6 +5,8 @@ import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
+import org.halkidiki.petsapp.accounts.User;
+
 public class App 
 {
 	static List<Pet> foundlist = new LinkedList<Pet>();
