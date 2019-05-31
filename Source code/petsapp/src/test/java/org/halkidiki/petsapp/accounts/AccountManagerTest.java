@@ -39,7 +39,10 @@ public class AccountManagerTest {
 	@Test
 	public final void testGetActiveAccountManager() {
 		assertEquals(accountManagerToTest,AccountManager.getActiveAccountManager());
-
+		assertNotEquals(null,AccountManager.getActiveAccountManager().getShelters());
+		assertNotEquals(null,AccountManager.getActiveAccountManager().getUsers());
+		assertNotEquals(null,AccountManager.getActiveAccountManager().getAdministrators());
+		
 		accountManagerToTest = null;
 		assertNotEquals(accountManagerToTest,AccountManager.getActiveAccountManager());
 	}
@@ -66,28 +69,28 @@ public class AccountManagerTest {
 
 	}
 
-		@Test
-		public final void testDeleteAccount() {
-			accountManagerToTest.addAccount(shelterMocked);
-			accountManagerToTest.addAccount(administratorMocked);
-			accountManagerToTest.addAccount(userMocked);
-			User userMockedDoNotDelete = Mockito.mock(User.class);
-			accountManagerToTest.addAccount(userMockedDoNotDelete);
-			
+	@Test
+	public final void testDeleteAccount() {
+		accountManagerToTest.addAccount(shelterMocked);
+		accountManagerToTest.addAccount(administratorMocked);
+		accountManagerToTest.addAccount(userMocked);
+		User userMockedDoNotDelete = Mockito.mock(User.class);
+		accountManagerToTest.addAccount(userMockedDoNotDelete);
 
-			assertEquals(true,accountManagerToTest.getShelters().contains(shelterMocked));
-			assertEquals(true,accountManagerToTest.getUsers().contains(userMocked));
-			assertEquals(true,accountManagerToTest.getAdministrators().contains(administratorMocked));
-			
-			accountManagerToTest.deleteAccount(shelterMocked);
-			accountManagerToTest.deleteAccount(administratorMocked);
-			accountManagerToTest.deleteAccount(userMocked);
-			
 
-			assertEquals(false,accountManagerToTest.getShelters().contains(shelterMocked));
-			assertEquals(false,accountManagerToTest.getUsers().contains(userMocked));
-			assertEquals(true,accountManagerToTest.getUsers().contains(userMockedDoNotDelete));
-			assertEquals(false,accountManagerToTest.getAdministrators().contains(administratorMocked));
-		}
+		assertEquals(true,accountManagerToTest.getShelters().contains(shelterMocked));
+		assertEquals(true,accountManagerToTest.getUsers().contains(userMocked));
+		assertEquals(true,accountManagerToTest.getAdministrators().contains(administratorMocked));
+
+		accountManagerToTest.deleteAccount(shelterMocked);
+		accountManagerToTest.deleteAccount(administratorMocked);
+		accountManagerToTest.deleteAccount(userMocked);
+
+
+		assertEquals(false,accountManagerToTest.getShelters().contains(shelterMocked));
+		assertEquals(false,accountManagerToTest.getUsers().contains(userMocked));
+		assertEquals(true,accountManagerToTest.getUsers().contains(userMockedDoNotDelete));
+		assertEquals(false,accountManagerToTest.getAdministrators().contains(administratorMocked));
+	}
 
 }
