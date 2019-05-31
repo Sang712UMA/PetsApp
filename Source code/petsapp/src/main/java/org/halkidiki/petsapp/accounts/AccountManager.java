@@ -41,8 +41,16 @@ public class AccountManager {
 		activeShelters.add(shelter);
 	}
 
-	public void deleteAccount(Account account) {
+	public void deleteAccount(User user) {
+		activeUsers.remove(user);
+	}
 	
+	public void deleteAccount(Administrator administrator) {
+		activeAdministrators.remove(administrator);
+	}
+	
+	public void deleteAccount(Shelter shelter) {
+		activeShelters.remove(shelter);
 	}
 
 	/*GETTERS*/

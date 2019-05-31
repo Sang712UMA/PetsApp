@@ -11,6 +11,7 @@
   - Advertiser's requirement - smart advertisement system <---> **GEORGE**
   - Shelter's requirement - minimising effort and time to find and take volunteers equally <---> **ANTEK**
   - EXTRA: Products/Rewards <---> **SANGGIL**
+  - EXTRA: AppManagers (AccountManagger, NotificationManager, PostManager) <---> **ADRI**
 
 ```
 **IMPORTANT**: SANGGIL is responsible for the slide unfied document, NO ONE ELSE. 
