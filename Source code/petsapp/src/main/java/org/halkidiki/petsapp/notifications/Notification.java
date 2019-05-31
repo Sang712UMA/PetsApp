@@ -1,7 +1,12 @@
 package org.halkidiki.petsapp.notifications;
 
-import org.halkidiki.petsapp.accounts.User;
+/**
+ * 
+ * @Author: Adrian
+ * 
+ */
 
+import org.halkidiki.petsapp.accounts.User;
 
 public abstract class Notification {
 	
