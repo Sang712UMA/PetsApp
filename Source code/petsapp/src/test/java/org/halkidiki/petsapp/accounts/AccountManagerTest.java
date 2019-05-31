@@ -51,7 +51,7 @@ public class AccountManagerTest {
 		assertEquals(true,accountManagerToTest.getAdministrators().isEmpty());
 		assertEquals(false,accountManagerToTest.getShelters().isEmpty());
 		assertEquals(true,accountManagerToTest.getShelters().contains(shelterMocked));
-		assertNotEquals(true,accountManagerToTest.getShelters().contains(Mockito.mock(Shelter.class)));
+		assertEquals(false,accountManagerToTest.getShelters().contains(Mockito.mock(Shelter.class)));
 		assertEquals(shelterMocked,accountManagerToTest.getShelters().get(0));
 
 		accountManagerToTest.addAccount(administratorMocked);
@@ -59,12 +59,35 @@ public class AccountManagerTest {
 		assertEquals(false,accountManagerToTest.getUsers().isEmpty());
 		assertEquals(false,accountManagerToTest.getAdministrators().isEmpty());
 		assertEquals(false,accountManagerToTest.getShelters().isEmpty());
+		assertEquals(true,accountManagerToTest.getShelters().contains(shelterMocked));
+		assertEquals(true,accountManagerToTest.getUsers().contains(userMocked));
+		assertEquals(true,accountManagerToTest.getAdministrators().contains(administratorMocked));
+
 
 	}
 
-	//	@Test
-	//	public final void testDeleteAccount() {
-	//		fail("Not yet implemented"); // TODO
-	//	}
+		@Test
+		public final void testDeleteAccount() {
+			accountManagerToTest.addAccount(shelterMocked);
+			accountManagerToTest.addAccount(administratorMocked);
+			accountManagerToTest.addAccount(userMocked);
+			User userMockedDoNotDelete = Mockito.mock(User.class);
+			accountManagerToTest.addAccount(userMockedDoNotDelete);
+			
+
+			assertEquals(true,accountManagerToTest.getShelters().contains(shelterMocked));
+			assertEquals(true,accountManagerToTest.getUsers().contains(userMocked));
+			assertEquals(true,accountManagerToTest.getAdministrators().contains(administratorMocked));
+			
+			accountManagerToTest.deleteAccount(shelterMocked);
+			accountManagerToTest.deleteAccount(administratorMocked);
+			accountManagerToTest.deleteAccount(userMocked);
+			
+
+			assertEquals(false,accountManagerToTest.getShelters().contains(shelterMocked));
+			assertEquals(false,accountManagerToTest.getUsers().contains(userMocked));
+			assertEquals(true,accountManagerToTest.getUsers().contains(userMockedDoNotDelete));
+			assertEquals(false,accountManagerToTest.getAdministrators().contains(administratorMocked));
+		}
 
 }
