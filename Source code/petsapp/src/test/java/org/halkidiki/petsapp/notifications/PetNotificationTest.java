@@ -19,20 +19,20 @@ public class PetNotificationTest {
 
 	User userMocked;
 	Pet petMocked;
-	PetNotification notificationToBeTested;
+	PetNotification notificationToTest;
 	
 	@Before
 	public void setUp() throws Exception {
 		userMocked = Mockito.mock(User.class);
 		petMocked = Mockito.mock(Pet.class);
-		notificationToBeTested = new PetNotification(userMocked, 0, 1, 2, 6, 72);
+		notificationToTest = new PetNotification(userMocked, 0, 1, 2, 6, 72);
 	}
 	
 	@After
 	public void tearDown() throws Exception {
 		userMocked = null;
 		petMocked = null;
-		notificationToBeTested = null;
+		notificationToTest = null;
 	}
 
 	@Test
@@ -42,16 +42,16 @@ public class PetNotificationTest {
 		Mockito.when(petMocked.getAge()).thenReturn(10);
 		
 		Boolean expected = true;
-		Boolean actual = notificationToBeTested.doPostMustBeNotified(petMocked);
+		Boolean actual = notificationToTest.doPostMustBeNotified(petMocked);
 		assertEquals(expected,actual);
 		
 		Mockito.when(petMocked.getAge()).thenReturn(0);
 		expected = false;
-		actual = notificationToBeTested.doPostMustBeNotified(petMocked);
+		actual = notificationToTest.doPostMustBeNotified(petMocked);
 		
 		Mockito.when(petMocked.getSize()).thenReturn(0);
 		expected = false;
-		actual = notificationToBeTested.doPostMustBeNotified(petMocked);
+		actual = notificationToTest.doPostMustBeNotified(petMocked);
 		assertEquals(expected,actual);
 		
 		Mockito.when(petMocked.getPetType()).thenReturn(0);
@@ -59,7 +59,7 @@ public class PetNotificationTest {
 		Mockito.when(petMocked.getAge()).thenReturn(72);
 		
 		expected = true;
-		actual = notificationToBeTested.doPostMustBeNotified(petMocked);
+		actual = notificationToTest.doPostMustBeNotified(petMocked);
 		assertEquals(expected,actual);
 		
 	}

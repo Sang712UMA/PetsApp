@@ -1,5 +1,6 @@
 package org.halkidiki.petsapp.accounts;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -10,12 +11,15 @@ import java.util.List;
 
 public class AccountManager {
 	
-	List<User> activeUsers;
-	List<Administrator> activeAdministrators;
-	List<Shelter> activeShelters;
+	private List<User> activeUsers;
+	private List<Administrator> activeAdministrators;
+	private List<Shelter> activeShelters;
 	private static AccountManager activeAccountManager=null;
 	
 	private AccountManager() {
+		activeUsers = new ArrayList<User>();
+		activeAdministrators = new ArrayList<Administrator>();
+		activeShelters = new ArrayList<Shelter>();
 	}
 
 	public static AccountManager getActiveAccountManager(){
@@ -25,22 +29,32 @@ public class AccountManager {
 		return activeAccountManager;
 	}
 	
-	public List<User> getUsers() {
-		return null;
+	public void addAccount(User user) {
+		activeUsers.add(user);
 	}
 	
-	public List<Administrator> getAdministrator(){
-		return null;
+	public void addAccount(Administrator administrator) {
+		activeAdministrators.add(administrator);
 	}
 	
-	public List<Shelter> getShelters(){
-		return null;
-	}
-	
-	public void addAccount(Account account) {
+	public void addAccount(Shelter shelter) {
+		activeShelters.add(shelter);
 	}
 
 	public void deleteAccount(Account account) {
 	
+	}
+
+	/*GETTERS*/
+	public List<User> getUsers() {
+		return activeUsers;
+	}
+	
+	public List<Administrator> getAdministrators(){
+		return activeAdministrators;
+	}
+	
+	public List<Shelter> getShelters(){
+		return activeShelters;
 	}
 }
