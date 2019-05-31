@@ -17,38 +17,24 @@ public class PostManager {
 	private List<Post> inactivePosts;
 
 	private PostManager() {
-		activePostManager = this;
 	}
 
 	public static PostManager getActivePostManager(){
-		if(activePostManager==null){
-			activePostManager= new PostManager();
-		}
-		return activePostManager;
+		return null;
 	}
 	
 	public List<Post> getPosts() {
-		return activePosts;
+		return null;
 	}
 
 	public void addPost(Post post) {
-		activePosts.add(post);
-		
-		NotificationManager nm = NotificationManager.getActiveNotificationManager();
-		nm.checkIfPostMustAlertUser(post);
 	}
 
 	public void deletePost(Post post) {
-		if (activePosts.contains(post)) {
-			activePosts.remove(post);
-		} else if (inactivePosts.contains(post)){
-			inactivePosts.remove(post);
-		}
+	
 	}
 	
 	public void postNotLongerRequired(Post post) {
-		activePosts.remove(post);
-		inactivePosts.add(post);
 	}
 	
 	

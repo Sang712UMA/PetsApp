@@ -1,22 +1,21 @@
 package org.halkidiki.petsapp.notifications;
 
-import org.halkidiki.petsapp.Pet;
-import org.halkidiki.petsapp.User;
-
 /**
  * 
  * @Author: Adrian
  * 
  */
 
+import org.halkidiki.petsapp.User;
+
+
 public abstract class Notification {
 	User userToBeNotified;
-        
-        public Notification(User userToBeNotified){
-            this.userToBeNotified=userToBeNotified;
-        }
-        
-	User getUser(){
-            return userToBeNotified;
-        }
+
+	public Notification(User userToBeNotified){
+	}
+
+	public User getUser(){
+		return null;
+	}
 }
