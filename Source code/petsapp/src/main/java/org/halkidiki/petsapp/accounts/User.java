@@ -46,7 +46,7 @@ public class User extends Account{ //Konstantina
 		public int petPoint = 0;
 		public int totalTimeDevoted = 0;
 		public int cTimeDevoted = 0;
-		public List<Reward> earnedReward = new ArrayList<Reward>();
+		private List<Reward> earnedReward = new ArrayList<Reward>();
 
 		public void addTimeDevoted(int timeDevoted) {
 			totalTimeDevoted += timeDevoted;
