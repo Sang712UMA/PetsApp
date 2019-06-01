@@ -3,15 +3,13 @@ package org.halkidiki.petsapp.accounts;
 import java.awt.Image;
 import java.util.Date;
 
-public class Account {
-
-    //move this line to AccountManager:
-    //public static List<Account> activeAccounts = new ArrayList<Account>();
+public abstract class Account {
 
     Date creationDate;
     Image profilePicture;
     int id, phoneNumber;
-    String street, city, email,  password, nickName;
+    String street, city, email, nickName;
+    protected String password; // Adrian (Private brings a error on User class)
     
     public Date getCreationDate() { //Konstantina 
             return creationDate;
@@ -64,6 +62,10 @@ public class Account {
     @SuppressWarnings("unused")
     private String getPassword() { //Konstantina 
             return password;
+    }
+    
+    public boolean checkPassword(String password) { // Adrian
+    	return this.password == password;
     }
 
     @SuppressWarnings("unused")
