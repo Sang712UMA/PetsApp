@@ -34,12 +34,12 @@ public class App
         }
 	}
     
-    /*public void temporaryAdopt(int adopterID, Pet pet1) { //Konstantina 
+   public void temporaryAdopt(int adopterID, Pet pet1) { //Konstantina 
     	User adopter;
     	
-    	adopter = getUser(userList, adopterID);
+    	adopter = (User) getUser(adopterID);
     	pet1.adopt(adopter);
-    }*/
+    }
   
    public List<Pet> searchForAdoption(int petType) {
     	List<Pet> Results = null;
