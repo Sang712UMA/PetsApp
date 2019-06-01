@@ -1,5 +1,11 @@
 package org.halkidiki.petsapp.notifications;
 
+/**
+ * 
+ * @Author: Adrian
+ * 
+ */
+
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;
