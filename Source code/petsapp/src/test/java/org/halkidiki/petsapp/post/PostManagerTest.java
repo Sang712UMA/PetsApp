@@ -1,5 +1,11 @@
 package org.halkidiki.petsapp.post;
 
+/**
+ * 
+ * @Author: Adrian
+ * 
+ */
+
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;

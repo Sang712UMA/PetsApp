@@ -1,5 +1,10 @@
 package org.halkidiki.petsapp.post;
 
+/**
+ * 
+ * @Author: Adrian
+ * 
+ */
 import java.util.ArrayList;
 
 /**
@@ -10,7 +15,9 @@ import java.util.ArrayList;
 
 import java.util.List;
 
+import org.halkidiki.petsapp.notifications.Notification;
 import org.halkidiki.petsapp.notifications.NotificationManager;
+import org.halkidiki.petsapp.notifications.PetNotification;
 
 public class PostManager {
 
@@ -32,6 +39,12 @@ public class PostManager {
 
 	public void addPost(Post post) {
 		activePosts.add(post);
+		NotificationManager nm = NotificationManager.getActiveNotificationManager();
+		List<Notification> postsToNotify = nm.getNotificationsForAPost(post);
+		
+		for(Notification notification : postsToNotify) {
+			nm.sendNotification((PetNotification)notification, post);
+		}
 	}
 
 	public void deletePost(Post post) {
