@@ -19,64 +19,76 @@ public class App
        
     }
     
-    private User getUser(List<User> users, int userID) { //Konstantina 
-    	User current = null;
-    	for(User b : users) {
+    private List<User> getUser(int userID) { //Konstantina 
+    	List<User> Results = null;
+    	for(User b : userList) {
     		if(b.getId() == userID) {
-    			current = b;
+    			Results.add(b);  
     		}
     	}
-    	return current;
+    	if(!Results.isEmpty()) {
+    		return Results;
+    	}
+    	else {
+            throw new RuntimeException();
+        }
 	}
     
-    public void temporaryAdopt(int adopterID, Pet pet1) { //Konstantina 
+    /*public void temporaryAdopt(int adopterID, Pet pet1) { //Konstantina 
     	User adopter;
     	
     	adopter = getUser(userList, adopterID);
     	pet1.adopt(adopter);
-    }
+    }*/
   
-  /* public List<Pet> searchForAdoption(int petType) {
+   public List<Pet> searchForAdoption(int petType) {
     	List<Pet> Results = null;
-    	int i =0;
     	for(Pet b : foundlist) {
     		if(b.getPetType() == petType) {
     			Results.add(b);    			
-    			i++;
     		}
     	}
-    	if(i==0) {
-    		e.expect(IndexOutOfBoundsException.class);
-    		e.expectMessage("Index: 0, Size: 0");
+    	if(!Results.isEmpty()) {
+    		return Results;
     	}
-    	else throw 
-    } */
+    	else {
+            throw new RuntimeException();
+        }
+    } 
 
    
     
     public void selectPet(int petID, List<Pet> l) { //Konstantina 
-    	Pet current = null; 
+    	List<Pet> Results = null;
     	for(Pet b : l) {
     		if(b.getPetID() == petID) {
-    			current = b;
+    			Results.add(b); 
     		}
     	}
-    	System.out.println(current);
+    	if(!Results.isEmpty()) {
+    		System.out.println(Results);
+    	}
+    	else {
+            throw new RuntimeException();
+        }
+    	
     }
     
-    public Pet getFoundPetData(Pet Pet1, List<Pet> l) { //Konstantina 
-		Pet current = null;
+    public List<Pet> getFoundPetData(Pet Pet1, List<Pet> l) { //Konstantina 
+    	List<Pet> Results = null;
     	for(Pet b : l) {
     		if(b == Pet1) {
-    			current = Pet1;
+    			Results.add(b);
     		}
     	}
-    	return current;
-			
-		
+    	if(!Results.isEmpty()) {
+    		return Results;
+    	}
+    	else {
+            throw new RuntimeException();
+        }
 	};
     
-	@SuppressWarnings("unused")
 	private void showFoundPets(List<Pet> l) { //Konstantina 
 		for(Pet b : l)
 			System.out.printf("%s ", b);
