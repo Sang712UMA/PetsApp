@@ -7,12 +7,6 @@ package org.halkidiki.petsapp.post;
  */
 import java.util.ArrayList;
 
-/**
- * 
- * @Author: Adrian
- * 
- */
-
 import java.util.List;
 
 import org.halkidiki.petsapp.notifications.Notification;

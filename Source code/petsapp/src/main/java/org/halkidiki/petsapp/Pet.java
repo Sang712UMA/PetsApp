@@ -108,6 +108,8 @@ public class Pet{
 		return size;
 	}
 	
-	
+	public String toString() { //Adrian
+		return details;
+	}
 	
 }
