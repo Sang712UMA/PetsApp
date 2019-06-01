@@ -17,6 +17,10 @@ public class Post { //Konstantina
 		return pet;
 	}
 	
+	public void setPet(Pet pet) { // Adrian
+		this.pet = pet;
+	}
+	
 	public Image getPetPicture() { //Konstantina 
 		return petPicture;
 	}
