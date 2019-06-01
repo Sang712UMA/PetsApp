@@ -10,7 +10,9 @@ import static org.junit.Assert.*;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 import org.mockito.Mockito;
 
 public class AccountManagerTest {
@@ -42,7 +44,7 @@ public class AccountManagerTest {
 		assertNotEquals(null,AccountManager.getActiveAccountManager().getShelters());
 		assertNotEquals(null,AccountManager.getActiveAccountManager().getUsers());
 		assertNotEquals(null,AccountManager.getActiveAccountManager().getAdministrators());
-		
+
 		accountManagerToTest = null;
 		assertNotEquals(accountManagerToTest,AccountManager.getActiveAccountManager());
 	}
@@ -91,6 +93,49 @@ public class AccountManagerTest {
 		assertEquals(false,accountManagerToTest.getUsers().contains(userMocked));
 		assertEquals(true,accountManagerToTest.getUsers().contains(userMockedDoNotDelete));
 		assertEquals(false,accountManagerToTest.getAdministrators().contains(administratorMocked));
+	}
+	@Rule
+	public ExpectedException thrown = ExpectedException.none();
+	@Test
+	public final void testLogin() throws Exception {
+		accountManagerToTest.addAccount(userMocked);
+		String userNickname = "peter1990";
+		String password = "1234";
+		Mockito.when(userMocked.getNickName()).thenReturn(userNickname);
+		Mockito.when(userMocked.checkPassword(password)).thenReturn(true);
+
+		assertEquals(userMocked,accountManagerToTest.login(userNickname, password));
+		accountManagerToTest.deleteAccount(userMocked);
+		
+		if (true){
+			thrown.expect(Exception.class);
+			thrown.expectMessage("User not found!");
+			accountManagerToTest.login(userNickname, password);
+		}
+		
+		accountManagerToTest.addAccount(administratorMocked);
+		String adminNickname = "admin1990";
+		Mockito.when(administratorMocked.getNickName()).thenReturn(adminNickname);
+		Mockito.when(administratorMocked.checkPassword(password)).thenReturn(true);
+		assertEquals(administratorMocked,accountManagerToTest.login(adminNickname, password));
+		accountManagerToTest.deleteAccount(administratorMocked);
+
+		if (true){
+			thrown.expect(Exception.class);
+			thrown.expectMessage("User not found!");
+			accountManagerToTest.login(adminNickname, password);
+		}
+		
+		String shelterNickname = "shelter1990";
+		Mockito.when(shelterMocked.getNickName()).thenReturn(shelterNickname);
+		Mockito.when(shelterMocked.checkPassword(password)).thenReturn(false);
+		
+		if (true){
+			thrown.expect(Exception.class);
+			thrown.expectMessage("Incorrect Password");
+			accountManagerToTest.login(shelterNickname, password);
+		}
+		accountManagerToTest.deleteAccount(shelterMocked);
 	}
 
 }

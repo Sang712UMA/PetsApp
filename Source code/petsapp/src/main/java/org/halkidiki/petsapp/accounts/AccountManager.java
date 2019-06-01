@@ -53,6 +53,67 @@ public class AccountManager {
 		activeShelters.remove(shelter);
 	}
 
+	public Account login (String username, String password) throws Exception {
+		Account account = null;
+
+		if(account == null ){
+			account = loginOnShelter(username,password);
+		}
+		if(account == null){
+			account = loginOnAdministrator(username,password);
+		}
+		if(account == null){
+			account = loginOnUser(username,password);
+		}
+		if(account == null){
+			throw new Exception("User not found!");
+		}
+
+		return account;
+	}
+
+	private Account loginOnShelter(String username, String password) throws Exception {
+		Account account = null;
+		for (Shelter shelter : activeShelters) {
+			if(shelter.getNickName() == username) {
+				if (shelter.checkPassword(password)) {
+					account = shelter;
+				} else {
+					throw new Exception("Incorrect Password!");
+				}
+			}
+		}
+		return account;
+	}
+
+	private Account loginOnAdministrator(String username, String password) throws Exception {
+		Account account = null;
+		for (Administrator admin : activeAdministrators) {
+			if(admin.getNickName() == username) {
+				if (admin.checkPassword(password)) {
+					account = admin;
+				} else {
+					throw new Exception("Incorrect Password!");
+				}
+			}
+		}
+		return account;
+	}
+
+	private Account loginOnUser(String username, String password) throws Exception {
+		Account account = null;
+		for (User user : activeUsers) {
+			if(user.getNickName() == username) {
+				if (user.checkPassword(password)) {
+					account = user;
+				} else {
+					throw new Exception("Incorrect Password!");
+				}
+			}
+		}
+		return account;
+	}
+
 	/*GETTERS*/
 	public List<User> getUsers() {
 		return activeUsers;
