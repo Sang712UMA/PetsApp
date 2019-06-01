@@ -1,5 +1,5 @@
 package org.halkidiki.petsapp.post;
 
-public class Hospitality {
+public class Hospitality extends Post{
 
 }
