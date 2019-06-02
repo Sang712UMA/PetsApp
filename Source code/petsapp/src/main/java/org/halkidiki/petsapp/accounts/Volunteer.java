@@ -10,7 +10,8 @@ import org.halkidiki.petsapp.FreeHours;
  */
 public class Volunteer extends User{
     
-    private ArrayList<FreeHours> freeHoursList;
+    private ArrayList<FreeHours> freeHoursList = new ArrayList<>();
+    private int tasksCompleted=0;
     
     public ArrayList<FreeHours> getFreeHours(){
         return freeHoursList;
@@ -24,8 +25,11 @@ public class Volunteer extends User{
         return this.freeHoursList.remove(freeHours);
     }
     
-    public void sendMessage(String text){
-        
+    public void setTasksCompleted(int tasksCompleted){
+        this.tasksCompleted = tasksCompleted;
     }
     
+    public int getTasksCompleted(){
+        return this.tasksCompleted;
+    }
 }

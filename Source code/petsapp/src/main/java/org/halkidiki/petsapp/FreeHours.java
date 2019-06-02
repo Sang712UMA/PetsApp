@@ -21,4 +21,12 @@ public class FreeHours {
         this.endDateTime = endDateTime;
     }
     
+    public Date getStartDateTime(){
+        return startDateTime;
+    }
+    
+    public Date getEndDateTime(){
+        return endDateTime;
+    }
+    
 }
