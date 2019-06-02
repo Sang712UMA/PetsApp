@@ -7,6 +7,8 @@ import java.util.Comparator;
 import java.util.Date;
 
 import org.halkidiki.petsapp.*;
+import org.halkidiki.petsapp.conversation.ConversationManager;
+import org.halkidiki.petsapp.conversation.Message;
 
 /**
  *
@@ -96,6 +98,23 @@ public class Shelter extends Account{
             }
         }
         return success;
+    }
+    
+    public void askVolunteerForAvailability(Task task){
+        if(shelterVolunteers!=null && shelterVolunteers.isEmpty()==false){
+            Message message = new Message("Can you be available between "+task.getStartHour().toString()+" and "+task.getEndHour()+"?", this.id);
+            //To implement: check if volunteer has a task at this time already
+            ArrayList<Volunteer> potentialVolunteers = shelterVolunteers;
+            Collections.sort(potentialVolunteers, new Comparator<Volunteer>() {
+                @Override
+                public int compare(Volunteer v1, Volunteer v2) {
+                    return v1.getTasksCompleted() - v2.getTasksCompleted(); // Ascending
+                }
+            });
+
+            ConversationManager.getActiveConversationManager().sendMessage(message, potentialVolunteers.get(0).getId());
+        }
+        
     }
     
     public void sendTask(ArrayList<Task> taskList){
