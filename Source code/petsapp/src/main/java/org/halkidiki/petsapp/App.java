@@ -19,7 +19,7 @@ public class App
        
     }
     
-    private List<User> getUser(int userID) { //Konstantina 
+    public List<User> getUser(int userID) { //Konstantina 
     	List<User> Results = null;
     	for(User b : userList) {
     		if(b.getId() == userID) {

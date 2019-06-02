@@ -5,6 +5,7 @@ import static org.mockito.Mockito.*;
 
 import java.util.List;
 
+import org.halkidiki.petsapp.accounts.User;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -39,6 +40,23 @@ public class AppTest {
 	public void testMain() {
 		fail("Not yet implemented");
 	}
+	
+	@Test public void ifNoUserExistsWhenSearchingForUserAnExceptionIsThrown() { //Konstantina
+		User myUser = new User(null,null, 128965, 685496352, "calle Larios 2", "Malaga", "alice@gmail.com", "fre54", "Alice");
+		App.userList.add(myUser);
+		List<User> Results;
+		Results = myApp.getUser(123456);
+    	
+	} 
+	
+	@Test
+	public void ifUserExistWhenSearchingForUserTheyAreReturnedInTheList() {
+		User myUser = new User(null,null, 128965, 685496352, "calle Larios 2", "Malaga", "alice@gmail.com", "fre54", "Alice");
+		App.userList.add(myUser);
+		List<User> Results;
+		Results = myApp.getUser(128965);
+	}
+	
 
 	@Test
 	public void testTemporaryAdopt() {
@@ -48,26 +66,19 @@ public class AppTest {
 	
 	
 	@Test public void ifNoPetExistsWhenSearchingForAdoptionAnExceptionIsThrown() { //Konstantina
-	// Setup this test
-	//	myApp.foundlist = mock(List.class); 
-		//Pet myPet = new Pet(1, )
-		//App.foundlist.add(myPet);
+		Pet myPet = new Pet(1,"M", false, "DF485445", 5, "Bob", null);
+		App.foundlist.add(myPet);
 		List<Pet> Results;
-		
-	// Stubbing some behavior
-		// Simular que cuando se pregunte por perro tipo 0 no hay ninguno que coincida
-		
-		
-		
-	// run the test	
-		
-		//Results = myApp.searchForAdoption(0);
+		Results = myApp.searchForAdoption(0);
     	
 	} 
 	
 	@Test
 	public void ifPetsExistWhenSearchingForAdoptionTheyAreReturnedInTheList() {
-		fail("Not yet implemented");
+		Pet myPet = new Pet(1,"M", false, "DF485445", 5, "Bob", null);
+		App.foundlist.add(myPet);
+		List<Pet> Results;
+		Results = myApp.searchForAdoption(1);
 	}
 
 	@Test
