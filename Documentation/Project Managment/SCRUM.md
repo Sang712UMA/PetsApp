@@ -27,6 +27,7 @@
  * Konstantina:
    - added some things in her code and created the class UserInput to help her with the data that she wants to get from the user
    - added and changed some things in her code
+   - did her presentation slides
  * Michal: 
  * Sanggil:
    - Modify class diagram
