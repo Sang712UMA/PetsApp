@@ -11,7 +11,6 @@
 * Antek:
 * George:
 * Konstantina:
-   - IPostTest, IUserTest (testing on her classes)
 * Michal: 
 * Sanggil:
    - Implement method on Administrator, Account, Reward, and **User**
@@ -26,10 +25,8 @@
    - Implemented methods in Shelter, FreeHours, Task and Volunteer classes
  * George:
  * Konstantina:
-   - added some things in her code and created the class UserInput to help her with the data that she wants to get from the user (19/05)
-   - added and changed some things in her code (20/05)(26/05)
-   - Deleted the classes LostPets and FoundPets, cteated the classes IPost, 
-     IPostTest and IUserTest and did some changes on her code (21/05)
+   - added some things in her code and created the class UserInput to help her with the data that she wants to get from the user
+   - added and changed some things in her code
  * Michal: 
  * Sanggil:
    - Modify class diagram
