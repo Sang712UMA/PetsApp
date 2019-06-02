@@ -66,8 +66,9 @@ public class AppTest {
 	
 	
 	@Test public void ifNoPetExistsWhenSearchingForAdoptionAnExceptionIsThrown() { //Konstantina
-		Pet myPet = new Pet(1,"M", false, "DF485445", 5, "Bob", null);
+		Pet myPet = new Pet(1, 654986,"M", false, "DF485445", 5, "Bob", null);
 		App.foundlist.add(myPet);
+		@SuppressWarnings("unused")
 		List<Pet> Results;
 		Results = myApp.searchForAdoption(0);
     	
@@ -75,20 +76,47 @@ public class AppTest {
 	
 	@Test
 	public void ifPetsExistWhenSearchingForAdoptionTheyAreReturnedInTheList() {
-		Pet myPet = new Pet(1,"M", false, "DF485445", 5, "Bob", null);
+		Pet myPet = new Pet(1, 518951, "M", false, "DF485445", 5, "Bob", null);
 		App.foundlist.add(myPet);
 		List<Pet> Results;
 		Results = myApp.searchForAdoption(1);
 	}
 
+	@SuppressWarnings("null")
+	@Test public void ifNoPetExistsWhenSearchingForPetToSelect() { //Konstantina
+		Pet myPet = new Pet(1, 519695,"M", false, "DF485445", 5, "Bob", null);
+		List<Pet> Results = null;
+		Results.add(myPet);
+		myApp.selectPet(969956,Results);
+    	
+	} 
+	
+	@SuppressWarnings("null")
 	@Test
-	public void testSelectPet() {
-		fail("Not yet implemented");
+	public void ifPetsExistWhenSearchingForPetToSelect() {
+		Pet myPet = new Pet(1, 519695,"M", false, "DF485445", 5, "Bob", null);
+		List<Pet> Results = null;
+		Results.add(myPet);
+		myApp.selectPet(519695,Results);
 	}
 
+	@SuppressWarnings("null")
+	@Test public void ifNoPetExistsWhenSearchingForPetData() { //Konstantina
+		Pet myPet = new Pet(1, 519695,"M", false, "DF485445", 5, "Bob", null);
+		Pet myPet2 = new Pet(1, 519697,"F", false, "DF465445", 1, "Alice", null);
+		List<Pet> Results = null;
+		Results.add(myPet2);
+		myApp.getFoundPetData(myPet,Results);
+    	
+	} 
+	
+	@SuppressWarnings("null")
 	@Test
-	public void testGetFoundPetData() {
-		fail("Not yet implemented");
+	public void ifPetsExistWhenSearchingForPetData() {
+		Pet myPet = new Pet(1, 519695,"M", false, "DF485445", 5, "Bob", null);
+		List<Pet> Results = null;
+		Results.add(myPet);
+		myApp.getFoundPetData(myPet,Results);
 	}
 
 	@Test

@@ -15,8 +15,9 @@ public class Pet{
 
 	public Pet(){}
 
-	public Pet(int petType, String sex, boolean neutralization, String chip, int age, String name, String details){
+	public Pet(int petType, int petID, String sex, boolean neutralization, String chip, int age, String name, String details){
 		this.petType = petType;
+		this.petID = petID;
 		this.sex = sex;
 		this.neutralization = neutralization;
 		this.chip = chip;

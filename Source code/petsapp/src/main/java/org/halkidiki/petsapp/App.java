@@ -74,7 +74,8 @@ public class App
     	
     }
     
-    public List<Pet> getFoundPetData(Pet Pet1, List<Pet> l) { //Konstantina 
+    @SuppressWarnings("null")
+	public List<Pet> getFoundPetData(Pet Pet1, List<Pet> l) { //Konstantina 
     	List<Pet> Results = null;
     	for(Pet b : l) {
     		if(b == Pet1) {
@@ -89,6 +90,7 @@ public class App
         }
 	};
     
+	@SuppressWarnings("unused")
 	private void showFoundPets(List<Pet> l) { //Konstantina 
 		for(Pet b : l)
 			System.out.printf("%s ", b);
@@ -100,7 +102,10 @@ public class App
 		Pet FoundPet1;
 		System.out.println("PetType: ");
 		int petType = UserInput.getInteger();
-
+		
+		System.out.println("PetID: ");
+		int petID = UserInput.getInteger();
+		
 		System.out.println("Sex: ");
 		String sex = UserInput.getString();
 	
@@ -119,7 +124,7 @@ public class App
 		System.out.println("Details: ");
 		String details = UserInput.getString();
 		
-		FoundPet1 = new Pet(petType, sex, neutralization, chip, age, name, details);
+		FoundPet1 = new Pet(petType, petID, sex, neutralization, chip, age, name, details);
 
 		foundlist.add(FoundPet1);
 		
@@ -128,6 +133,9 @@ public class App
 		Pet LostPet1;
 		System.out.println("PetType: ");
 		int petType = UserInput.getInteger();
+		
+		System.out.println("PetID: ");
+		int petID = UserInput.getInteger();
 
 		System.out.println("Sex: ");
 		String sex = UserInput.getString();
@@ -147,7 +155,7 @@ public class App
 		System.out.println("Details: ");
 		String details = UserInput.getString();
 		
-		LostPet1 = new Pet(petType, sex, neutralization, chip, age, name, details);
+		LostPet1 = new Pet(petType, petID, sex, neutralization, chip, age, name, details);
 
 		lostlist.add(LostPet1);
 	}
