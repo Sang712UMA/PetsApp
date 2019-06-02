@@ -1,8 +1,8 @@
 package org.halkidiki.petsapp;
 
 
-/*
- * by Sanggil
+/**
+ * @author Sanggil Han
  */
 
 public class Reward {
