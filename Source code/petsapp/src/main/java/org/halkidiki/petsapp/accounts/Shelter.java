@@ -95,6 +95,9 @@ public class Shelter extends Account{
                 success = false;
             } else {
                 task.assignVolunteer(v);
+                Message message = new Message("You have new task assigned: "+task.getDescription()+" To be completed between "+task.getStartHour().toString()+" and "+task.getEndHour().toString(), this.id);
+                ConversationManager.getActiveConversationManager().sendMessage(message, v.getId());
+                //to implement: send taskNotification
             }
         }
         return success;
