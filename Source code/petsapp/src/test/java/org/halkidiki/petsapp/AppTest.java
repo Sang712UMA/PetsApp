@@ -44,11 +44,13 @@ public class AppTest {
 	@Test public void ifNoUserExistsWhenSearchingForUserAnExceptionIsThrown() { //Konstantina
 		User myUser = new User(null,null, 128965, 685496352, "calle Larios 2", "Malaga", "alice@gmail.com", "fre54", "Alice");
 		App.userList.add(myUser);
+		@SuppressWarnings("unused")
 		List<User> Results;
 		Results = myApp.getUser(123456);
     	
 	} 
 	
+	@SuppressWarnings("unused")
 	@Test
 	public void ifUserExistWhenSearchingForUserTheyAreReturnedInTheList() {
 		User myUser = new User(null,null, 128965, 685496352, "calle Larios 2", "Malaga", "alice@gmail.com", "fre54", "Alice");
@@ -119,19 +121,40 @@ public class AppTest {
 		myApp.getFoundPetData(myPet,Results);
 	}
 
+	@Rule
+	public ExpectedException e = ExpectedException.none(); 
+	@SuppressWarnings("static-access")
 	@Test
 	public void testReportFoundPet() {
-		fail("Not yet implemented");
+		myApp.reportFoundPet();
+		if(myApp.foundlist.isEmpty()) {
+			e.expect(IndexOutOfBoundsException.class);
+			e.expectMessage("Index: 0, Size: 0");
+			myApp.foundlist.get(0);
+		} 
 	}
 
+	@SuppressWarnings("static-access")
 	@Test
 	public void testReportLostPet() {
-		fail("Not yet implemented");
+		myApp.reportLostPet();
+		if(myApp.lostlist.isEmpty()) {
+			e.expect(IndexOutOfBoundsException.class);
+			e.expectMessage("Index: 0, Size: 0");
+			myApp.lostlist.get(0);
+		} 
 	}
 
+	@SuppressWarnings("static-access")
 	@Test
 	public void testRecordAdopter() {
-		fail("Not yet implemented");
+		myApp.recordAdopter(null, null, 896584);
+		if(myApp.adopterList.isEmpty()) {
+			e.expect(IndexOutOfBoundsException.class);
+			e.expectMessage("Index: 0, Size: 0");
+			myApp.adopterList.get(0);
+		} 
+	    
 	}
 
 }
