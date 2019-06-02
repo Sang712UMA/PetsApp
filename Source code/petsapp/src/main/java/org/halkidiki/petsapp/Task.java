@@ -1,5 +1,6 @@
 package org.halkidiki.petsapp;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 import org.halkidiki.petsapp.accounts.Volunteer;
@@ -61,5 +62,19 @@ public class Task {
     
     public void assignVolunteer(Volunteer assignedVolunteer){
         this.assignedVolunteer = assignedVolunteer;
+        ArrayList<FreeHours> fhs = assignedVolunteer.getFreeHours();
+        for(FreeHours fh : fhs){
+            if(!startHour.before(fh.getStartDateTime())
+                    && !endHour.after(fh.getStartDateTime())){
+                
+                assignedVolunteer.removeFreeHours(fh);
+                if(!fh.startDateTime.equals(startHour)){
+                    assignedVolunteer.addFreeHours(new FreeHours(fh.startDateTime, startHour));
+                }
+                if(!fh.endDateTime.equals(endHour)){
+                    assignedVolunteer.addFreeHours(new FreeHours(fh.endDateTime, endHour));
+                }
+            }
+        }
     }
 }
