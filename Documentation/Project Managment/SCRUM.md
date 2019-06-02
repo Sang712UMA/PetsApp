@@ -6,8 +6,6 @@
 #### WORK IN PROGRESS:
 
 * Adri:
-  - UI Design
-  - Create JUnit Tests
 * Antek:
 * George:
 * Konstantina:
@@ -19,7 +17,12 @@
 
  * Adri:
    - INotification, NotificationManager, PetNotification, PostManager code written
-   - Modify a bit class Diagram with the new methods (name of methods) used on the code
+   - Delete all his code (In order to follow TDD)
+   - PostManager, Notification, NotificationManager, AccountManager, PetNotification done with **TDD**
+   - Help Sanggil doing Pair Programming
+   - UI web design
+   - UI android design
+   - Did his slides (Architecture, Models, Implementation Models)
  * Antek:
    - Created Task and Volunteer classes
    - Implemented methods in Shelter, FreeHours, Task and Volunteer classes
