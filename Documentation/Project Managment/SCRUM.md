@@ -6,12 +6,9 @@
 #### WORK IN PROGRESS:
 
 * Adri:
-  - UI Design
-  - Create JUnit Tests
 * Antek:
 * George:
 * Konstantina:
-   - IPostTest, IUserTest (testing on her classes)
 * Michal: 
 * Sanggil:
    - Implement method on Administrator, Account, Reward, and **User**
@@ -20,16 +17,20 @@
 
  * Adri:
    - INotification, NotificationManager, PetNotification, PostManager code written
-   - Modify a bit class Diagram with the new methods (name of methods) used on the code
+   - Delete all his code (In order to follow TDD)
+   - PostManager, Notification, NotificationManager, AccountManager, PetNotification done with **TDD**
+   - Help Sanggil doing Pair Programming
+   - UI web design
+   - UI android design
+   - Did his slides (Architecture, Models, Implementation Models)
  * Antek:
    - Created Task and Volunteer classes
    - Implemented methods in Shelter, FreeHours, Task and Volunteer classes
  * George:
  * Konstantina:
-   - added some things in her code and created the class UserInput to help her with the data that she wants to get from the user (19/05)
-   - added and changed some things in her code (20/05)(26/05)
-   - Deleted the classes LostPets and FoundPets, cteated the classes IPost, 
-     IPostTest and IUserTest and did some changes on her code (21/05)
+   - added some things in her code and created the class UserInput to help her with the data that she wants to get from the user
+   - added and changed some things in her code
+   - did her presentation slides
  * Michal: 
  * Sanggil:
    - Modify class diagram
