@@ -19,6 +19,29 @@ public class Volunteer extends User{
     
     public void addFreeHours(FreeHours freeHours){
         this.freeHoursList.add(freeHours);
+        for(FreeHours fh : this.freeHoursList){
+            if(freeHours.getStartDateTime().after(fh.getStartDateTime())
+                    && freeHours.getStartDateTime().before(fh.getEndDateTime())){
+                if(freeHours.getEndDateTime().after(fh.getEndDateTime())){
+                    removeFreeHours(fh);
+                    removeFreeHours(freeHours);
+                    addFreeHours(new FreeHours(fh.getStartDateTime(), freeHours.getEndDateTime()));
+                } else {
+                    removeFreeHours(freeHours);
+                }
+            }
+            
+            if(freeHours.getEndDateTime().after(fh.getStartDateTime())
+                    && freeHours.getEndDateTime().before(fh.getEndDateTime())){
+                if(freeHours.getStartDateTime().before(fh.getStartDateTime())){
+                    removeFreeHours(fh);
+                    removeFreeHours(freeHours);
+                    addFreeHours(new FreeHours(fh.getStartDateTime(), freeHours.getEndDateTime()));
+                } else {
+                    removeFreeHours(freeHours);                    
+                }
+            }
+        }
     }
     
     public boolean removeFreeHours(FreeHours freeHours){
