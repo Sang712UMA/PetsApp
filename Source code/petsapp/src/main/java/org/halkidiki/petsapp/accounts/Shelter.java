@@ -66,7 +66,7 @@ public class Shelter extends Account{
         for(Volunteer v : potentialVolunteers){
             for(FreeHours fh : v.getFreeHours()){
                 if(!task.getStartHour().before(fh.getStartDateTime())
-                        && !task.getStartHour().after(fh.getStartDateTime())){
+                        && !task.getEndHour().after(fh.getEndDateTime())){
                     return v;
                 }
             }
