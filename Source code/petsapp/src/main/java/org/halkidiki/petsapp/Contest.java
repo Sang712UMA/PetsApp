@@ -1,42 +1,75 @@
 package org.halkidiki.petsapp;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 import org.halkidiki.petsapp.accounts.AccountManager;
 import org.halkidiki.petsapp.accounts.User;
 
-public class Contest {
-	private String title = "";
-	private String description = "";
-	private Boolean	cStarted = false;
-	private Date cStartDate;
-	private Date cEndDate;
-	private Reward cPrize;
-	private AccountManager AM = AccountManager.getActiveAccountManager();
-	private List<User> winner = AM.getUsers();
-//	private final int ONE_DAY_IN_MILLISEC = 86400000;
+import Algorithms.HeapsortUsersContest;
 
-	
-	Contest(String title, String description, Boolean cStarted, Date cStartDate, Date cEndDate, Reward cPrize){
+/**
+ * @author Sanggil Han
+ */
+
+public class Contest {
+	private String title;
+	private String description;
+	private Boolean	contestIsRunning;
+	private Date contestStartDate;
+	private Date contestEndDate;
+	private Reward contestReward;
+	private int numWinners;
+	private List<User> usersInTheContest;
+
+	//	private final int ONE_DAY_IN_MILLISEC = 86400000;
+
+
+	public Contest(String title, String description, Boolean contestIsRunning, Date contestStartDate, Date contestEndDate, 
+			Reward contestReward, int numWinners){
 		this.title = title;
 		this.description = description;
-		this.cStarted = cStarted;
-		this.cStartDate = cStartDate;
-		this.cEndDate = cEndDate;
-		this.cPrize = cPrize;
+		this.contestIsRunning = contestIsRunning;
+		this.contestStartDate = contestStartDate;
+		this.contestEndDate = contestEndDate;
+		this.contestReward = contestReward;
+		this.numWinners = numWinners;
 	}
-	
+
 	public void contestEnd() {
-		cStarted = false;
-	}
-	public void givePrize(Reward reward)	{
-		for(User user : winner) {
-			user.earnReward(reward);
-		}
-		contestEnd();
+		setWinners();
+		contestIsRunning = false;
 	}
 	
+	//This method return winners in the console.
+	private void setWinners() {
+		addAllUsers();
+		sortUsers();
+
+		for(int i=usersInTheContest.size() - 1; i> usersInTheContest.size() - 1 - numWinners; i--) {
+			System.out.println("The #" + (numWinners-i+1) + " is " 
+					+ usersInTheContest.get(i).toString() + " who devoted " 
+					+ usersInTheContest.get(i).getContestTimeDevoted() + "hours.");
+			giveReward(usersInTheContest.get(i));
+		}
+	}
+
+	private void addAllUsers() {
+		AccountManager AM = AccountManager.getActiveAccountManager();
+		usersInTheContest = new ArrayList<User>(AM.getUsers());
+	}
+
+	private void sortUsers() {
+		HeapsortUsersContest.heapSort(usersInTheContest);
+	}
+
+
+	private void giveReward(User user)	{
+		user.earnReward(contestReward);
+	}
+
+
 	/*	
 	 *	getters & setters
 	 */
@@ -52,31 +85,34 @@ public class Contest {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public Boolean getcStarted() {
-		return cStarted;
+	public Boolean getContestStarted() {
+		return contestIsRunning;
 	}
-	public void setcStarted(Boolean cStarted) {
-		this.cStarted = cStarted;
+	public void setContestStarted(Boolean contestStarted) {
+		this.contestIsRunning = contestStarted;
 	}
-	public Date getcStartDate() {
-		return cStartDate;
+	public Date getContestStartDate() {
+		return contestStartDate;
 	}
-	public void setcStartDate(Date cStartDate) {
-		this.cStartDate = cStartDate;
+	public void setContestStartDate(Date contestStartDate) {
+		this.contestStartDate = contestStartDate;
 	}
-	public Date getcEndDate() {
-		return cEndDate;
+	public Date getContestEndDate() {
+		return contestEndDate;
 	}
-	public void setcEndDate(Date cEndDate) {
-		this.cEndDate = cEndDate;
+	public void setContestEndDate(Date contestEndDate) {
+		this.contestEndDate = contestEndDate;
 	}
-	public Reward getcPrize() {
-		return cPrize;
+	public Reward getContestReward() {
+		return contestReward;
 	}
-	public void setcPrize(Reward cPrize) {
-		this.cPrize = cPrize;
+	public void setContestReward(Reward reward) {
+		this.contestReward = reward;
 	}
-	public void setWinner(User winner) {
-		this.winner.add(winner);
+	public int getNumWinners() {
+		return numWinners;
+	}
+	public void setNumWinners(int numWinners) {
+		this.numWinners = numWinners;
 	}
 }
