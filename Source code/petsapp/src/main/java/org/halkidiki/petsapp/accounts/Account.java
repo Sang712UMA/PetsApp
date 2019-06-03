@@ -66,7 +66,7 @@ public abstract class Account {
     }
     
     public boolean checkPassword(String password) { // Adrian
-    	return this.password == password;
+    	return this.password.equalsIgnoreCase(password);
     }
 
     @SuppressWarnings("unused")

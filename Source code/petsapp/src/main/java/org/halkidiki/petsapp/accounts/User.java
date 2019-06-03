@@ -101,6 +101,10 @@ public class User extends Account{ //Konstantina
 	public int getPetPoint() {
 		return petPoint;
 	}
+	
+	public void setPassword(String password) {
+		this.password = password;
+	}
 	/*
 	 * to this line coded by Sanggil
 	 */

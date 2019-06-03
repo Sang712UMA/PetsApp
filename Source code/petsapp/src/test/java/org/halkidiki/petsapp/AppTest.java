@@ -6,6 +6,7 @@ import static org.mockito.Mockito.*;
 import java.awt.Image;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.LinkedList;
 import java.util.List;
 
 import org.halkidiki.petsapp.accounts.User;
@@ -18,9 +19,8 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import org.mockito.Mockito;
 
-public class AppTest {
-	App myApp;
-	private List<Pet> results; 
+public class AppTest { 
+	App myApp; 
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -98,7 +98,7 @@ public class AppTest {
 
 	@Test public void ifNoPetExistsWhenSearchingForPetToSelect() { //Konstantina
 		Pet myPet = new Pet(1, 519695,"M", false, "DF485445", 5, "Bob", null);
-		List<Pet> Results = new ArrayList<Pet>(); // Error fixed Adri
+		List<Pet> Results = new LinkedList<Pet>();
 		Results.add(myPet);
 		myApp.selectPet(519695,Results);
     	
@@ -107,9 +107,9 @@ public class AppTest {
 	@Test
 	public void ifPetsExistWhenSearchingForPetToSelect() {  //Konstantina
 		Pet myPet = new Pet(1, 519695,"M", false, "DF485445", 5, "Bob", null);
-		List<Pet> Results = new ArrayList<Pet>(); // Error fixed Adri
+		List<Pet> Results = new LinkedList<Pet>(); 
 		Results.add(myPet);
-		myApp.selectPet(519695,Results); // Error fixed Adri
+		myApp.selectPet(519695,Results); 
 	}
 
 	@Test public void ifNoPetExistsWhenSearchingForPetData() { //Konstantina
@@ -124,7 +124,7 @@ public class AppTest {
 	@Test
 	public void ifPetsExistWhenSearchingForPetData() {
 		Pet myPet = new Pet(1, 519695,"M", false, "DF485445", 5, "Bob", null);
-		List<Pet> Results = new ArrayList<Pet>(); // Error fixed Adri
+		List<Pet> Results = new LinkedList<Pet>(); 
 		Results.add(myPet);
 		myApp.getFoundPetData(myPet,Results);
 	}

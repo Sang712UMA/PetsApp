@@ -3,7 +3,7 @@
 ### From Project Contract:
 - UI Design of web and android app <---> **ADRI**
 - Backend of the app (Server-side)
-  - Hospitality <---> **MICHAL**
+  - Hospitality <---> **___**
   - Lost & Found <---> **KONSTANTINA**
   - PetSitting <---> **MICHAL**
   - User Profiles <---> **KONSTANTINA / SANGGIL / ANTEK**
@@ -31,6 +31,6 @@ After you've done your slides YOU SHOULD SEND HIM yours.
 - Development / Deployment
   - Strategies & tools <---> **SANGGIL**
   - Implementation models (what is real and not real) <---> **ADRI**
-  - Deployment <---> **____**
-- Results <---> **____**
+  - Deployment <---> **MICHAL**
+- Results <---> **MICHAL**
 - Conclusions <---> **SANGGIL**
