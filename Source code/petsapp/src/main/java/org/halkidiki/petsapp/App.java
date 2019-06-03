@@ -7,6 +7,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 import org.halkidiki.petsapp.accounts.User;
+import org.halkidiki.petsapp.ads.Tag;
 
 public class App 
 {
@@ -22,7 +23,7 @@ public class App
     
     @SuppressWarnings("null")
 	public List<User> getUser(int userID) { //Konstantina 
-    	List<User> Results = new ArrayList<User>(); // Error fixed Adri
+    	List<User> Results = new LinkedList<User>(); 
     	for(User b : userList) {
     		if(b.getId() == userID) {
     			Results.add(b);  
@@ -44,7 +45,7 @@ public class App
     }
   
    public List<Pet> searchForAdoption(int petType) {
-    	List<Pet> Results = new ArrayList<Pet>(); // Error fixed Adri
+    	List<Pet> Results = new LinkedList<Pet>(); 
     	for(Pet b : foundlist) {
     		if(b.getPetType() == petType) {
     			Results.add(b);    			
@@ -62,7 +63,7 @@ public class App
     
     @SuppressWarnings("null")
 	public void selectPet(int petID, List<Pet> l) { //Konstantina 
-    	List<Pet> Results = new ArrayList<Pet>(); // Error fixed Adri
+    	List<Pet> Results = new LinkedList<Pet>(); 
     	for(Pet b : l) {
     		if(b.getPetID() == petID) {
     			Results.add(b); 
@@ -79,7 +80,7 @@ public class App
     
     @SuppressWarnings("null")
 	public List<Pet> getFoundPetData(Pet Pet1, List<Pet> l) { //Konstantina 
-    	List<Pet> Results = new ArrayList<Pet>(); // Error fixed Adri
+    	List<Pet> Results = new LinkedList<Pet>(); 
     	for(Pet b : l) {
     		if(b == Pet1) {
     			Results.add(b);
@@ -182,7 +183,7 @@ public class App
 		System.out.println("Nickname: ");
 		String nickname = UserInput.getString();
 		
-		Adopter = new User(); // ErrorFixed Adri
+		Adopter = new User(creationDate,profilePicture, adopterID, phone, street, city, email, password, nickname, null); 
 
 		adopterList.add(Adopter);
 	}
