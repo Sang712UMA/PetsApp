@@ -19,7 +19,8 @@ public class App
        
     }
     
-    public List<User> getUser(int userID) { //Konstantina 
+    @SuppressWarnings("null")
+	public List<User> getUser(int userID) { //Konstantina 
     	List<User> Results = null;
     	for(User b : userList) {
     		if(b.getId() == userID) {
@@ -58,7 +59,8 @@ public class App
 
    
     
-    public void selectPet(int petID, List<Pet> l) { //Konstantina 
+    @SuppressWarnings("null")
+	public void selectPet(int petID, List<Pet> l) { //Konstantina 
     	List<Pet> Results = null;
     	for(Pet b : l) {
     		if(b.getPetID() == petID) {
@@ -90,8 +92,7 @@ public class App
         }
 	};
     
-	@SuppressWarnings("unused")
-	private void showFoundPets(List<Pet> l) { //Konstantina 
+	public void showFoundPets(List<Pet> l) { //Konstantina 
 		for(Pet b : l)
 			System.out.printf("%s ", b);
 		System.out.println();

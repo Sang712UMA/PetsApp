@@ -31,6 +31,6 @@ After you've done your slides YOU SHOULD SEND HIM yours.
 - Development / Deployment
   - Strategies & tools <---> **SANGGIL**
   - Implementation models (what is real and not real) <---> **ADRI**
-  - Deployment <---> **____**
-- Results <---> **____**
+  - Deployment <---> **GEORGE**
+- Results <---> **GEORGE**
 - Conclusions <---> **SANGGIL**
