@@ -1,5 +1,7 @@
 package org.halkidiki.petsapp.accounts;
+
 import java.awt.Image;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -7,14 +9,19 @@ import java.util.List;
 import org.halkidiki.petsapp.Pet;
 import org.halkidiki.petsapp.Contest;
 import org.halkidiki.petsapp.Reward;
-public class User extends Account{ //Konstantina
+import org.halkidiki.petsapp.ads.Ad;
+import org.halkidiki.petsapp.ads.Tag;
 
+public class User extends Account{ //Konstantina
 
 	Pet pet1 = new Pet();
 	User theowner = null;
+	List<Tag> adTags; // George
+	List<Ad> ads; // George
+	
 	public User() {}
 
-	public User(Date creationDate,Image profilePicture, int id, int phoneNumber, String street, String city, String email, String  password,String nickName) { //Konstantina 
+	public User(Date creationDate,Image profilePicture, int id, int phoneNumber, String street, String city, String email, String  password, String nickName, List<Tag> adTags) { //Konstantina 
 		this.creationDate = creationDate;
 		this.profilePicture = profilePicture;
 		this.id = id;
@@ -24,6 +31,8 @@ public class User extends Account{ //Konstantina
 		this.email = email;
 		this.password = password;
 		this.nickName = nickName;
+		this.adTags = adTags; // George
+		this.ads = new ArrayList<Ad>(); // George
 		earnedReward = new ArrayList<Reward>(); // Sanggil
 	}
 
@@ -98,5 +107,30 @@ public class User extends Account{ //Konstantina
 
 	public String toString() { //Adrian
 		return nickName;
+	}
+
+
+	/*
+	 * from this line coded by George
+	 */
+	
+	public List<Tag> getAdTags() {
+		return adTags;
+	}
+
+	public void setAdTags(List<Tag> adTags) {
+		this.adTags = adTags;
+	}
+
+	public List<Ad> getAds() {
+		return ads;
+	}
+
+	public void setAds(List<Ad> ads) {
+		this.ads = ads;
+	}
+	
+	public void addAd(Ad ad) {
+		ads.add(ad);
 	}
 }
