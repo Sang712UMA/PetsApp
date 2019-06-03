@@ -1,8 +1,13 @@
 package org.halkidiki.petsapp.adriGUI;
 
+/**
+ * 
+ * @Author: Adrian
+ * 
+ */
+
 import java.awt.EventQueue;
 
-import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 import org.halkidiki.petsapp.accounts.Account;
@@ -17,8 +22,8 @@ public class mainWindow {
 	private AccountManager accountManager = AccountManager.getActiveAccountManager();
 	private LogIn logIn;
 	private SignUp signUp;
-	private JOptionPane popup;
 	private User user;
+	private SuccessLog succesLog;
 
 	/**
 	 * Launch the application.
@@ -48,6 +53,7 @@ public class mainWindow {
 	private void initialize() {
 		logIn = new LogIn();
 		signUp = new SignUp();
+		succesLog = new SuccessLog();
 		logIn.setVisible(true);
 
 		logIn.btnLogIn.addActionListener(new ActionListener() {
@@ -56,7 +62,7 @@ public class mainWindow {
 					Account account = accountManager.login(logIn.textUser.getText(), logIn.textPassword.getText());
 					user = (User) account;
 					logIn.setVisible(false);
-					signUp.setVisible(true);
+					succesLog.setVisible(true);
 				} catch (Exception e1) {
 					JOptionPane.showMessageDialog(logIn, "User not valid");
 				}

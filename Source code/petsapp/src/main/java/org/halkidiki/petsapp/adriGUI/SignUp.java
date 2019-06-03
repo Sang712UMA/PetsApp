@@ -1,6 +1,11 @@
 package org.halkidiki.petsapp.adriGUI;
 
-import java.awt.BorderLayout;
+/**
+ * 
+ * @Author: Adrian
+ * 
+ */
+
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
