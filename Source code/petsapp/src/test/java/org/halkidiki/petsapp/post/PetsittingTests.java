@@ -14,6 +14,7 @@ public class PetsittingTests {
 	PostManager postManagerToTest;
 	Petsitting petsittingMocked;
 	Hospitality hospitalityMocked;
+	Petsitting petsitting = new Petsitting();
 
 	@Before
 	public void setUp() throws Exception {
@@ -72,9 +73,17 @@ public class PetsittingTests {
 		assertEquals(true, postManagerToTest.getInactivePosts().contains(petsittingMocked));
 
 	}
+	
+	@Test
+	public void rewardPointsTest() {
+		petsitting.setRewardPoints(100);
+		assertEquals(100, petsitting.getRewardPoints());
+	}
 
 	@Test
 	public void giveRewardTest() {
+		postManagerToTest.addPost(petsittingMocked);
+		
 
 	}
 

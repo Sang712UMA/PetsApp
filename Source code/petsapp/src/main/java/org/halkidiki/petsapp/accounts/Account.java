@@ -7,8 +7,9 @@ public abstract class Account {
 
     Date creationDate;
     Image profilePicture;
-    int id, phoneNumber;
+    int id, phoneNumber, rewardPoints;
     String street, city, email, nickName;
+    
     protected String password; // Adrian (Private brings a error on User class)
     
     public Date getCreationDate() { //Konstantina 
@@ -87,5 +88,11 @@ public abstract class Account {
 
     public void setId(int id) { //Konstantina 
             this.id = id;
+    }
+    public void setRewardPoints(int rewardPoints) {
+    	this.rewardPoints = rewardPoints;
+    }
+    public int getRewardPoints() {
+    	return rewardPoints;
     }
 }
