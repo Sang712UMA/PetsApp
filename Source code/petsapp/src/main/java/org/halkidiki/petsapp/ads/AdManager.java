@@ -29,12 +29,12 @@ public class AdManager {
 		return activeAds;
 	}
 	
-	public void addAd(Ad Ad) {
-		activeAds.add(Ad);
+	public void addAd(Ad ad) {
+		activeAds.add(ad);
 	}
 	
-	public void deleteAd(Ad Ad) {
-		activeAds.remove(Ad);
+	public void deleteAd(Ad ad) {
+		activeAds.remove(ad);
 	}
 	
 	public List<Ad> getAdsForAUser(User user) {
