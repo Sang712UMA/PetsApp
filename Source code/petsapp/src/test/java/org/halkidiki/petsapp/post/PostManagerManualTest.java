@@ -35,7 +35,7 @@ public class PostManagerManualTest {
 		NotificationManager notiManager = NotificationManager.getActiveNotificationManager();
 		
 		FoundPets foundPet = new FoundPets(new Date(),"Malaga, Plaza Mayor");
-		foundPet.setPet(new Pet(petType,sex,neutralization,chip,age,name,details));
+		foundPet.setPet(new Pet(petType,0, sex,neutralization,chip,age,name,details));
 
 		User hachikoOwner = new User();
 		hachikoOwner.setNickName("hachikoOwner");
