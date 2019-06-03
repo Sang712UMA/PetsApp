@@ -79,6 +79,11 @@ public class PostManager {
 	private boolean isAPetsittingtPost(Post post) {
 		return post instanceof Petsitting;
 	}
+	
+	public void AcceptPetsitting(Petsitting post) {
+		
+		postNotLongerRequired(post);
+	}
 
 	/*GETTERS*/
 	public List<Post> getPosts() {
@@ -88,6 +93,8 @@ public class PostManager {
 	public List<Post> getInactivePosts(){
 		return inactivePosts;
 	}
+	
+	
 
 
 }

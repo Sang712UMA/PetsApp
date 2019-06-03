@@ -12,10 +12,6 @@ public class PetsittingManager {
 	private List<Post> inactivePosts;
 	Petsitting petsittingpost = new Petsitting();
 
-	public void deletePost(Post post) {
-		activePosts.remove(post);
-		inactivePosts.remove(post);
-	}
 
 	public void AcceptPetsittingReques(Petsitting post) {
 
