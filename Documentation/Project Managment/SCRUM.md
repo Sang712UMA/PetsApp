@@ -11,7 +11,7 @@
 * Konstantina:
 * Michal: 
 * Sanggil:
-   - Implement method on Administrator, Account, Reward, and **User**
+   
 
 #### WORK DONE: *(Describe what was done)*
 
@@ -22,16 +22,25 @@
    - Help Sanggil doing Pair Programming
    - UI web design
    - UI android design
-   - Did his slides (Architecture, Models, Implementation Models)
+   - Made his presentation slides (Architecture, Models, Implementation Models)
  * Antek:
    - Created Task and Volunteer classes
    - Implemented methods in Shelter, FreeHours, Task and Volunteer classes
+   - Made his presentaion slides (Introduction, requirements)
  * George:
+   - Made his presentation slides (principle, patterns, testing)
  * Konstantina:
-   - added some things in her code and created the class UserInput to help her with the data that she wants to get from the user
-   - added and changed some things in her code
-   - did her presentation slides
+   - Added some things in her code and created the class UserInput to help her with the data that she wants to get from the user
+   - Added and changed some things in her code
+   - Made her presentation slides (team & teamwork, solution)
  * Michal: 
+   - Made his presentation slides (results)
  * Sanggil:
    - Modify class diagram
    - Make Administrator, Account, Reward
+   - Create Contest, ContestManager, Store,
+   - Implement Heapsort algorithm
+   - Test Heapsort, AccountManager
+   - Implement method on Administrator, Account, Reward, and **User**
+   - Made his presentation slides (strateges & tools, conclusion)
+   - Combine slides to a one piece
