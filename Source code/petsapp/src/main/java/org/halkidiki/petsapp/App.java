@@ -1,6 +1,7 @@
 package org.halkidiki.petsapp;
 
 import java.awt.Image;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
@@ -21,7 +22,7 @@ public class App
     
     @SuppressWarnings("null")
 	public List<User> getUser(int userID) { //Konstantina 
-    	List<User> Results = null;
+    	List<User> Results = new ArrayList<User>(); // Error fixed Adri
     	for(User b : userList) {
     		if(b.getId() == userID) {
     			Results.add(b);  
@@ -43,7 +44,7 @@ public class App
     }
   
    public List<Pet> searchForAdoption(int petType) {
-    	List<Pet> Results = null;
+    	List<Pet> Results = new ArrayList<Pet>(); // Error fixed Adri
     	for(Pet b : foundlist) {
     		if(b.getPetType() == petType) {
     			Results.add(b);    			
@@ -61,7 +62,7 @@ public class App
     
     @SuppressWarnings("null")
 	public void selectPet(int petID, List<Pet> l) { //Konstantina 
-    	List<Pet> Results = null;
+    	List<Pet> Results = new ArrayList<Pet>(); // Error fixed Adri
     	for(Pet b : l) {
     		if(b.getPetID() == petID) {
     			Results.add(b); 
@@ -78,7 +79,7 @@ public class App
     
     @SuppressWarnings("null")
 	public List<Pet> getFoundPetData(Pet Pet1, List<Pet> l) { //Konstantina 
-    	List<Pet> Results = null;
+    	List<Pet> Results = new ArrayList<Pet>(); // Error fixed Adri
     	for(Pet b : l) {
     		if(b == Pet1) {
     			Results.add(b);
@@ -181,7 +182,7 @@ public class App
 		System.out.println("Nickname: ");
 		String nickname = UserInput.getString();
 		
-		Adopter = new User(creationDate,profilePicture, adopterID, phone, street, city, email, password, nickname);
+		Adopter = new User(); // ErrorFixed Adri
 
 		adopterList.add(Adopter);
 	}
