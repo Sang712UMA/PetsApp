@@ -1,10 +1,7 @@
 package org.halkidiki.petsapp.post;
 
-/**
- * 
- * @Author: Adrian
- * 
- */
+
+
 import java.util.ArrayList;
 
 import java.util.List;
@@ -62,9 +59,25 @@ public class PostManager {
 
 		return lostPetsList;
 	}
+	
+	public List<Petsitting> getPostsOfPetsittingPets() {
+		List<Petsitting> petsittingPostList = new ArrayList<Petsitting>();
+
+		for(Post post : activePosts) {
+			if(isAPetsittingtPost(post)) {
+				petsittingPostList.add((Petsitting)post);
+			}
+		}
+
+		return petsittingPostList;
+	}
 
 	private boolean isALostPetPost(Post post) {
 		return post instanceof LostPets;
+	}
+	
+	private boolean isAPetsittingtPost(Post post) {
+		return post instanceof Petsitting;
 	}
 
 	/*GETTERS*/

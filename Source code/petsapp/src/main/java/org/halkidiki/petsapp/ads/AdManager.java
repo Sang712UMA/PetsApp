@@ -14,7 +14,7 @@ public class AdManager {
 	private static AdManager activeAdManager = null;
 	private List<Ad> activeAds;
 	
-	public AdManager() {
+	private AdManager() {
 		activeAds = new ArrayList<Ad>();
 	}
 

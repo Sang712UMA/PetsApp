@@ -4,10 +4,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import org.halkidiki.petsapp.Algorithms.HeapsortUsersContest;
 import org.halkidiki.petsapp.accounts.AccountManager;
 import org.halkidiki.petsapp.accounts.User;
-
-import Algorithms.HeapsortUsersContest;
 
 /**
  * @author Sanggil Han
