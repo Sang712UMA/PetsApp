@@ -14,19 +14,17 @@ public class PetsittingManager {
 	Petsitting ps = new Petsitting();
 	ConversationManager cm = ConversationManager.getActiveConversationManager();
 
-	public void addPetsittingRequest() {
+	public void addPetsittingRequest(Petsitting ps) {
 
 		pm.addPost(ps);
 	}
 
-	public void acceptPetsittingHelp(Message message) {
+	public void acceptPetsittingRequest(Message message) {
 
 		cm.sendMessage(message, ps.getPet().getUserId());
-	}
-
-	public void confirmPetsittingHelFounded() {
 		pm.postNotLongerRequired(ps);
 	}
+
 
 	private void sendReward(Account petsitter) {
 		petsitter.updateRewardPoints(ps.getRewardPoints());
