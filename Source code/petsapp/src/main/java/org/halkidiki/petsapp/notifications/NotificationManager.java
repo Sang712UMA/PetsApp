@@ -61,9 +61,14 @@ public class NotificationManager {
 		System.out.println("Maybe this is the pet you are looking for: " + post.getPet());
 	}
 	
-	public void sendNotification(MessageNotification message) {
+	public void sendMessageNotification(MessageNotification message) {
 		sendNotification(message);
 		System.out.println(message.message);
+	}
+        
+        public void sendTaskNotification(TaskNotification taskNotification) {
+		sendNotification(taskNotification);
+		System.out.println(taskNotification.task.getDescription());
 	}
 	
 	private void sendNotification(Notification notification) {

@@ -9,6 +9,8 @@ import java.util.Date;
 import org.halkidiki.petsapp.*;
 import org.halkidiki.petsapp.conversation.ConversationManager;
 import org.halkidiki.petsapp.conversation.Message;
+import org.halkidiki.petsapp.notifications.NotificationManager;
+import org.halkidiki.petsapp.notifications.TaskNotification;
 
 /**
  *
@@ -95,9 +97,7 @@ public class Shelter extends Account{
                 success = false;
             } else {
                 task.assignVolunteer(v);
-                Message message = new Message("You have new task assigned: "+task.getDescription()+" To be completed between "+task.getStartHour().toString()+" and "+task.getEndHour().toString(), this.id);
-                ConversationManager.getActiveConversationManager().sendMessage(message, v.getId());
-                //to implement: send taskNotification
+                sendTask(task, v);
             }
         }
         return success;
@@ -105,8 +105,7 @@ public class Shelter extends Account{
     
     public void askVolunteerForAvailability(Task task){
         if(shelterVolunteers!=null && shelterVolunteers.isEmpty()==false){
-            Message message = new Message("Can you be available between "+task.getStartHour().toString()+" and "+task.getEndHour()+"?", this.id);
-            //To implement: check if volunteer has a task at this time already
+            //Sort volunteers by their engagement:
             ArrayList<Volunteer> potentialVolunteers = shelterVolunteers;
             Collections.sort(potentialVolunteers, new Comparator<Volunteer>() {
                 @Override
@@ -114,14 +113,37 @@ public class Shelter extends Account{
                     return v1.getTasksCompleted() - v2.getTasksCompleted(); // Ascending
                 }
             });
-
-            ConversationManager.getActiveConversationManager().sendMessage(message, potentialVolunteers.get(0).getId());
+            
+            //Check if potential volunteers have other tasks assigned at this time, starting with the least engaged:
+            boolean foundPotential = false;
+            int iterator = -1;
+            while(!foundPotential){
+                iterator++;
+                if(iterator<potentialVolunteers.size()){
+                    potentialVolunteers.get(iterator);
+                    foundPotential=true;
+                    for(Task t : this.shelterTasks){
+                        if(t.getAssignedVolunteer()==potentialVolunteers.get(iterator)
+                                && t.getStartHour().before(task.getEndHour())
+                                && t.getEndHour().after(task.getStartHour()))
+                            foundPotential=false;
+                    }
+                } else {
+                    return;
+                }
+            }
+            
+            Message message = new Message("Can you be available between "+task.getStartHour().toString()+" and "+task.getEndHour()+"?", this.id);
+            ConversationManager.getActiveConversationManager().sendMessage(message, potentialVolunteers.get(iterator).getId());
         }
         
     }
     
-    public void sendTask(ArrayList<Task> taskList){
-        
+    public void sendTask(Task task, Volunteer v){
+        Message message = new Message("You have new task assigned: "+task.getDescription()+" To be completed between "+task.getStartHour().toString()+" and "+task.getEndHour().toString(), this.id);
+        ConversationManager.getActiveConversationManager().sendMessage(message, v.getId());
+        TaskNotification taskNotification = new TaskNotification(v, task);
+        NotificationManager.getActiveNotificationManager().sendTaskNotification(taskNotification);
     }
     
 }
