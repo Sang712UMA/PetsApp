@@ -88,7 +88,7 @@ public class AppTest {
 	} 
 
 	@Test
-	public void ifPetsExistWhenSearchingForAdoptionTheyAreReturnedInTheList() {
+	public void ifPetsExistWhenSearchingForAdoptionTheyAreReturnedInTheList() { //Konstantina
 		Pet myPet = new Pet(1, 518951, "M", false, "DF485445", 5, "Bob", null);
 		App.foundlist.add(myPet);
 		List<Pet> Results;
@@ -131,13 +131,13 @@ public class AppTest {
 
 	
 	@Test
-	public void testReportFoundPet() {
+	public void testReportFoundPet() { //Konstantina
 		myApp.reportFoundPet();
 	    myApp.showFoundPets(App.foundlist);
 	}
 
 	@Test
-	public void testReportLostPet() {
+	public void testReportLostPet() { //Konstantina
 		myApp.reportLostPet();
 		 myApp.showFoundPets(App.lostlist);
 	}
