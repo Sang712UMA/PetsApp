@@ -21,9 +21,6 @@ public class AdManagerTest {
 	User userMocked;
 	Ad adMocked1;
 	Ad adMocked2;
-	Tag tagMocked1;
-	Tag tagMocked2;
-	Tag tagMocked3;
 	
 	@Before
 	public void setUp() throws Exception {
@@ -32,15 +29,15 @@ public class AdManagerTest {
 		userMocked = Mockito.mock(User.class);
 		adMocked1 = Mockito.mock(Ad.class);
 		adMocked2 = Mockito.mock(Ad.class);
-		tagMocked1 = Mockito.mock(Tag.class);
-		tagMocked2 = Mockito.mock(Tag.class);
-		tagMocked3 = Mockito.mock(Tag.class);
 	}
 
 	@After
 	public void tearDown() throws Exception {
 
 		adManagerToTest = null;
+		userMocked = null;
+		adMocked1 = null;
+		adMocked2 = null;
 	}
 
 	@Test
@@ -71,10 +68,21 @@ public class AdManagerTest {
 	@Test
 	public final void testGetAdsForAUser() {
 		
+		List<Tag> adTags1 = new ArrayList<Tag>();
+		adTags1.add(Tag.Cats);
+		adTags1.add(Tag.Dogs);
+
+		List<Tag> adTags2 = new ArrayList<Tag>();
+		adTags1.add(Tag.Cats);
+		adTags1.add(Tag.Hospitality);
+		
+		adMocked1.setTags(adTags1);
+		adMocked2.setTags(adTags2);
+		
 		List<Ad> expectedAdList = new ArrayList<Ad>();
 		expectedAdList.add(adMocked1);
 		expectedAdList.add(adMocked2);
-
+		
 		adManagerToTest.addAd(adMocked1);
 		adManagerToTest.addAd(adMocked2);
 		List<Ad> actualAdList = adManagerToTest.getAdsForAUser(userMocked);
