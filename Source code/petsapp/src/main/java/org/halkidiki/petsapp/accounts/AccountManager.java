@@ -75,7 +75,7 @@ public class AccountManager {
 	private Account loginOnShelter(String username, String password) throws Exception {
 		Account account = null;
 		for (Shelter shelter : activeShelters) {
-			if(shelter.getNickName() == username) {
+			if(shelter.getNickName().equalsIgnoreCase(username)) {
 				if (shelter.checkPassword(password)) {
 					account = shelter;
 				} else {
@@ -89,7 +89,7 @@ public class AccountManager {
 	private Account loginOnAdministrator(String username, String password) throws Exception {
 		Account account = null;
 		for (Administrator admin : activeAdministrators) {
-			if(admin.getNickName() == username) {
+			if(admin.getNickName().equalsIgnoreCase(username)) {
 				if (admin.checkPassword(password)) {
 					account = admin;
 				} else {
@@ -102,8 +102,9 @@ public class AccountManager {
 
 	private Account loginOnUser(String username, String password) throws Exception {
 		Account account = null;
+		
 		for (User user : activeUsers) {
-			if(user.getNickName() == username) {
+			if(user.getNickName().equalsIgnoreCase(username)) {
 				if (user.checkPassword(password)) {
 					account = user;
 				} else {
