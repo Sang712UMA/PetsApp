@@ -1,10 +1,7 @@
 package org.halkidiki.petsapp.post;
 
-/**
- * 
- * @Author: Adrian
- * 
- */
+
+
 import java.util.ArrayList;
 
 import java.util.List;
