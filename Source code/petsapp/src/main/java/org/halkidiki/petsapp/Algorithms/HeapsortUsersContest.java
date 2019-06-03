@@ -1,4 +1,4 @@
-package Algorithms;
+package org.halkidiki.petsapp.Algorithms;
 
 import java.util.List;
 

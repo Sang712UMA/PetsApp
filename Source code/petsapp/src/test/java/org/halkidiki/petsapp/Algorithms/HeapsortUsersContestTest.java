@@ -1,8 +1,9 @@
-package Algorithms;
+package org.halkidiki.petsapp.Algorithms;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import org.halkidiki.petsapp.Algorithms.HeapsortUsersContest;
 import org.halkidiki.petsapp.accounts.User;
 import org.junit.Before;
 import org.junit.Test;
