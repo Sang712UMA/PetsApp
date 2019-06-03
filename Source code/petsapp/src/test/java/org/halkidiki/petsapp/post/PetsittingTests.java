@@ -13,22 +13,18 @@ public class PetsittingTests {
 
 	PostManager postManagerToTest;
 	Petsitting petsittingMocked;
-	Petsitting petsittingMocked2;
 	Hospitality hospitalityMocked;
-	LostPets lostPetsMocked;
-	LostPets lostPetsMocked2;
 
 	@Before
 	public void setUp() throws Exception {
 		postManagerToTest = PostManager.getActivePostManager();
 		petsittingMocked = Mockito.mock(Petsitting.class);
 		hospitalityMocked = Mockito.mock(Hospitality.class);
-		lostPetsMocked = Mockito.mock(LostPets.class);
-		lostPetsMocked2 = Mockito.mock(LostPets.class);
+
 	}
 
 	@Test
-	public final void testGetActivePostManager() {
+	public final void GetActivePostManager() {
 		assertEquals(postManagerToTest, PostManager.getActivePostManager());
 
 		postManagerToTest = null;
@@ -36,16 +32,15 @@ public class PetsittingTests {
 
 	}
 
-
 	@Test
 	public void createPetsittingPostTest() {
 		postManagerToTest.addPost(petsittingMocked);
-		assertEquals(true,postManagerToTest.getPosts().contains(petsittingMocked));
+		assertEquals(true, postManagerToTest.getPosts().contains(petsittingMocked));
 		postManagerToTest.addPost(petsittingMocked);
 		assertEquals(true, postManagerToTest.getPostsOfPetsittingPets().contains(petsittingMocked));
-		
+
 	}
-	
+
 	@Test
 	public void deletePetsittingPostTest() {
 		postManagerToTest.addPost(petsittingMocked);
@@ -54,39 +49,33 @@ public class PetsittingTests {
 		assertEquals(false, postManagerToTest.getPostsOfPetsittingPets().contains(petsittingMocked));
 	}
 
-
-	
 	@Test
 	public final void GetPostsOfPetsittingTest() {
 		postManagerToTest.addPost(petsittingMocked);
-		postManagerToTest.addPost(petsittingMocked2);
-		
+		postManagerToTest.addPost(hospitalityMocked);
+
 		List<Petsitting> expected = new ArrayList<Petsitting>();
 		expected.add(petsittingMocked);
-		expected.add(petsittingMocked2);
-		
 		List<Petsitting> actual = postManagerToTest.getPostsOfPetsittingPets();
-		assertEquals(expected,actual);
+
+		assertEquals(expected, actual);
 	}
-	
 
 	@Test
 	public void acceptPetsittingPostTest() {
-		
+
 		postManagerToTest.addPost(petsittingMocked);
-		assertEquals(true,postManagerToTest.getPosts().contains(petsittingMocked));
-		assertEquals(true,postManagerToTest.getPostsOfPetsittingPets().contains(petsittingMocked));
+		assertEquals(true, postManagerToTest.getPosts().contains(petsittingMocked));
+		assertEquals(true, postManagerToTest.getPostsOfPetsittingPets().contains(petsittingMocked));
 		postManagerToTest.postNotLongerRequired(petsittingMocked);
-		assertEquals(false,postManagerToTest.getPosts().contains(petsittingMocked));
-		assertEquals(true,postManagerToTest.getInactivePosts().contains(petsittingMocked));
-		
+		assertEquals(false, postManagerToTest.getPosts().contains(petsittingMocked));
+		assertEquals(true, postManagerToTest.getInactivePosts().contains(petsittingMocked));
+
 	}
 
 	@Test
 	public void giveRewardTest() {
-		
-		
-		
+
 	}
 
 }
