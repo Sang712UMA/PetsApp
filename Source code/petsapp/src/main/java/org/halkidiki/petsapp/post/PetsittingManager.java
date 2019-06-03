@@ -5,57 +5,31 @@ import java.util.List;
 
 import org.halkidiki.petsapp.accounts.Account;
 import org.halkidiki.petsapp.accounts.User;
+import org.halkidiki.petsapp.conversation.ConversationManager;
+import org.halkidiki.petsapp.conversation.Message;
 
 public class PetsittingManager {
 
-	private List<Post> activePosts;
-	private List<Post> inactivePosts;
-	Petsitting petsittingpost = new Petsitting();
+	PostManager pm = PostManager.getActivePostManager();
+	Petsitting ps = new Petsitting();
+	ConversationManager cm = ConversationManager.getActiveConversationManager();
 
+	public void addPetsittingRequest() {
 
-	public void AcceptPetsittingReques(Petsitting post) {
-
-		postNotLongerRequired(post);
-
+		pm.addPost(ps);
 	}
 
-	public void AcceptPetsittingHelp(Account helpingUser) {
-		
-		helpingUser.setRewardPoints(petsittingpost.getRewardPoints());
+	public void acceptPetsittingHelp(Message message) {
+
+		cm.sendMessage(message, ps.getPet().getUserId());
 	}
 
-	
-
-	private boolean isAPetsittingtPost(Post post) {
-		return post instanceof Petsitting;
+	public void confirmPetsittingHelFounded() {
+		pm.postNotLongerRequired(ps);
 	}
 
-	public List<Petsitting> getPostsOfPetsittingPets() {
-		List<Petsitting> petsittingPostList = new ArrayList<Petsitting>();
-
-		for (Post post : activePosts) {
-			if (isAPetsittingtPost(post)) {
-				petsittingPostList.add((Petsitting) post);
-			}
-		}
-
-		return petsittingPostList;
+	private void sendReward(Account petsitter) {
+		petsitter.updateRewardPoints(ps.getRewardPoints());
 	}
-
-	private void postNotLongerRequired(Post post) {
-		activePosts.remove(post);
-		inactivePosts.add(post);
-	}
-
-	public List<Post> getPosts() {
-		return activePosts;
-	}
-
-	public List<Post> getInactivePosts() {
-		return inactivePosts;
-	}
-	
-
-	
 
 }

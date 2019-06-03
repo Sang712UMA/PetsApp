@@ -95,4 +95,8 @@ public abstract class Account {
     public int getRewardPoints() {
     	return rewardPoints;
     }
+    
+    public void updateRewardPoints(int rewardPoints) {
+		this.rewardPoints += rewardPoints;
+	}
 }

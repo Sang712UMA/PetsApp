@@ -137,4 +137,6 @@ public class User extends Account{ //Konstantina
 	public void addAd(Ad ad) {
 		ads.add(ad);
 	}
+	
+	
 }

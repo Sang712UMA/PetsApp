@@ -113,4 +113,8 @@ public class Pet{
 		return details;
 	}
 	
+	public int getUserId() {
+		return adopter.getId();
+	}
+	
 }

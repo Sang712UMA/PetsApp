@@ -2,20 +2,21 @@ package org.halkidiki.petsapp.post;
 
 import java.util.Date;
 
+import org.halkidiki.petsapp.accounts.Account;
+
 public class Petsitting extends Post {
 
 	private int duration;
 	public static int rewardPoints;
-	
 
-	public Petsitting() {}
-	
+	public Petsitting() {
+	}
+
 	public Petsitting(int duration, int rewardPoints) {
 		this.duration = duration;
 		this.rewardPoints = rewardPoints;
 	}
 
-	
 	public int getDuration() {
 		return duration;
 	}
@@ -23,7 +24,7 @@ public class Petsitting extends Post {
 	public void setDuration(int duration) {
 		this.duration = duration;
 	}
-	
+
 	public int getRewardPoints() {
 		return rewardPoints;
 	}
@@ -31,9 +32,5 @@ public class Petsitting extends Post {
 	public void setRewardPoints(int rewardPoints) {
 		this.rewardPoints = rewardPoints;
 	}
-	
-	
-	
 
-	
 }

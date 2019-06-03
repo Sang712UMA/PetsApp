@@ -15,25 +15,19 @@ class PetsittingManagerTest {
 
 	PetsittingManager petsittingManagerMocked;
 	Petsitting petsittingMocked;
-	
+
 	@Before
 	public void setUp() throws Exception {
-		
+
 		petsittingManagerMocked = Mockito.mock(PetsittingManager.class);
 		petsittingMocked = Mockito.mock(Petsitting.class);
-		
+
 	}
 
-	@After
-	public void tearDown() throws Exception {
-		petsittingManagerMocked = null;
-		petsittingMocked = null;
-	}
-	
-	
 	@Test
 	public void AcceptPetsittingRequesTest() {
 		
+
 	}
 
 	@Test
