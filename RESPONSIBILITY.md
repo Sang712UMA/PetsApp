@@ -26,11 +26,11 @@ After you've done your slides YOU SHOULD SEND HIM yours.
   - Requirements <---> **ANTEK**
   - Architecture <---> **ADRI**
   - Models <---> **ADRI**
-  - Principles / Patterns  <---> **____**
-  - Testing <---> **____**
+  - Principles / Patterns  <---> **GEORGE**
+  - Testing <---> **GEORGE**
 - Development / Deployment
   - Strategies & tools <---> **SANGGIL**
   - Implementation models (what is real and not real) <---> **ADRI**
-  - Deployment <---> **GEORGE**
-- Results <---> **GEORGE**
+  - Deployment <---> **____**
+- Results <---> **____**
 - Conclusions <---> **SANGGIL**
