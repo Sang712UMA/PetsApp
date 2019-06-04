@@ -28,6 +28,7 @@
    - Created Task and Volunteer classes
    - Implemented methods in Shelter, FreeHours, Task and Volunteer classes
    - Made his presentaion slides (Introduction, requirements)
+   - Created and implemented Conversation, ConversationManager and Message classes
  * George:
    - Made his presentation slides (principle, patterns, testing)
  * Konstantina:
