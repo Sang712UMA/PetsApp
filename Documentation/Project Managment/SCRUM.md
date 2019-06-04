@@ -23,6 +23,7 @@
    - UI web design
    - UI android design
    - Made his presentation slides (Architecture, Models, Implementation Models)
+   - Made the "demo" we showed in the presentation. It's a simple demo of his own story done in Java Spring
  * Antek:
    - Created Task and Volunteer classes
    - Implemented methods in Shelter, FreeHours, Task and Volunteer classes
