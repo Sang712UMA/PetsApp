@@ -16,6 +16,8 @@ import javax.swing.JButton;
 public class SuccessLog extends JFrame {
 
 	private JPanel contentPane;
+	JButton btnCreateNotification;
+	JButton btnCreatePost;
 
 	/**
 	 * Launch the application.
@@ -44,13 +46,13 @@ public class SuccessLog extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JButton btnCreateNotification = new JButton("Create Notification");
+		btnCreateNotification = new JButton("Create Notification");
 		btnCreateNotification.setBounds(10, 29, 160, 23);
 		contentPane.add(btnCreateNotification);
 		
-		JButton btnNewButton = new JButton("Create Post");
-		btnNewButton.setBounds(10, 63, 160, 23);
-		contentPane.add(btnNewButton);
+		btnCreatePost = new JButton("Create Post");
+		btnCreatePost.setBounds(10, 63, 160, 23);
+		contentPane.add(btnCreatePost);
 	}
 
 }
